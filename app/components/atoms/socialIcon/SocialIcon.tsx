@@ -1,5 +1,6 @@
 import React from "react";
 import { IconType } from "react-icons";
+import AnchorLink from "../anchorLink/AnchorLink";
 
 interface SocialIconProps {
     Icon: IconType;
@@ -8,8 +9,8 @@ interface SocialIconProps {
 
 export default function SocialIcon({ Icon, link }: SocialIconProps) {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer">
+    <AnchorLink href={link} target="_blank" rel="noopener noreferrer">
       <Icon className="w-6 h-6" />
-    </a>
+    </AnchorLink>
   );
 }

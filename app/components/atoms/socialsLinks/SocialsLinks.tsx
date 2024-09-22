@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import SocialIcon from "../../socialIcon/SocialIcon";
+import SocialIcon from "../socialIcon/SocialIcon";
 
 export default function SocialsLinks() {
   return (
