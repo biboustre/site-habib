@@ -9,6 +9,6 @@ interface AnchorLinkProps {
 
 export default function AnchorLink({ href, children, target, rel }: AnchorLinkProps) {
   return (
-    <a href={href} target={target} rel={rel}>{children}</a>
+    <a className='tracking-wider' href={href} target={target} rel={rel}>{children}</a>
   )
 }

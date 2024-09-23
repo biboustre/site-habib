@@ -8,6 +8,6 @@ interface InternalLinkProps {
 
 export default function InternalLink({ href, name }: InternalLinkProps) {
   return (
-    <Link href={href}>{name}</Link>
+    <Link className='tracking-wider' href={href}>{name}</Link>
   )
 }

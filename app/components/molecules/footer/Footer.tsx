@@ -1,3 +1,4 @@
+import AnchorLink from '../../atoms/anchorLink/AnchorLink';
 import SocialsLinks from '../../atoms/socialsLinks/SocialsLinks';
 
 export default function Footer () {
@@ -19,19 +20,13 @@ export default function Footer () {
           <h3 className="text-lg font-bold mb-4">Liens utiles</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/about" className="hover:text-gray-400">À propos</a>
+              <AnchorLink href=''>À propos</AnchorLink>
             </li>
             <li>
-              <a href="/services" className="hover:text-gray-400">Services</a>
+              <AnchorLink href=''>Services</AnchorLink>
             </li>
             <li>
-              <a href="/faq" className="hover:text-gray-400">FAQ</a>
-            </li>
-            <li>
-              <a href="/privacy" className="hover:text-gray-400">Politique de confidentialité</a>
-            </li>
-            <li>
-              <a href="/terms" className="hover:text-gray-400">Conditions d&apos;utilisation</a>
+              <AnchorLink href=''>FAQ</AnchorLink>
             </li>
           </ul>
         </div>
@@ -61,7 +56,7 @@ export default function Footer () {
 
       {/* Copyright et mentions légales */}
       <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
-        <p>&copy; 2024 Nom de l&apos;entreprise. Tous droits réservés.</p>
+        <p>&copy; 2024 Web&apos;ibou. Tous droits réservés.</p>
         <a href="/legal" className="hover:text-gray-400">Mentions légales</a>
       </div>
     </footer>
