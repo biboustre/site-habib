@@ -6,9 +6,9 @@ export default function NavHeader() {
   return (
     <nav className="flex gap-10">
       <ul className="flex gap-5">
-        <li><InternalLink href="" name="A propos" /></li>
-        <li><InternalLink href="" name="Services" /></li>
-        <li><InternalLink href="" name="Contact" /></li>
+        <li><InternalLink href="#a-propos" name="A propos" /></li>
+        <li><InternalLink href="services" name="Services" /></li>
+        <li><InternalLink href="#contactFooter" name="Contact" /></li>
       </ul>
       <SocialsLinks />
     </nav>

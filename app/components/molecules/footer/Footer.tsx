@@ -3,8 +3,8 @@ import SocialsLinks from '../../atoms/socialsLinks/SocialsLinks';
 
 export default function Footer () {
   return (
-    <footer className="bg-gray-800 text-white py-10 px-6">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer id='contactFooter' className="bg-gray-800 text-white py-10 px-6">
+      <section className=" mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Section 1: Informations de Contact */}
         <div>
           <h3 className="text-lg font-bold mb-4">Contact</h3>
@@ -52,13 +52,13 @@ export default function Footer () {
             </button>
           </form>
         </div>
-      </div>
+      </section>
 
       {/* Copyright et mentions légales */}
-      <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
+      <section className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
         <p>&copy; 2024 Web&apos;ibou. Tous droits réservés.</p>
         <a href="/legal" className="hover:text-gray-400">Mentions légales</a>
-      </div>
+      </section>
     </footer>
   );
 };
