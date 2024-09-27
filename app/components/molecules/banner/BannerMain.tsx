@@ -27,7 +27,7 @@ export default function BannerMain({
   return (
     <section className="flex flex-col-reverse md:flex-row">
       <section className="md:w-1/2 space-y-20">
-        <h1 className={`p-10 ${classNameTitle}`}>{title}</h1>
+        <h1 className={`pt-10 ${classNameTitle}`}>{title}</h1>
         {text && <h2 className={`${classNameText}`} dangerouslySetInnerHTML={{ __html: text }} />}
       </section>
       <section className="md:w-1/2">
