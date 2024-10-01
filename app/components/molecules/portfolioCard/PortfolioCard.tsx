@@ -16,29 +16,37 @@ export function PortfolioCard({
     null
   );
 
+  const handleAsideClick = () => {
+    if (selectedItem) {
+      setSelectedItem(null);
+    } else {
+      setSelectedItem({
+        title,
+        category,
+        imageSrc,
+        description,
+        onClick: () => setSelectedItem(null),
+      });
+    }
+  };
+
   return (
     <section>
-      <section className="relative  h-[460px] cursor-pointer">
+      <section className="relative  h-[460px]">
         <Image src={imageSrc} alt={title} layout="fill" objectFit="cover" />
         <aside
-          className="absolute bottom-0 z-20 flex flex-col inset-x-0  h-1/3 bg-red-950 bg-opacity-50 pl-8 pt-10"
-          onClick={() =>
-            setSelectedItem({
-              title,
-              category,
-              imageSrc,
-              description,
-              onClick: () => setSelectedItem(null),
-            })
-          }
+          className={`absolute bottom-0 z-20 flex flex-col justify-center gap-5 inset-x-0 h-[190px] bg-red-950 bg-opacity-50 pl-8  cursor-pointer ${
+            selectedItem ? "hidden" : "flex"
+          }`}
+          onClick={handleAsideClick}
         >
-          <p className="flex-1 text-white text-lg font-bold">{category}</p>
-          <h2 className="flex-1 text-white text-2xl font-bold">{title}</h2>
+          <p className=" text-white text-lg font-bold">{category}</p>
+          <h2 className=" text-white text-4xl font-bold">{title}</h2>
         </aside>
       </section>
 
       {selectedItem && (
-        <aside className=" p-3 bg-gray-100 shadow-lg">
+        <aside className=" p-3 bg-gray-100 shadow-lg" >
           <h3 className="text-2xl font-bold">{title}</h3>
           <p className="mt-2 text-gray-700">{description}</p>
           <button

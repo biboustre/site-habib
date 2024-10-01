@@ -26,7 +26,7 @@ export default function BannerMain({
   height = 300,
 }: BannerMainProps) {
   return (
-    <section className="flex flex-col-reverse bg-orange-50 md:flex-row md:h-[720px]">
+    <section className="flex flex-col-reverse bg-slate-50 h-[calc(100vh-6rem)] md:flex-row md:h-[720px]">
       {/* Section contenant les h1 et h2 */}
       <section className="flex flex-col items-center justify-center  md:w-1/2 md:items-start md:justify-end md:pl-20 md:pb-10">
         <h1 className={`pt-10 mb-5 text-5xl md:text-7xl lg:text-8xl text-gray-800 font-bold text-center md:text-start ${classNameTitle}`}>{title}</h1>
@@ -38,15 +38,15 @@ export default function BannerMain({
         )}
         <BtnMain
           href="#contactFooter"
-          classNameBtn="mb-14"
+          classNameBtn=" mb-14 "
           label="Contactez-nous"
         />
       </section>
 
       {/* Section contenant l'image */}
-      <section className="md:w-1/2 ">
+      <section className=" md:w-1/2 ">
         <Image
-          className={`h-full w-full ${classNameImage}`}
+          className={`w-full md:h-full ${classNameImage}`}
           src={src}
           alt={alt}
           width={width}

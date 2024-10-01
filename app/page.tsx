@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from 'react';
 import ServiceDescription from "./components/atoms/serviceDescription/ServiceDescription";
 import BannerMain from "./components/molecules/banner/BannerMain";
 import { descriptions } from "./data/data";
@@ -20,9 +21,9 @@ export default function Home() {
         src="/images/photo_ordinateur_2.webp"
         alt="photo de profil"
       />
-      <section className="pt-24 flex flex-col gap-32 bg-gray-800 md:h-[calc(100vh-6rem)]">
+      <section className="pt-24 flex flex-col gap-32 bg-gray-800">
         <h2
-          id="a-propos"
+          id="services"
           className="text-4xl text-white font-bold text-center md:text-6xl"
         >
           Ce que nous proposons
@@ -39,7 +40,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="relative h-[calc(100vh-6rem)]">
+      <section id="a-propos" className="relative h-[calc(100vh-6rem)]">
         <h1 className="absolute text-white text-3xl tracking-wider font-bold w-full text-center pt-10 z-10 md:text-5xl">
           Nous créons et améliorons les <br /> produits Web et mobiles
         </h1>
@@ -53,9 +54,11 @@ export default function Home() {
           // layout="fill"
         />
       </section>
-      <section className="flex flex-col gap-14 bg-orange-50 pt-24 pb-32">
-        <h1 className="text-gray-800 text-4xl font-bold text-center md:text-6xl">Portfolio</h1>
-        <section className=" flex flex-col gap-10 px-1 md:grid md:grid-cols-2 md:gap-3 md:px-32 lg:grid-cols-3">
+      <section id="portfolio" className="flex flex-col gap-14 bg-orange-50 md:px-7 lg:px-28 pt-24 pb-32">
+        <h1 className="text-gray-800 text-4xl font-bold text-center md:text-6xl">
+          Portfolio
+        </h1>
+        <section className="flex flex-col gap-10 px-2 md:grid md:grid-cols-2 md:gap-3 lg:grid-cols-3">
           {portfolioItems.map((portfolioItem) => (
             <PortfolioCard
               key={portfolioItem.id}
