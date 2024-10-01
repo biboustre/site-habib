@@ -47,7 +47,7 @@ html, body {
 
     .btnMain {
       transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-      box-shadow: 0 4px 6px rgb(162, 62, 134);
+      box-shadow: 0 8px 8px rgba(162, 62, 134, 0.89);
     }
   
     .btnMain:hover {

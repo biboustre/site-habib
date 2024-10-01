@@ -5,6 +5,7 @@ import BannerMain from "./components/molecules/banner/BannerMain";
 import { descriptions } from "./data/data";
 import { PortfolioCard } from "./components/molecules/portfolioCard/PortfolioCard";
 import { portfolioItems } from "./data/data";
+import { ContactCard } from "./components/molecules/contact/contactCard";
 
 export default function Home() {
   // const [open, setOpen] = useState(false);
@@ -69,6 +70,7 @@ export default function Home() {
           ))}
         </section>
       </section>
+      <ContactCard />
     </>
   );
 }
