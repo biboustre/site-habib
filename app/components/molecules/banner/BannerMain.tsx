@@ -26,9 +26,9 @@ export default function BannerMain({
   height = 300,
 }: BannerMainProps) {
   return (
-    <section className="flex flex-col-reverse md:flex-row">
+    <section className="flex flex-col-reverse bg-orange-50 md:flex-row md:h-[720px]">
       {/* Section contenant les h1 et h2 */}
-      <section className="flex flex-col items-center justify-center md:w-1/2 md:items-start md:pl-20">
+      <section className="flex flex-col items-center justify-center  md:w-1/2 md:items-start md:justify-end md:pl-20 md:pb-10">
         <h1 className={`pt-10 mb-5 text-5xl md:text-7xl lg:text-8xl text-gray-800 font-bold text-center md:text-start ${classNameTitle}`}>{title}</h1>
         {text && (
           <h2
@@ -51,7 +51,6 @@ export default function BannerMain({
           alt={alt}
           width={width}
           height={height}
-          // layout="responsive"
           objectFit="cover"
         />
       </section>

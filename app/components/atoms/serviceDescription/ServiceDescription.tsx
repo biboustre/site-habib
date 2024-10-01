@@ -11,11 +11,11 @@ export default function ServiceDescription({
 }: ServiceDescriptionProps) {
   return (
     <>
-      <section className="md:bg-zinc-400/10 md:p-5 rounded-xl space-y-10 text-center">
-        <h3 className="text-2xl font-bold md:text-3xl">{title}</h3>
-        <p className="md:p-5">{text}</p>
-      </section>
       <hr className="" />
+      <section className="flex flex-col justify-between gap-10 rounded-xl text-center md:bg-zinc-400/1 ">
+        <h3 className="text-2xl font-bold md:text-3xl">{title}</h3>
+        <p className="md:px-5 md:font-normal md:text-xl">{text}</p>
+      </section>
     </>
   );
 }
