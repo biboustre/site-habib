@@ -1,11 +1,11 @@
 import Image from "next/image";
-import React from 'react';
+import React from "react";
 import ServiceDescription from "./components/atoms/serviceDescription/ServiceDescription";
 import BannerMain from "./components/molecules/banner/BannerMain";
 import { descriptions } from "./data/data";
 import { PortfolioCard } from "./components/molecules/portfolioCard/PortfolioCard";
 import { portfolioItems } from "./data/data";
-import { ContactCard } from "./components/molecules/contact/contactCard";
+import ContactCard from "./components/molecules/contact/ContactCard";
 
 export default function Home() {
   // const [open, setOpen] = useState(false);
@@ -22,11 +22,11 @@ export default function Home() {
         src="/images/photo_ordinateur_2.webp"
         alt="photo de profil"
       />
-      <section className="pt-24 flex flex-col gap-32 bg-gray-800">
-        <h2
-          id="services"
-          className="text-4xl text-white font-bold text-center md:text-6xl"
-        >
+      <section
+        id="services"
+        className="pt-24 flex flex-col gap-32 scroll-mt-[100px] bg-gray-800"
+      >
+        <h2 className="text-4xl text-white font-bold text-center md:text-6xl">
           Ce que nous proposons
         </h2>
         {/* <hr className="w-64 m-auto" /> */}
@@ -41,7 +41,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section id="a-propos" className="relative h-[calc(100vh-6rem)]">
+      <section id="a-propos" className="relative h-[100vh] scroll-mt-[100px]">
         <h1 className="absolute text-white text-3xl tracking-wider font-bold w-full text-center pt-10 z-10 md:text-5xl">
           Nous créons et améliorons les <br /> produits Web et mobiles
         </h1>
@@ -55,7 +55,10 @@ export default function Home() {
           // layout="fill"
         />
       </section>
-      <section id="portfolio" className="flex flex-col gap-14 bg-orange-50 md:px-7 lg:px-28 pt-24 pb-32">
+      <section
+        id="portfolio"
+        className="flex flex-col gap-14 scroll-mt-[100px] bg-orange-50 md:px-7 lg:px-28 pt-16 pb-32"
+      >
         <h1 className="text-gray-800 text-4xl font-bold text-center md:text-6xl">
           Portfolio
         </h1>
@@ -70,7 +73,13 @@ export default function Home() {
           ))}
         </section>
       </section>
-      <ContactCard />
+
+      <section
+        id="contact"
+        className="flex flex-col scroll-mt-[100px] items-center justify-between lg:flex-row bg-[#e3d7cd] p-10"
+      >
+        <ContactCard />
+      </section>
     </>
   );
 }

@@ -2,13 +2,13 @@
 import React from 'react';
 import Image from 'next/image';
 
-export function ContactCard () {
+export default function ContactCard () {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between bg-[#e3d7cd] p-10">
+    <>
       {/* Section de l'image */}
       <figure className="relative w-full lg:w-1/2 flex justify-center items-center">
         <Image
-          src="/images/"
+          src="/images/photo-profil.jpg"
           alt=""
           width={500}
           height={500}
@@ -22,10 +22,10 @@ export function ContactCard () {
 
         <ul className="space-y-2">
           <li>
-            <span className="text-orange-500 font-semibold">TÉLÉPHONE :</span> (555) 123-4567
+            <span className="text-orange-500 font-semibold">TÉLÉPHONE :</span> 06-74-32-48-32
           </li>
           <li>
-            <span className="text-orange-500 font-semibold">E-MAIL :</span> info@sample.com
+            <span className="text-orange-500 font-semibold">E-MAIL :</span> web&apos;ibou@outlook.com
           </li>
           <li>
             <span className="text-orange-500 font-semibold">ADRESSE :</span> Alexandrie, 32 Rue Washington, 22303
@@ -38,13 +38,8 @@ export function ContactCard () {
             Vendredi — Dimanche 10:00 — 19:00
           </li>
         </ul>
-
-        {/* Bouton */}
-        <button className="mt-8 px-6 py-3 bg-black text-white rounded-lg shadow-lg">
-          Consultation de livre
-        </button>
       </section>
-    </section>
+    </>
   );
 };
 

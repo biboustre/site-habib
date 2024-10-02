@@ -9,7 +9,7 @@ export default function NavHeader() {
         <li className="underline-animation"><InternalLink href="#services" name="Services" /></li>
         <li className="underline-animation"><InternalLink href="#a-propos" name="A propos" /></li>
         <li className="underline-animation"><InternalLink href="#portfolio" name="Portfolio" /></li>
-        <li className="underline-animation"><InternalLink href="#contactFooter" name="Contact" /></li>
+        <li className="underline-animation"><InternalLink href="#contact" name="Contact" /></li>
       </ul>
       <SocialsLinks />
     </nav>
