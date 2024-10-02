@@ -4,23 +4,24 @@ import Image from 'next/image';
 
 export default function ContactCard () {
   return (
-    <>
+    <section id='contact' className="flex flex-col gap-16  h-full items-center py-10 md:flex-row md:justify-center">
       {/* Section de l'image */}
-      <figure className="relative w-full lg:w-1/2 flex justify-center items-center">
+      <figure className="h-full w-3/5">
         <Image
-          src="/images/photo-profil.jpg"
+        className='h-[80vh] w-full'
+          src="/images/photo-ordinateur-sur-bureau.jpg"
           alt=""
           width={500}
           height={500}
-          className="object-contain"
+          objectFit='cover'
         />
       </figure>
 
       {/* Section des informations de contact */}
-      <section className="w-full lg:w-1/2 mt-10 lg:mt-0 lg:ml-10 text-gray-800">
-        <h2 className="text-4xl font-bold mb-4">Contactez-nous</h2>
+      <section className="px-3 md:">
+        <h2 className="text-4xl font-bold mb-4 md:text-6xl md:mb-10">Contactez-nous</h2>
 
-        <ul className="space-y-2">
+        <ul className="space-y-12 text-xl md:text-3xl">
           <li>
             <span className="colorPrimary  font-bold">TÉLÉPHONE :</span> 06-74-32-48-32
           </li>
@@ -28,18 +29,18 @@ export default function ContactCard () {
             <span className="colorPrimary  font-semibold">E-MAIL :</span> web&apos;ibou@outlook.com
           </li>
           <li>
-            <span className="colorPrimary  font-semibold">ADRESSE :</span> Alexandrie, 32 Rue Washington, 22303
+            <span className="colorPrimary  font-semibold">ADRESSE :</span> Fréjus 83600
           </li>
           <li>
             <span className="colorPrimary  font-semibold">HEURES D&apos;OUVERTURE :</span>
             <br />
-            Lundi — Jeudi 10:00 — 23:00
+            Lundi — Jeudi 10h à 20h
             <br />
-            Vendredi — Dimanche 10:00 — 19:00
+            Vendredi — Dimanche 10h/12 — 14h/20h
           </li>
         </ul>
       </section>
-    </>
+    </section>
   );
 };
 

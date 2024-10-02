@@ -74,12 +74,9 @@ export default function Home() {
         </section>
       </section>
 
-      <section
-        id="contact"
-        className="flex flex-col scroll-mt-[100px] items-center justify-between lg:flex-row bg-[#e3d7cd] p-10"
-      >
+      
         <ContactCard />
-      </section>
+      
     </>
   );
 }
