@@ -74,9 +74,7 @@ export default function Home() {
         </section>
       </section>
 
-      
-        <ContactCard />
-      
+      <ContactCard />
     </>
   );
 }

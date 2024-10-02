@@ -61,8 +61,8 @@ body {
   }
 
   .colorPrimary {
-    color: #0f2027;
-    color: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    color: #e88635; 
+    color: linear-gradient(to right, #cc5333, #23074d); 
   }
 
   .bgPrimary {
