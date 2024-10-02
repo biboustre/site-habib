@@ -27,7 +27,7 @@ export default function BannerMain({
           />
         )}
         <BtnMain
-          href="#contactFooter"
+          href="#contact"
           classNameBtn=" mb-14 "
           label="Contactez-nous"
         />

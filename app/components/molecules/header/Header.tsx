@@ -5,7 +5,7 @@ import NavHeader from "../../atoms/navHeader/NavHeader";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center text-white px-10  shadow-md h-[100px]  w-full bg-gray-800 fixed z-50">
+    <header className="flex justify-between items-center text-white px-10  shadow-xl h-[100px]  w-full bgPrimary fixed z-50">
       <LogoMain />
       <NavHeader />
       {/* <nav>

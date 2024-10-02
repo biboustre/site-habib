@@ -22,16 +22,16 @@ export default function ContactCard () {
 
         <ul className="space-y-2">
           <li>
-            <span className="text-orange-500 font-semibold">TÉLÉPHONE :</span> 06-74-32-48-32
+            <span className="colorPrimary  font-bold">TÉLÉPHONE :</span> 06-74-32-48-32
           </li>
           <li>
-            <span className="text-orange-500 font-semibold">E-MAIL :</span> web&apos;ibou@outlook.com
+            <span className="colorPrimary  font-semibold">E-MAIL :</span> web&apos;ibou@outlook.com
           </li>
           <li>
-            <span className="text-orange-500 font-semibold">ADRESSE :</span> Alexandrie, 32 Rue Washington, 22303
+            <span className="colorPrimary  font-semibold">ADRESSE :</span> Alexandrie, 32 Rue Washington, 22303
           </li>
           <li>
-            <span className="text-orange-500 font-semibold">HEURES D&apos;OUVERTURE :</span>
+            <span className="colorPrimary  font-semibold">HEURES D&apos;OUVERTURE :</span>
             <br />
             Lundi — Jeudi 10:00 — 23:00
             <br />

@@ -2,61 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@layer components {
+  .underline-animation {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
   }
 
-
-  @layer components {
-    .underline-animation {
-      position: relative;
-      display: inline-block;
-      overflow: hidden;
-    }
-  
-    .underline-animation::after {
-      content: '';
-      position: absolute;
-      bottom: - 10px;
-      left: 100%;
-      width: 100%;
-      height: 2px;
-      background-color: currentColor;
-      transition: left 0.3s ease-out;
-    }
-  
-    .underline-animation:hover::after {
-      left: 0;
-    }
-
-    .icon {
-      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-  
-    .icon:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    }
-  
-    .icon:active {
-      transform: translateY(2px);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .btnMain {
-      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-      box-shadow: 0 8px 8px rgba(162, 62, 134, 0.89);
-    }
-  
-    .btnMain:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 12px rgba(117, 52, 160, 0.106);
-    }
-  
-    .btnMain:active {
-      transform: translateY(2px);
-      box-shadow: 0 2px 4px rgba(144, 59, 159, 0.1);
-    }
+  .underline-animation::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transition: left 0.3s ease-out;
   }
+
+  .underline-animation:hover::after {
+    left: 0;
+  }
+
+  .icon {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .icon:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .btnMain {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 2px 5px 5px rgba(200, 122, 13, 0.526);
+  }
+
+  .btnMain:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(117, 52, 160, 0.106);
+  }
+
+  .btnMain:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(144, 59, 159, 0.1);
+  }
+
+  .colorPrimary {
+    color: #0f2027;
+    color: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  }
+
+  .bgPrimary {
+    /* background: #659999; 
+    background: -webkit-linear-gradient(
+      to right,
+      #f4791f,
+      #659999
+    ); 
+    background: linear-gradient(
+      to right,
+      #f4791f,
+      #659999
+    );  */
+    background: #23074d;  
+background: -webkit-linear-gradient(to right, #cc5333, #23074d);  
+background: linear-gradient(to right, #cc5333, #23074d); 
+
+  }
+
+  /* background: #0F2027;  
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027);  */
+
+
+  .bgSecondary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(227 215 205 / var(--tw-bg-opacity));
+  }
+}

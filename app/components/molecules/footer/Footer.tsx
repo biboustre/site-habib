@@ -3,7 +3,7 @@ import SocialsLinks from "../../atoms/socialsLinks/SocialsLinks";
 
 export default function Footer() {
   return (
-    <footer id="contactFooter" className="flex flex-col justify-between bg-gray-800 text-white py-14 px-6 md:h-[60vh]">
+    <footer id="contactFooter" className="flex flex-col justify-between bgPrimary text-white py-14 px-6 md:h-[60vh]">
       <section className=" mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Section 1: Informations de Contact */}
         <div>

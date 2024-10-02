@@ -24,7 +24,7 @@ export default function Home() {
       />
       <section
         id="services"
-        className="pt-24 flex flex-col gap-32 scroll-mt-[100px] bg-gray-800"
+        className="pt-24 flex flex-col gap-32 scroll-mt-[100px] bgPrimary"
       >
         <h2 className="text-4xl text-white font-bold text-center md:text-6xl">
           Ce que nous proposons
@@ -57,7 +57,7 @@ export default function Home() {
       </section>
       <section
         id="portfolio"
-        className="flex flex-col gap-14 scroll-mt-[100px] bg-orange-50 md:px-7 lg:px-28 pt-16 pb-32"
+        className="flex flex-col gap-14 scroll-mt-[100px] bg-[#e3d7cd] md:px-7 lg:px-28 pt-16 pb-32"
       >
         <h1 className="text-gray-800 text-4xl font-bold text-center md:text-6xl">
           Portfolio
