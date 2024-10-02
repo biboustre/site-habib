@@ -80,7 +80,9 @@ body {
     background: #23074d;  
 background: -webkit-linear-gradient(to right, #cc5333, #23074d);  
 background: linear-gradient(to right, #cc5333, #23074d); 
-
+/* background: #0F2027;  
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
   }
 
   /* background: #0F2027;  

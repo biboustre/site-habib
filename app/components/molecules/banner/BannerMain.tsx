@@ -28,7 +28,7 @@ export default function BannerMain({
         )}
         <BtnMain
           href="#contact"
-          classNameBtn=" mb-14 "
+          classNameBtn="mt-10"
           label="Contactez-nous"
         />
       </section>
