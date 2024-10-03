@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="h-full flex flex-col">
+      <body className="flex h-full flex-col">
         <Header />
         <main className="mt-[100px]">{children}</main>
         <Footer />

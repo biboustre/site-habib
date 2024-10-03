@@ -24,13 +24,13 @@ export default function Home() {
       />
       <section
         id="services"
-        className="pt-24 flex flex-col gap-32 scroll-mt-[100px] bgPrimary"
+        className="bgPrimary flex scroll-mt-[100px] flex-col gap-32 pt-24"
       >
-        <h2 className="text-4xl text-white font-bold text-center md:text-6xl">
+        <h2 className="text-center text-4xl font-bold text-white md:text-6xl">
           Ce que nous proposons
         </h2>
         {/* <hr className="w-64 m-auto" /> */}
-        <section className="flex flex-col gap-20 text-white text-lg text-justify font-semibold px-5 pb-20 lg:flex-row lg:gap-5 xl:px-20">
+        <section className="flex flex-col gap-20 px-5 pb-20 text-justify text-lg font-semibold text-white lg:flex-row lg:gap-5 xl:px-20">
           {descriptions.map((description) => (
             <ServiceDescription
               key={description.id}
@@ -41,12 +41,12 @@ export default function Home() {
         </section>
       </section>
 
-      <section id="a-propos" className="relative h-[100vh] scroll-mt-[100px]">
-        <h1 className="absolute text-white text-3xl tracking-wider font-bold w-full text-center pt-10 z-10 md:text-5xl">
+      <section id="a-propos" className="relative h-screen scroll-mt-[100px]">
+        <h1 className="absolute z-10 w-full pt-10 text-center text-3xl font-bold tracking-wider text-white md:text-5xl">
           Nous créons et améliorons les <br /> produits Web et mobiles
         </h1>
         <Image
-          className="z-0 h-full w-full"
+          className="z-0 size-full"
           src="/images/photo_ordinateur_1.webp"
           alt="hero"
           height={500}
@@ -57,9 +57,9 @@ export default function Home() {
       </section>
       <section
         id="portfolio"
-        className="flex flex-col gap-14 scroll-mt-[100px] bg-[#e3d7cd] md:px-7 lg:px-28 pt-16 pb-32"
+        className="flex scroll-mt-[100px] flex-col gap-14 bg-[#e3d7cd] pb-32 pt-16 md:px-7 lg:px-28"
       >
-        <h1 className="text-gray-800 text-4xl font-bold text-center md:text-6xl">
+        <h1 className="text-center text-4xl font-bold text-gray-800 md:text-6xl">
           Portfolio
         </h1>
         <section className="flex flex-col gap-10 px-2 md:grid md:grid-cols-2 md:gap-3 lg:grid-cols-3">

@@ -1,3 +1,29 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  // Utilisation des règles spécifiques à Next.js, TypeScript et Tailwind CSS
+  "extends": [
+    "next/core-web-vitals", // Utilisation des règles spécifiques à Next.js
+    "plugin:@typescript-eslint/recommended", // Règles pour TypeScript
+    "plugin:tailwindcss/recommended" // Règles pour Tailwind CSS
+  ],
+  // Plugins utilisés par ESLint
+  "plugins": ["@typescript-eslint", "tailwindcss"],
+  // Spécifie le parser pour TypeScript
+  "parser": "@typescript-eslint/parser", // Pour bien prendre en compte TypeScript
+  // Personnalisation des règles ESLint
+  "rules": {
+    // Personnalise tes règles ici
+    "tailwindcss/classnames-order": "warn", // Alerte pour l'ordre des classes Tailwind
+    "tailwindcss/no-custom-classname": "off" // Si tu utilises des classes personnalisées désactive cette règle
+  },
+  // Paramètres supplémentaires pour ESLint
+  "settings": {
+    "tailwindcss": {
+      // Optionnel : Ajoute des fichiers supplémentaires pour la vérification Tailwind
+      "config": "tailwind.config.js", // Chemin vers ton fichier de configuration Tailwind
+      "cssFiles": [
+        "**/*.css", // Vérifie les fichiers CSS
+        "**/*.scss" // Si tu utilises SCSS
+      ]
+    }
+  }
 }
