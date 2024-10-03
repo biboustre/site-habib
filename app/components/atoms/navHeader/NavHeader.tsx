@@ -3,6 +3,7 @@ import InternalLink from "../internalLink/InternalLink";
 import SocialsLinks from "../socialsLinks/SocialsLinks";
 
 export default function NavHeader() {
+
   return (
     <nav className="flex gap-10">
       <ul className="flex gap-5 text-xl font-bold text-white">
