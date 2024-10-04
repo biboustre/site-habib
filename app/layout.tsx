@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/molecules/header/Header";
 import Footer from "./components/molecules/footer/Footer";
+import HamburgerMenu from "./components/molecules/hamburgerMenu/HamburgerMenu";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex h-full flex-col">
-        <Header />
+        <Header><HamburgerMenu/></Header>
         <main className="mt-[100px]">{children}</main>
         <Footer />
       </body>

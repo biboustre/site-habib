@@ -92,7 +92,11 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
   /* background: #0F2027;  
 background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
 background: linear-gradient(to right, #2C5364, #203A43, #0F2027);  */
-
+.bgHamburger {
+  background: #0F2027;  
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
 
   .bgSecondary {
     --tw-bg-opacity: 1;

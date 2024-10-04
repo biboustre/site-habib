@@ -19,13 +19,13 @@ export default function BannerMain({
       {/* Section contenant les h1 et h2 */}
       <section className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:left-96">
         <h1
-          className={`mb-5 pt-10 text-center text-5xl font-bold text-white md:text-start md:text-7xl lg:text-8xl ${classNameTitle}`}
+          className={`mb-5 pt-10 text-center text-6xl font-bold text-white md:text-start md:text-7xl lg:text-8xl ${classNameTitle}`}
         >
           {title}
         </h1>
         {text && (
           <h2
-            className={`mb-16  text-center text-2xl font-semibold tracking-wider text-white md:text-start md:text-4xl lg:text-5xl ${classNameText}`}
+            className={`mb-16  text-center text-3xl font-semibold tracking-wider text-white md:text-start md:text-4xl lg:text-5xl ${classNameText}`}
             dangerouslySetInnerHTML={{ __html: text }}
           />
         )}
