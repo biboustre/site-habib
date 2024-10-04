@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function LogoMain() {
   return (
     <section className="">
-      <Link href="#top">
+      <Link href="/">
         <h1 className="text-4xl font-bold text-white transition-transform duration-300 ease-in-out hover:scale-110 md:text-5xl">
           WEB&apos;ibou
         </h1>

@@ -1,5 +1,6 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import ServiceDescription from "./components/atoms/serviceDescription/ServiceDescription";
 import BannerMain from "./components/molecules/banner/BannerMain";
 import { descriptions } from "./data/data";
@@ -21,6 +22,9 @@ export default function Home() {
         text="Solution </br> WEB </br> & </br>DESIGN"
         src="/images/photo_ordinateur_2.webp"
         alt="photo de profil"
+        classNameBanner="relative bg-slate-50"
+        classNameInfo="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:left-96"
+        classNameTitle="mb-5 pt-10 text-center text-6xl font-bold text-white md:text-start md:text-7xl lg:text-8xl"
       />
       <section
         id="services"
@@ -73,6 +77,14 @@ export default function Home() {
           ))}
         </section>
       </section>
+      <div className="text-center">
+        <Link
+          href="/stackTechnic"
+          className="text-lg font-semibold text-blue-500 hover:underline"
+        >
+          Voir la stack technique
+        </Link>
+      </div>
 
       <ContactCard />
     </>

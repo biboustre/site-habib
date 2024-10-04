@@ -1,5 +1,5 @@
-import AnchorLink from "../../atoms/anchorLink/AnchorLink";
-import SocialsLinks from "../../atoms/socialsLinks/SocialsLinks";
+import AnchorLink from "../../atoms/links/anchorLink/AnchorLink";
+import SocialsLinks from "../../atoms/socials/socialsLinks/SocialsLinks";
 
 export default function Footer() {
   return (

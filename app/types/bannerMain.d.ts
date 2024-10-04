@@ -6,6 +6,9 @@ export interface BannerMainProps {
     classNameImage?: string;
     classNameTitle?: string;
     classNameText?: string;
+    classNameBanner?: string;
+    classNameInfo?: string;
+    classNameParentImage?: string;
     width?: number;
     height?: number;
   }

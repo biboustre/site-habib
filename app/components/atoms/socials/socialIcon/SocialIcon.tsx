@@ -1,6 +1,6 @@
 import React from "react";
 import { IconType } from "react-icons";
-import AnchorLink from "../anchorLink/AnchorLink";
+import AnchorLink from "../../links/anchorLink/AnchorLink";
 
 interface SocialIconProps {
     Icon: IconType;

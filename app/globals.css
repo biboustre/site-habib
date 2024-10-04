@@ -102,4 +102,8 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
     --tw-bg-opacity: 1;
     background-color: rgb(227 215 205 / var(--tw-bg-opacity));
   }
+
+  .bgHeaderStack {
+    background: rgb(62, 56, 46);
+  }
 }

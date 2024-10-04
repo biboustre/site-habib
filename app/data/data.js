@@ -64,3 +64,7 @@ export const portfolioItems = [
     imageSrc: "/images/photo_ordinateur_2.webp",
   },
 ];
+
+export const textGeneraux = {
+  text: "Développeur web spécialisé en React,</br> TypeScript, Next.js et Tailwind CSS. Expert en référencement naturel (SEO) et performance, je crée des applications web modernes, performantes et optimisées pour les moteurs de recherche. Mon objectif est de fournir des solutions robustes et évolutives qui répondent aux besoins des entreprises et améliorent leur visibilité en ligne.",
+};
