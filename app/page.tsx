@@ -9,7 +9,7 @@ import BannerMain from "@/app/components/molecules/banner/BannerMain";
 import { descriptions } from "./data/data";
 import { PortfolioCard } from "./features/portfolioCard/PortfolioCard";
 import { portfolioItems } from "./data/data";
-import ContactForm from "./components/molecules/contacForm/ContactForm";
+import ContactForm from "./components/organism/contacForm/ContactForm";
 // import ContactCard from "./components/molecules/contact/ContactCard";
 // import BtnMain from "./components/atoms/btnMain/BtnMain";
 
@@ -96,13 +96,9 @@ export default function Home() {
           ))}
         </section>
       </section>
-      <ContactForm />
-      {/* <section
-        id="contact"
-        className="bgSecondary flex h-full  scroll-mt-[100px] flex-col items-center gap-16 py-10 md:flex-row md:justify-center"
-      >
-        <ContactCard />
-      </section> */}
+      <section id="#contact" className="bgPrimary flex min-h-screen items-center justify-center text-white">
+        <ContactForm />
+      </section>
       <Modal
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}

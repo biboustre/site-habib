@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import InputField from "./InputField";
-import TextareaField from "./TextareaField";
-import SubmitButton from "./SubmitButton";
+import InputField from "@/app/components/atoms/inputField/InputField";
+import TextareaField from "@/app/components/atoms/textareaField/TextareaField";
+import SubmitButton from "@/app/components/atoms/submitButton/SubmitButton";
 
 interface FormData {
   firstName: string;
@@ -55,12 +55,13 @@ const ContactForm: React.FC = () => {
         setErrorMessage("Failed to send your message. Please try again.");
       }
     } catch (error) {
+      console.error("Error:", error);
       setErrorMessage("An error occurred. Please try again.");
     }
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-900 text-white">
+    <>
       <div className="flex w-full max-w-4xl flex-col space-y-8 p-8 lg:flex-row lg:space-x-16 lg:space-y-0">
         {/* Section gauche avec texte et informations */}
         <div className="lg:w-1/2">
@@ -144,7 +145,7 @@ const ContactForm: React.FC = () => {
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
