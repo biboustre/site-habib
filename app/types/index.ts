@@ -4,3 +4,4 @@ export * from './banner/bannerMain';
 export * from './btn/btnMain';
 export * from './links/anchorLinkProps';
 export * from './links/internalLinkProps';
+export * from './form/formData';

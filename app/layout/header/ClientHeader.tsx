@@ -5,9 +5,8 @@ import Header from "./Header";
 import HamburgerMenu from "../../features/hamburgerMenu/HamburgerMenu";
 
 export default function ClientHeader() {
-  const pathname = usePathname(); //usePathname pour obtenir la route actuelle
+  const pathname = usePathname(); 
 
-  // Détermine la classe de couleur de fond du header en fonction de la route actuelle
   const headerBgClass = pathname === "/" ? "bgPrimary" : "bgHeaderStack";
 
   return (

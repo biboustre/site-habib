@@ -28,7 +28,7 @@ export default function BannerMain({
             className={`mb-16  text-center text-3xl font-semibold tracking-wider text-white md:text-start md:text-4xl lg:text-5xl ${classNameText}`}
             dangerouslySetInnerHTML={{ __html: text }}/>
         )}
-        <BtnMain href="#contact" classNameBtn="mt-10 " label="Contactez-nous" />
+        <BtnMain href="#contact" classNameBtn="mt-10 bgPrimary" label="Contactez-nous" />
       </section>
       <section className={`${classNameParentImage}`}>
         <Image

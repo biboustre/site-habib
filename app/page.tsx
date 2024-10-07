@@ -9,9 +9,7 @@ import BannerMain from "@/app/components/molecules/banner/BannerMain";
 import { descriptions } from "./data/data";
 import { PortfolioCard } from "./features/portfolioCard/PortfolioCard";
 import { portfolioItems } from "./data/data";
-import ContactForm from "./components/organism/contacForm/ContactForm";
-// import ContactCard from "./components/molecules/contact/ContactCard";
-// import BtnMain from "./components/atoms/btnMain/BtnMain";
+
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -80,7 +78,7 @@ export default function Home() {
       </section>
       <section
         id="portfolio"
-        className="flex scroll-mt-[100px] flex-col gap-14 bg-[#e3d7cd] pb-32 pt-16 md:px-7 lg:px-28"
+        className="flex scroll-mt-[100px] flex-col gap-32 bg-[#e3d7cd] py-32 md:px-7 lg:px-28"
       >
         <h1 className="text-center text-4xl font-bold text-gray-800 md:text-6xl">
           Portfolio
@@ -95,9 +93,6 @@ export default function Home() {
             />
           ))}
         </section>
-      </section>
-      <section id="#contact" className="bgPrimary flex min-h-screen items-center justify-center text-white">
-        <ContactForm />
       </section>
       <Modal
         isOpen={isModalOpen}

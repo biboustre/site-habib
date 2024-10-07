@@ -8,9 +8,15 @@ interface InputFieldProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const InputField: React.FC<InputFieldProps> = ({ label, type, name, value, onChange }) => (
+const InputField: React.FC<InputFieldProps> = ({
+  label,
+  type,
+  name,
+  value,
+  onChange,
+}) => (
   <div>
-    <label htmlFor={name} className="block text-sm font-medium">
+    <label htmlFor={name} className="block text-sm font-medium text-slate-400">
       {label}
     </label>
     <input

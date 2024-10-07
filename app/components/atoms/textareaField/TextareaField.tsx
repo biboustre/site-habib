@@ -9,7 +9,7 @@ interface TextareaFieldProps {
 
 const TextareaField: React.FC<TextareaFieldProps> = ({ label, name, value, onChange }) => (
   <div>
-    <label htmlFor={name} className="block text-sm font-medium">
+    <label htmlFor={name} className="block text-sm font-medium text-slate-400">
       {label}
     </label>
     <textarea

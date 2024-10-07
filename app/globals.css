@@ -64,39 +64,22 @@ html {
     box-shadow: 0 2px 4px rgba(144, 59, 159, 0.1);
   }
 
-  .colorPrimary {
-    color: #e88635; 
-    color: linear-gradient(to right, #cc5333, #23074d); 
-  }
+  
 
   .bgPrimary {
-    /* background: #659999; 
-    background: -webkit-linear-gradient(
-      to right,
-      #f4791f,
-      #659999
-    ); 
-    background: linear-gradient(
-      to right,
-      #f4791f,
-      #659999
-    );  */
-    background: #23074d;  
-background: -webkit-linear-gradient(to right, #cc5333, #23074d);  
-background: linear-gradient(to right, #cc5333, #23074d); 
-/* background: #0F2027;  
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
+    background: #23074d;
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);
+    background: linear-gradient(to right, #cc5333, #23074d);
+    /* background: #0f0c29; 
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
   }
 
-  /* background: #0F2027;  
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027);  */
-.bgHamburger {
-  background: #0F2027;  
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-}
+  .bgHamburger {
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  }
 
   .bgSecondary {
     --tw-bg-opacity: 1;
@@ -104,6 +87,10 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
   }
 
   .bgHeaderStack {
-    background: rgb(62, 56, 46);
+    background-color: #001722;
   }
+
+ .bgFooter {
+  background-color: #001722;
+ }
 }
