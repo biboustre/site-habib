@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "./components/molecules/footer/Footer";
-import ClientHeader from "./components/molecules/header/ClientHeader";
+import Footer from "./layout/footer/Footer";
+import ClientHeader from "./layout/header/ClientHeader";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,12 +13,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
-
   return (
     <html lang="en">
       <body className="flex h-full flex-col">
-        <ClientHeader/>
+        <ClientHeader />
         <main className="mt-[100px]">{children}</main>
         <Footer />
       </body>

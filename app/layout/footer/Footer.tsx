@@ -1,9 +1,13 @@
-import AnchorLink from "../../atoms/links/anchorLink/AnchorLink";
-import SocialsLinks from "../../atoms/socials/socialsLinks/SocialsLinks";
+import BtnMain from "@/app/components/atoms/btnMain/BtnMain";
+import AnchorLink from "../../components/atoms/links/anchorLink/AnchorLink";
+import SocialsLinks from "../../components/atoms/socials/socialsLinks/SocialsLinks";
 
 export default function Footer() {
   return (
-    <footer id="contactFooter" className="bgPrimary flex flex-col justify-between px-6 py-14 text-white md:h-[60vh]">
+    <footer
+      id="contactFooter"
+      className="bgPrimary flex flex-col justify-between px-6 py-14 text-white md:h-[60vh]"
+    >
       <section className=" mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
         {/* Section 1: Informations de Contact */}
         <div>
@@ -12,6 +16,7 @@ export default function Footer() {
           <p>Fréjus</p>
           <p>Email : Habib-MB@outlook.com</p>
           <p>Téléphone : 06 74 32 48 32</p>
+          <BtnMain href="/stackTechnic" label="Stack technique" />
         </div>
 
         {/* Section 2: Navigation rapide */}

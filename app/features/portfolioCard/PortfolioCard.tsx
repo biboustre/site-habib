@@ -2,9 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { PortfolioCardProps } from "../../../types";
-
-
+import { PortfolioCardProps } from "../../types";
 
 export function PortfolioCard({
   title,
@@ -46,7 +44,7 @@ export function PortfolioCard({
       </section>
 
       {selectedItem && (
-        <aside className=" bg-gray-100 p-3 shadow-lg" >
+        <aside className=" bg-gray-100 p-3 shadow-lg">
           <h3 className="text-2xl font-bold">{title}</h3>
           <p className="mt-2 text-gray-700">{description}</p>
           <button

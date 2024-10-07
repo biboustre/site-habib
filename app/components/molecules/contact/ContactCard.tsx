@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function ContactCard () {
   return (
-    <section id='contact' className="bgSecondary flex h-full  scroll-mt-[100px] flex-col items-center gap-16 py-10 md:flex-row md:justify-center">
+    < >
       {/* Section de l'image */}
       <figure className="h-full w-3/5">
         <Image
@@ -40,7 +40,7 @@ export default function ContactCard () {
           </li>
         </ul>
       </section>
-    </section>
+    </>
   );
 };
 

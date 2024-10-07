@@ -1,6 +1,6 @@
 import React from "react";
-import LogoMain from "../../atoms/logo/LogoMain";
-import NavHeader from "../../atoms/navHeader/NavHeader";
+import LogoMain from "../../components/atoms/logo/LogoMain";
+import NavHeader from "../../components/atoms/navHeader/NavHeader";
 // import SocialsLinks from "../../atoms/socialsLinks/SocialsLinks";
 
 interface HeaderProps {

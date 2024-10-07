@@ -1,14 +1,41 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
+import Modal from "react-modal";
 import ServiceDescription from "./components/atoms/serviceDescription/ServiceDescription";
-import BannerMain from "./components/molecules/banner/BannerMain";
+import BannerMain from "@/app/components/molecules/banner/BannerMain";
 import { descriptions } from "./data/data";
-import { PortfolioCard } from "./components/molecules/portfolioCard/PortfolioCard";
+import { PortfolioCard } from "./features/portfolioCard/PortfolioCard";
 import { portfolioItems } from "./data/data";
-import ContactCard from "./components/molecules/contact/ContactCard";
+import ContactForm from "./components/molecules/contacForm/ContactForm";
+// import ContactCard from "./components/molecules/contact/ContactCard";
+// import BtnMain from "./components/atoms/btnMain/BtnMain";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const router = useRouter();
+
+  useEffect(() => {
+    const appElement = document.getElementById("__next");
+    if (appElement) {
+      Modal.setAppElement(appElement);
+    } else {
+      console.error("Element with ID '__next' not found.");
+    }
+  }, []);
+
+  const handleClientClick = () => {
+    console.log("Client Potentiel button clicked");
+    setIsModalOpen(false);
+  };
+
+  const handleRecruiterClick = () => {
+    console.log("Recruteur button clicked");
+    router.push("/stackTechnic");
+  };
+
   return (
     <>
       <BannerMain
@@ -69,15 +96,40 @@ export default function Home() {
           ))}
         </section>
       </section>
-      <div className="text-center">
-        <Link
-          href="/stackTechnic"
-          className="text-lg font-semibold text-blue-500 hover:underline"
-        >
-          Voir la stack technique
-        </Link>
-      </div>
-      <ContactCard />
+      <ContactForm />
+      {/* <section
+        id="contact"
+        className="bgSecondary flex h-full  scroll-mt-[100px] flex-col items-center gap-16 py-10 md:flex-row md:justify-center"
+      >
+        <ContactCard />
+      </section> */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={() => setIsModalOpen(false)}
+        contentLabel="User Type Selection"
+        className="fixed inset-0 flex items-center justify-center bg-black/50"
+        overlayClassName="fixed inset-0 bg-black/50"
+      >
+        <div className="rounded-lg bg-white p-8 shadow-lg">
+          <h2 className="mb-4 text-2xl font-bold">
+            Êtes-vous un client potentiel ou un recruteur ?
+          </h2>
+          <div className="flex justify-around">
+            <button
+              onClick={handleClientClick}
+              className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
+            >
+              Client Potentiel
+            </button>
+            <button
+              onClick={handleRecruiterClick}
+              className="rounded bg-green-500 px-4 py-2 text-white hover:bg-green-700"
+            >
+              Recruteur
+            </button>
+          </div>
+        </div>
+      </Modal>
     </>
   );
 }
