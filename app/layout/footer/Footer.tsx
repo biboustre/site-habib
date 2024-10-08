@@ -1,6 +1,6 @@
 "use client";
 
-import BtnMain from "@/app/components/atoms/btnMain/BtnMain";
+import BtnMain from "@/app/components/atoms/button/BtnMain";
 // import BtnMain from "@/app/components/atoms/btnMain/BtnMain";
 // import AnchorLink from "../../components/atoms/links/anchorLink/AnchorLink";
 // import SocialsLinks from "../../components/atoms/socials/socialsLinks/SocialsLinks";
@@ -8,7 +8,7 @@ import ContactForm from "@/app/components/organism/contacForm/ContactForm";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bgFooter lg:h-[75vh] lg:p-20 scroll-mt-[100px] p-10">
+    <footer id="contact" className="bgFooter scroll-mt-[100px] p-10 lg:p-20">
       <ContactForm />
       <BtnMain href="/stackTechnic" label="Stack technique" />
     </footer>

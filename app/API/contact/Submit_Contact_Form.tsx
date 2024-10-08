@@ -1,14 +1,8 @@
-interface ContactFormData {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    message: string;
-  }
+import { submitContactFormData } from "@/app/types";
   
-  export const submitContactForm = async (formData: ContactFormData) => {
+  export const submitContactForm = async (url: string, formData: submitContactFormData) => {
     try {
-      const response = await fetch("https://formspree.io/f/mgvewldb", {
+      const response = await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

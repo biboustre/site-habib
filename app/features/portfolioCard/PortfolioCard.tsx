@@ -33,7 +33,7 @@ export function PortfolioCard({
       <section className="relative  h-[460px]">
         <Image src={imageSrc} alt={title} layout="fill" objectFit="cover" />
         <aside
-          className={`absolute inset-x-0 bottom-0 z-20 flex h-[190px] cursor-pointer flex-col justify-center gap-5 bg-red-950 bg-opacity-50  pl-8 ${
+          className={`absolute inset-x-0 bottom-0 z-20 flex h-[190px] cursor-pointer flex-col justify-center gap-5 bg-red-950/50  pl-8 ${
             selectedItem ? "hidden" : "flex"
           }`}
           onClick={handleAsideClick}

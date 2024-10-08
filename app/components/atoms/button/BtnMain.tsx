@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 interface BtnMainProps {
   label: string;
@@ -8,7 +8,12 @@ interface BtnMainProps {
   href?: string;
 }
 
-export default function BtnMain({ label, onClick, classNameBtn, href }: BtnMainProps) {
+export default function BtnMain({
+  label,
+  onClick,
+  classNameBtn,
+  href,
+}: BtnMainProps) {
   const buttonContent = (
     <button
       onClick={onClick}
@@ -18,11 +23,5 @@ export default function BtnMain({ label, onClick, classNameBtn, href }: BtnMainP
     </button>
   );
 
-  return href ? (
-    <Link href={href}>
-      {buttonContent}
-    </Link>
-  ) : (
-    buttonContent
-  );
+  return href ? <Link href={href}>{buttonContent}</Link> : buttonContent;
 }

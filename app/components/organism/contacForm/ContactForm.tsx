@@ -1,12 +1,16 @@
 import React, { useState } from "react";
-import InputField from "@/app/components/atoms/inputField/InputField";
-import TextareaField from "@/app/components/atoms/textareaField/TextareaField";
+import InputField from "@/app/components/atoms/form/InputField";
+import Textarea from "@/app/components/atoms/form/Textarea";
 import SubmitButton from "@/app/components/atoms/submitButton/SubmitButton";
-import { submitContactForm } from "@/app/API/contactApi";
-import { FormData } from "@/app/types/form/formData";
+import { useSubmitContactForm } from "@/app/hooks/useSubmitContactForm";
+import { submitContactFormData } from "@/app/types";
 
-export default function ContactForm() {
-  const [formData, setFormData] = useState<FormData>({
+interface ContactFormProps {
+  children?: React.ReactNode;
+}
+
+export default function ContactForm({ children }: ContactFormProps) {
+  const [formData, setFormData] = useState<submitContactFormData>({
     firstName: "",
     lastName: "",
     email: "",
@@ -14,8 +18,7 @@ export default function ContactForm() {
     message: "",
   });
 
-  const [successMessage, setSuccessMessage] = useState<string | null>(null);
-  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const { successMessage, errorMessage, handleSubmit } = useSubmitContactForm("https://formspree.io/f/mgvewldb");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -24,29 +27,9 @@ export default function ContactForm() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSuccessMessage(null);
-    setErrorMessage(null);
-
-    try {
-      const message = await submitContactForm(formData);
-      setSuccessMessage(message);
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-    } catch (error: unknown) {
-      // Vérification si l'erreur est de type Error
-      if (error instanceof Error) {
-        setErrorMessage(error.message);
-      } else {
-        setErrorMessage("An unexpected error occurred.");
-      }
-    }
+    handleSubmit(formData);
   };
 
   return (
@@ -54,35 +37,25 @@ export default function ContactForm() {
       {/* Section gauche avec texte et informations */}
       <section className="lg:w-1/2">
         <h2 className="mb-4 text-3xl font-bold text-slate-400">CONTACT</h2>
-        {/* <p className="mb-8 text-gray-400">
-            Proin volutpat consequat porttitor cras nullam gravida at. Orci
-            molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-          </p> */}
         <ul className="space-y-4 text-slate-400">
           <li>
-            <span role="img" aria-label="address">
-              🏠
-            </span>{" "}
+            <span role="img" aria-label="address">🏠</span>{" "}
             Fréjus 83600
           </li>
           <li>
-            <span role="img" aria-label="phone">
-              📞
-            </span>{" "}
+            <span role="img" aria-label="phone">📞</span>{" "}
             +33 6 74 32 48 32
           </li>
           <li>
-            <span role="img" aria-label="email">
-              📧
-            </span>{" "}
+            <span role="img" aria-label="email"> 📧</span>{" "}
             Web&apos;ibou@outlook.com
           </li>
+        {children}
         </ul>
       </section>
 
-      {/* Section droite avec le formulaire */}
       <section className="lg:w-1/2">
-        <form onSubmit={handleSubmit} className="space-y-6 ">
+        <form onSubmit={onSubmit} className="space-y-6 ">
           <div className="flex space-x-4">
             <div className="w-1/2">
               <InputField
@@ -117,7 +90,7 @@ export default function ContactForm() {
             value={formData.phone}
             onChange={handleChange}
           />
-          <TextareaField
+          <Textarea
             label="Message"
             name="message"
             value={formData.message}

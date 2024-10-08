@@ -40,29 +40,6 @@ export const portfolioItems = [
       "Description du site de recettes avec des fonctionnalités de recherche et filtrage.",
     imageSrc: "/images/photo_ordinateur_1.webp",
   },
-  {
-    id: 4,
-    title: "Site de voyage",
-    category: "CONCEPTION WEB",
-    description:
-      "Description du site de voyage avec des fonctionnalités de recherche et réservation.",
-    imageSrc: "/images/photo_ordinateur_2.webp",
-  },
-  {
-    id: 5,
-    title: "Logo pour entreprise",
-    category: "DESIGN GRAPHIQUE",
-    description:
-      "Description du logo créé pour une entreprise de vente de produits bio.",
-    imageSrc: "/images/photo_ordinateur_1.webp",
-  },
-  {
-    id: 6,
-    title: "Flyer pour événement",
-    category: "DESIGN GRAPHIQUE",
-    description: "Description du flyer créé pour un événement sportif.",
-    imageSrc: "/images/photo_ordinateur_2.webp",
-  },
 ];
 
 export const textGeneraux = {
