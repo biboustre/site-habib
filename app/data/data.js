@@ -1,4 +1,4 @@
-export const descriptions = [
+export const serviceDescriptions = [
   {
     id: 1,
     title: "Création de sites web et design graphique",
@@ -16,7 +16,7 @@ export const descriptions = [
   },
 ];
 
-export const portfolioItems = [
+export const creatCardItems = [
   {
     id: 1,
     title: "Application Happy Day",

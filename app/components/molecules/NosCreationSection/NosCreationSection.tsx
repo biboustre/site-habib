@@ -1,6 +1,6 @@
 import React from 'react';
 import CreationCard from '../../../features/creationCard/CreationCard';
-import { portfolioItems } from '@/app/data/data';
+import { creatCardItems } from '@/app/data/data';
 
 
 
@@ -11,13 +11,13 @@ export default function NosCreationSection() {
         Nos Créations
       </h1>
       <section className="md:flex md:flex-col md:gap-20">
-        {portfolioItems.map((portfolioItem, index) => (
+        {creatCardItems.map((creatCardItem, index) => (
           <CreationCard
-            key={portfolioItem.id}
-            title={portfolioItem.title}
-            imageUrl={portfolioItem.imageSrc}
-            imageAlt={portfolioItem.title}
-            description={portfolioItem.description}
+            key={creatCardItem.id}
+            title={creatCardItem.title}
+            imageUrl={creatCardItem.imageSrc}
+            imageAlt={creatCardItem.title}
+            description={creatCardItem.description}
             isReversed={index % 2 === 1}
           />
         ))}
