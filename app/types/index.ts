@@ -1,4 +1,3 @@
-export * from "./portfolio/portfolio";
 export * from "./portfolio/portfolioCardProps";
 export * from "./banner/bannerMain";
 export * from "./buttons/btnMain";

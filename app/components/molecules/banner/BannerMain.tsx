@@ -35,7 +35,7 @@ export default function BannerMain({
       </section>
       <section className={`${classNameParentImage}`}>
         <Image
-          className={`h-[calc(100vh-6rem)] w-full ${classNameImage}`}
+          className={`${classNameImage}`}
           src={src}
           alt={alt}
           width={width}

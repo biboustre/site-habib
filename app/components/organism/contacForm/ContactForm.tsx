@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import InputField from "@/app/components/atoms/form/InputField";
 import Textarea from "@/app/components/atoms/form/Textarea";
 import SubmitButton from "@/app/components/atoms/submitButton/SubmitButton";
-import { useSubmitContactForm } from "@/app/hooks/useSubmitContactForm";
+import { useSubmitContactForm } from "@/app/hooks/use_Submit_Contact_Form";
 import { submitContactFormData } from "@/app/types";
 
 interface ContactFormProps {
