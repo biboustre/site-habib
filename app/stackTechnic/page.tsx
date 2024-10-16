@@ -1,12 +1,13 @@
 import React from "react";
 import BannerMain from "../components/molecules/banner/BannerMain";
-import { textGeneraux } from "../data/data";
+import { textBannerStackTechnic } from "../data/data";
+import PortfolioSection from "../features/portfolioSection/PortfolioSection";
 
 export default function StackTechnic() {
   return (
     <>
       <BannerMain
-        text={textGeneraux.text}
+        text={textBannerStackTechnic.text}
         src="/images/photo-profil.jpg"
         alt=""
         classNameBanner="bgHeaderStack flex flex-col-reverse lg:flex relative"
@@ -15,6 +16,8 @@ export default function StackTechnic() {
         classNameImage="object-cover rounded-full h-40 w-40 "
         classNameParentImage=" rounded-full h-40 w-40 "
       />
+
+      <PortfolioSection />
     </>
   );
 }

@@ -17,7 +17,7 @@ export default function BtnMain({
   const buttonContent = (
     <button
       onClick={onClick}
-      className={`btnMain w-64 rounded-xl px-4 py-6 font-bold uppercase tracking-widest text-white hover:bg-gray-700  ${classNameBtn}`}
+      className={`btnMain w-64 rounded-xl px-4 py-6 font-bold uppercase tracking-widest text-white   ${classNameBtn}`}
     >
       {label}
     </button>

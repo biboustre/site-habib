@@ -21,7 +21,6 @@ export default function Home() {
   }, []);
 
   const handleClientClick = () => {
-    console.log("Client Potentiel button clicked");
     setIsModalOpen(false);
   };
 

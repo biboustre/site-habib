@@ -4,34 +4,33 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { PortfolioCardProps } from "../../types";
 
-export function PortfolioCard({
+export default function PortfolioCard({
   title,
   category,
   imageSrc,
-  description,
-}: PortfolioCardProps) {
-  const [selectedItem, setSelectedItem] = useState<PortfolioCardProps | null>(
-    null
-  );
+  alt,
+  description,}: PortfolioCardProps) {
+
+  const [selectedItem, setSelectedItem] = useState<PortfolioCardProps | null>(null);
 
   const handleAsideClick = () => {
-    if (selectedItem) {
-      setSelectedItem(null);
-    } else {
-      setSelectedItem({
-        title,
-        category,
-        imageSrc,
-        description,
-        onClick: () => setSelectedItem(null),
-      });
-    }
+    setSelectedItem((prevSelectedItem) =>
+      prevSelectedItem ? null : { title, category, imageSrc, alt, description }
+    );
   };
+  // const handleAsideClick = () => {
+  //   if (selectedItem) {
+  //     setSelectedItem(null);
+  //   } else {
+  //     setSelectedItem({ title, category, imageSrc, alt, description, onClick: () => setSelectedItem(null),
+  //     });
+  //   }
+  // };
 
   return (
     <section>
       <section className="relative  h-[460px]">
-        <Image src={imageSrc} alt={title} layout="fill" objectFit="cover" />
+        <Image src={imageSrc} alt={alt} layout="fill" objectFit="cover" />
         <aside
           className={`absolute inset-x-0 bottom-0 z-20 flex h-[190px] cursor-pointer flex-col justify-center gap-5 bg-red-950/50  pl-8 ${
             selectedItem ? "hidden" : "flex"

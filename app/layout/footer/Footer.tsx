@@ -8,9 +8,16 @@ import ContactForm from "@/app/components/organism/contacForm/ContactForm";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bgFooter scroll-mt-[100px] p-10 lg:p-20">
+    <footer
+      id="contact"
+      className="bgFooter flex scroll-mt-[100px] flex-col items-center gap-20 p-10 md:items-start lg:p-20"
+    >
       <ContactForm />
-      <BtnMain href="/stackTechnic" label="Stack technique" />
+      <BtnMain
+        href="/stackTechnic"
+        label="Stack technique"
+        classNameBtn="btnStack"
+      />
     </footer>
   );
 }

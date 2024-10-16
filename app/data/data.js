@@ -12,11 +12,11 @@ export const serviceDescriptions = [
   {
     id: 3,
     title: "Hébergement, référencement SEO et performance",
-    text: "Nous mettons tout en œuvre pour vous offrir des solutions sur-mesure, adaptées à vos attentes et à votre budget. Que vous soyez un particulier ou une entreprise, nous vous proposons des services de qualité pour vous aider à atteindre vos objectifs.",
+    text: "Boostez la visibilité de votre site grâce à nos solutions SEO sur-mesure et un hébergement rapide. Nous vous aidons à améliorer votre positionnement sur les moteurs de recherche et à offrir une expérience utilisateur optimale.",
   },
 ];
 
-export const creatCardItems = [
+export const card = [
   {
     id: 1,
     title: "Application Happy Day",
@@ -42,6 +42,6 @@ export const creatCardItems = [
   },
 ];
 
-export const textGeneraux = {
-  text: "Développeur web spécialisé en React,</br> TypeScript, Next.js et Tailwind CSS. Expert en référencement naturel (SEO) et performance, je crée des applications web modernes, performantes et optimisées pour les moteurs de recherche. Mon objectif est de fournir des solutions robustes et évolutives qui répondent aux besoins des entreprises et améliorent leur visibilité en ligne.",
+export const textBannerStackTechnic = {
+  text: "Développeur web spécialisé en React,</br> TypeScript, Next.js et Tailwind CSS. Expert en référencement naturel (SEO) et performance.",
 };

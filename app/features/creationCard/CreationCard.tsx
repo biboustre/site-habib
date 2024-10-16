@@ -7,6 +7,7 @@ interface CreationCardProps {
   imageUrl: string;
   imageAlt: string;
   className?: string;
+  classNameImg?: string;
   isReversed?: boolean;
 }
 
@@ -16,17 +17,22 @@ export default function CreationCard({
   imageUrl,
   imageAlt,
   className,
+  classNameImg,
   isReversed = false,
 }: CreationCardProps) {
   return (
-    <section className={`flex flex-col rounded-lg shadow-lg md:flex-row ${isReversed ? 'md:flex-row-reverse' : ''}  ${className}`}>
+    <section
+      className={`flex flex-col rounded-lg px-2 md:flex-row ${
+        isReversed ? "md:flex-row-reverse" : ""
+      }  ${className}`}
+    >
       <figure className="md:w-1/2 ">
         <Image
           src={imageUrl}
           alt={imageAlt}
           width={500}
           height={500}
-          className="size-full rounded-lg object-cover"
+          className={`size-full h-[200px]  rounded-t-lg object-cover md:rounded-lg ${classNameImg}`}
         />
       </figure>
       <figcaption className="flex flex-col justify-center p-6 md:w-1/2">

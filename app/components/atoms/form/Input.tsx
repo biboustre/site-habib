@@ -1,6 +1,6 @@
 import React from "react";
 
-interface InputFieldProps {
+interface InputProps {
   label: string;
   type: string;
   name: string;
@@ -8,7 +8,7 @@ interface InputFieldProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const InputField: React.FC<InputFieldProps> = ({
+const Input: React.FC<InputProps> = ({
   label,
   type,
   name,
@@ -31,4 +31,4 @@ const InputField: React.FC<InputFieldProps> = ({
   </div>
 );
 
-export default InputField;
+export default Input;

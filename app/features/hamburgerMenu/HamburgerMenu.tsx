@@ -6,14 +6,14 @@ import { useState } from "react";
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Fonction pour ouvrir et fermer le menu
+  // ouvre et ferme le menu
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <div className="lg:hidden">
-      {/* Cache le menu hamburger sur les écrans moyens et plus grands */}
+      {/* cache le menu écrans moyen et lg */}
       <button
         className="p-2 focus:outline-none"
         onClick={toggleMenu}

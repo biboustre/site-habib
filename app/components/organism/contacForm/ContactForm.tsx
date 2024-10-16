@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import InputField from "@/app/components/atoms/form/InputField";
+import Input from "@/app/components/atoms/form/Input";
 import Textarea from "@/app/components/atoms/form/Textarea";
 import SubmitButton from "@/app/components/atoms/submitButton/SubmitButton";
 import { useSubmitContactForm } from "@/app/hooks/use_Submit_Contact_Form";
@@ -36,8 +36,8 @@ export default function ContactForm({ children }: ContactFormProps) {
     <section className="flex w-full flex-col gap-20 lg:flex-row lg:justify-between">
       {/* Section gauche avec texte et informations */}
       <section className="lg:w-1/2">
-        <h2 className="mb-4 text-3xl font-bold text-slate-400">CONTACT</h2>
-        <ul className="space-y-4 text-slate-400">
+        <h2 className="mb-4 text-3xl font-bold text-slate-400 md:text-5xl md:mb-10">CONTACT</h2>
+        <ul className="space-y-4 text-slate-400 md:text-xl">
           <li>
             <span role="img" aria-label="address">🏠</span>{" "}
             Fréjus 83600
@@ -58,7 +58,7 @@ export default function ContactForm({ children }: ContactFormProps) {
         <form onSubmit={onSubmit} className="space-y-6 ">
           <div className="flex space-x-4">
             <div className="w-1/2">
-              <InputField
+              <Input
                 label="Prénom"
                 type="text"
                 name="firstName"
@@ -67,7 +67,7 @@ export default function ContactForm({ children }: ContactFormProps) {
               />
             </div>
             <div className="w-1/2">
-              <InputField
+              <Input
                 label="Nom"
                 type="text"
                 name="lastName"
@@ -76,14 +76,14 @@ export default function ContactForm({ children }: ContactFormProps) {
               />
             </div>
           </div>
-          <InputField
+          <Input
             label="Email"
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
           />
-          <InputField
+          <Input
             label="Tel"
             type="tel"
             name="phone"

@@ -49,6 +49,11 @@ html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
+
+
+
+  
+
   .btnMain {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 0 1px 4px 3px rgba(200, 122, 13, 0.526);
@@ -59,12 +64,18 @@ html {
     box-shadow: 0 8px 12px rgba(117, 52, 160, 0.106);
   }
 
-  .btnMain:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 4px rgba(144, 59, 159, 0.1);
+  .btnStack {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 1px 4px 3px rgba(195, 183, 167, 0.526);
   }
 
-  
+  .btnStack:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(50, 89, 180, 0.588);
+  }
+
+
+
 
   .bgPrimary {
     background: #23074d;

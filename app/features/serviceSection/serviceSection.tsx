@@ -7,9 +7,9 @@ export default function ServiceSection() {
     // j'ai mis en h-screen mais faut redisposter les elements
     <section
       id="services"
-      className="bgPrimary flex flex-col gap-32 py-24 lg:h-screen"
+      className="bgPrimary flex flex-col gap-20 py-20 lg:h-screen"
     >
-      <h2 className="text-center text-4xl font-bold text-white md:text-6xl">
+      <h2 className="text-center text-5xl font-bold text-white md:text-6xl">
         Ce que nous proposons
       </h2>
       <section className="flex flex-col gap-20 px-5 pb-20 text-justify text-lg font-semibold text-white lg:flex-row lg:gap-5  xl:px-20 ">
