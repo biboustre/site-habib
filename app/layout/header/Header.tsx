@@ -1,7 +1,6 @@
 import React from "react";
 import LogoMain from "../../components/atoms/logo/LogoMain";
 import NavHeader from "../../components/atoms/navigation/NavHeader";
-// import SocialsLinks from "../../atoms/socialsLinks/SocialsLinks";
 
 interface HeaderProps {
   className?: string;

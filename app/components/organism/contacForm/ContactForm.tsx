@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import Input from "@/app/components/atoms/form/Input";
 import Textarea from "@/app/components/atoms/form/Textarea";
-import SubmitButton from "@/app/components/atoms/submitButton/SubmitButton";
+import SubmitButton from "@/app/components/atoms/button/SubmitButton";
 import { useSubmitContactForm } from "@/app/hooks/use_Submit_Contact_Form";
 import { submitContactFormData } from "@/app/types";
+import Image from "next/image";
 
-interface ContactFormProps {
-  children?: React.ReactNode;
-}
 
-export default function ContactForm({ children }: ContactFormProps) {
+
+export default function ContactForm() {
   const [formData, setFormData] = useState<submitContactFormData>({
     firstName: "",
     lastName: "",
@@ -18,7 +17,9 @@ export default function ContactForm({ children }: ContactFormProps) {
     message: "",
   });
 
-  const { successMessage, errorMessage, handleSubmit } = useSubmitContactForm("https://formspree.io/f/mgvewldb");
+  const { successMessage, errorMessage, handleSubmit } = useSubmitContactForm(
+    "https://formspree.io/f/mgvewldb"
+  );
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -36,22 +37,7 @@ export default function ContactForm({ children }: ContactFormProps) {
     <section className="flex w-full flex-col gap-20 lg:flex-row lg:justify-between">
       {/* Section gauche avec texte et informations */}
       <section className="lg:w-1/2">
-        <h2 className="mb-4 text-3xl font-bold text-slate-400 md:text-5xl md:mb-10">CONTACT</h2>
-        <ul className="space-y-4 text-slate-400 md:text-xl">
-          <li>
-            <span role="img" aria-label="address">🏠</span>{" "}
-            Fréjus 83600
-          </li>
-          <li>
-            <span role="img" aria-label="phone">📞</span>{" "}
-            +33 6 74 32 48 32
-          </li>
-          <li>
-            <span role="img" aria-label="email"> 📧</span>{" "}
-            Web&apos;ibou@outlook.com
-          </li>
-        {children}
-        </ul>
+        <Image src="/images/contact.webp" alt="contact" width={500} height={500} />
       </section>
 
       <section className="lg:w-1/2">

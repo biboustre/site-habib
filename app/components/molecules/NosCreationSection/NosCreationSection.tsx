@@ -4,8 +4,11 @@ import { card } from "@/app/data/data";
 
 export default function NosCreationSection() {
   return (
-    <section id="creations" className="flex flex-col gap-40 bg-[#e3d7cd] py-32">
-      <h1 className="text-center text-4xl font-bold text-gray-800 underline md:text-7xl">
+    <section
+      id="creations"
+      className="bgFooter flex scroll-mt-[100px] flex-col gap-40 py-32"
+    >
+      <h1 className="text-center text-4xl font-bold text-white underline md:text-7xl">
         Nos Créations
       </h1>
       <section className="flex flex-col gap-64">

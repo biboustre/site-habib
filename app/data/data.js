@@ -11,7 +11,7 @@ export const serviceDescriptions = [
   },
   {
     id: 3,
-    title: "Hébergement, référencement SEO et performance",
+    title: "Hébergement, SEO et performance",
     text: "Boostez la visibilité de votre site grâce à nos solutions SEO sur-mesure et un hébergement rapide. Nous vous aidons à améliorer votre positionnement sur les moteurs de recherche et à offrir une expérience utilisateur optimale.",
   },
 ];
