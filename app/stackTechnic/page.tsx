@@ -1,16 +1,20 @@
 import React from "react";
-import CompetenceSection from "../features/competenceSection/CompetenceSection";
+import CompetenceSection from "../components/molecules/competenceSection/CompetenceSection";
 import BannerStackTechnic from "../components/molecules/banner/BannerStackTechnic";
-import PortfolioSection from "../features/portfolioSection/PortfolioSection";
+import PortfolioSection from "../components/molecules/portfolioSection/PortfolioSection";
 import ContactSection from "../components/molecules/contactSection/ContactSection";
+import CvSection from "../features/CV/CuriculomSection";
 
 export default function StackTechnic() {
   return (
     <>
+    <section className="md:px-20 xl:px-40">
       <BannerStackTechnic />
       <CompetenceSection />
       <PortfolioSection />
+      <CvSection />
       <ContactSection />
+    </section>
     </>
   );
 }

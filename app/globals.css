@@ -34,6 +34,24 @@ html {
     left: 0;
   }
 
+  .active-link {
+    position: relative;
+    color: rgb(232, 197, 1); 
+  }
+
+  .active-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 2px; 
+    background-color: rgb(232, 197, 1);
+    transition: left 0.3s ease-out;
+  }
+
+
+  /******************************************************************************/
   .icon {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -51,9 +69,7 @@ html {
 
 
 
-
-  
-
+/* BUTTON*********************************************************************/
   .btnMain {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 0 1px 4px 3px rgba(200, 122, 13, 0.526);
@@ -103,5 +119,14 @@ html {
 
  .bgFooter {
   background-color: #001722;
+ }
+
+
+ .colorPrimaryStack{
+    color: #ffbd39
+ }
+
+ .bgPrimaryStack{
+    background-color: #ffbd39
  }
 }

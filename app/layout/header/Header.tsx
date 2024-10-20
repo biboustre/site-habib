@@ -10,7 +10,7 @@ interface HeaderProps {
 export default function Header({ children, className }: HeaderProps) {
   return (
     <header
-      className={`fixed z-50 flex h-[100px]  w-full items-center  justify-between px-3 text-white shadow-xl md:px-10 ${className}`}
+      className={`fixed inset-0 z-50 flex h-[100px] items-center justify-between  px-5 text-white shadow-xl md:px-20 xl:px-40 ${className}`}
     >
       <LogoMain />
       <NavHeader />

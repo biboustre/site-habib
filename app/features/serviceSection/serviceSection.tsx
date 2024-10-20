@@ -1,6 +1,6 @@
 import React from "react";
 import ServiceDescription from "../../components/atoms/serviceDescription/ServiceDescription";
-import { serviceDescriptions } from "../../data/data";
+import { serviceDescriptions } from "@/app/data/data";
 
 export default function ServiceSection() {
   return (

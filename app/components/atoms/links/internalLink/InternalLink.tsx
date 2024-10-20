@@ -1,16 +1,30 @@
-'use client';
+"use client";
 
-import Link from 'next/link'
-import React from 'react'
-
+import Link from "next/link";
+import React from "react";
+// import { usePathname } from 'next/navigation';
 interface InternalLinkProps {
-    href: string;
-    name?: string;
-    }
+  href: string;
+  name?: string;
+  isActive?: boolean;
+  onClick: () => void;
+}
 
-export default function InternalLink({ href, name }: InternalLinkProps) {
-
+export default function InternalLink({
+  href,
+  name,
+  isActive,
+  onClick,
+}: InternalLinkProps) {
   return (
-    <Link className='tracking-wider' href={href} >{name}</Link>
-  )
+    <Link
+      onClick={onClick}
+      className={`underline-animation tracking-wider transition-colors duration-300 ${
+        isActive ? "active-link" : "text-white"
+      } hover:colorPrimaryStack `}
+      href={href}
+    >
+      {name}
+    </Link>
+  );
 }

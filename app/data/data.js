@@ -45,3 +45,74 @@ export const card = [
 export const textBannerStackTechnic = {
   text: "Développeur web spécialisé en React,</br> TypeScript, Next.js et Tailwind CSS. Expert en référencement naturel (SEO) et performance.",
 };
+
+
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaGlobe,
+} from "react-icons/fa";
+
+
+export const arrayItemsContact = [
+  {
+    id: 1,
+    icon: <FaMapMarkerAlt />,
+    title: "ADRESSE",
+    description: "Fréjus 83600",
+  },
+  {
+    id: 2,
+    icon: <FaPhoneAlt />,
+    title: "TEL",
+    description: "06.74.32.48.32",
+  },
+  {
+    id: 3,
+    icon: <FaEnvelope />,
+    title: "EMAIL",
+    description: "Habib-MB@outlook.com",
+  },
+  {
+    id: 4,
+    icon: <FaGlobe />,
+    title: "SITE WEB",
+    description: "Web'ibou",
+  },
+];
+
+export const cvData = [
+  {
+    id: 1,
+    year: "2014-2015",
+    title: "Master en Design",
+    institution: "Université de Cambridge",
+    description:
+      "Une petite rivière, appelée Duden, coule à côté de chez eux et leur fournit les regelialia nécessaires. C'est un pays paradisiaque.",
+  },
+  {
+    id: 2,
+    year: "2014-2015",
+    title: "Directeur artistique et créatif",
+    institution: "Université de Cambridge",
+    description:
+      "Une petite rivière, appelée Duden, coule à côté de chez eux et leur fournit les regelialia nécessaires. C'est un pays paradisiaque.",
+  },
+  {
+    id: 3,
+    year: "2014-2015",
+    title: "Baccalauréat en CA",
+    institution: "Université de Cambridge",
+    description:
+      "Une petite rivière, appelée Duden, coule à côté de chez eux et leur fournit les regelialia nécessaires. C'est un pays paradisiaque.",
+  },
+  {
+    id: 4,
+    year: "2014-2015",
+    title: "Développeur WordPress",
+    institution: "Université de Cambridge",
+    description:
+      "Une petite rivière, appelée Duden, coule à côté de chez eux et leur fournit les regelialia nécessaires. C'est un pays paradisiaque.",
+  },
+];

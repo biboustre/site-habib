@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import InternalLink from "../links/internalLink/InternalLink";
 import SocialsLinks from "../socials/socialsLinks/SocialsLinks";
 
 export default function NavHeader() {
-  const pathname = usePathname(); // Utiliser usePathname pour obtenir la route actuelle
+  const [activeLink, setActiveLink] = useState<string>("");
 
-  // Définir les liens en fonction de la route actuelle
+  const pathname = usePathname();
+
   const links =
     pathname === "/stackTechnic"
       ? [
-          { href: "/link1", name: "Link 1" },
-          { href: "/link2", name: "Link 2" },
-          { href: "/link3", name: "Link 3" },
+          { href: "#competence", name: "Compétences" },
+          { href: "#projets", name: "Projets" },
+          { href: "#cv", name: "CV" },
+          { href: "#contact", name: "Contact" },
         ]
       : [
           { href: "#services", name: "Services" },
@@ -25,10 +27,15 @@ export default function NavHeader() {
     <nav className="hidden gap-10 lg:flex">
       {" "}
       {/* Cache les liens sur les écrans mobiles */}
-      <ul className="flex gap-5 text-xl font-bold text-white">
+      <ul className="flex gap-5 text-xl font-normal text-white">
         {links.map((link) => (
           <li key={link.href} className="underline-animation">
-            <InternalLink href={link.href} name={link.name} />
+            <InternalLink
+              href={link.href}
+              name={link.name}
+              isActive={activeLink === link.href}
+              onClick={() => setActiveLink(link.href)}
+            />
           </li>
         ))}
       </ul>

@@ -2,7 +2,13 @@ import DuplicatedText from "@/app/components/atoms/duplicateText/DuplicateText";
 import CompetenceCard from "@/app/components/molecules/competenceCard/CompetenceCard";
 import React from "react";
 import { FaReact } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiRedux,
+  SiWordpress,
+} from "react-icons/si";
 
 const competenceIcon = [
   {
@@ -25,20 +31,33 @@ const competenceIcon = [
     text: "Tailwind",
     icon: <SiTailwindcss />,
   },
+  {
+    id: 5,
+    text: "Redux ToolKit",
+    icon: <SiRedux />,
+  },
+  {
+    id: 6,
+    text: "Wordpress",
+    icon: <SiWordpress />,
+  },
 ];
 
 export default function CompetenceSection() {
   return (
     <section
       id="competences"
-      className="relative flex scroll-mt-[100px] flex-col gap-20 bg-black py-20"
+      className="relative flex scroll-mt-[100px] flex-col gap-10 bg-black pb-36"
     >
       <DuplicatedText
         text="Compétences"
         className="text-center text-[45px] font-bold text-white"
         duplicatedClassName=" font-bold text-white opacity-10"
       />
-      <section className="flex flex-col items-center justify-center gap-10 px-4">
+      <h2 className="mb-5 text-center text-xl tracking-wide text-white">
+        Voici mes compétences principales
+      </h2>
+      <section className="flex flex-col items-center justify-center gap-10 px-4 md:grid md:grid-cols-2 lg:grid-cols-3">
         {competenceIcon.map((icon) => (
           <CompetenceCard key={icon.id} text={icon.text} icon={icon.icon} />
         ))}

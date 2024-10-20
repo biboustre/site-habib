@@ -13,7 +13,7 @@ export default function ContactItem({
 }: ContactItemProps) {
   return (
     <section className="flex w-32 flex-col items-center text-center">
-      <section className="mb-4 rounded-full bg-gray-800 p-10 text-3xl text-yellow-500">
+      <section className="colorPrimaryStack mb-4 rounded-full bg-gray-800 p-10 text-3xl">
         {icon}
       </section>
       <h3 className="font-bold">{title}</h3>

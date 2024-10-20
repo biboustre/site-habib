@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import InternalLink from "@/app/components/atoms/links/internalLink/InternalLink";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const HamburgerMenu = () => {
@@ -10,6 +11,23 @@ const HamburgerMenu = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const pathname = usePathname(); //usePathname pour obtenir la route actuelle
+
+  const links =
+    pathname === "/stackTechnic"
+      ? [
+          { href: "#competences", name: "Compétences" },
+          { href: "#projets", name: "Projets" },
+          { href: "#cv", name: "CV" },
+          { href: "#contact", name: "Contact" },
+        ]
+      : [
+          { href: "#services", name: "Services" },
+          { href: "#a-propos", name: "A propos" },
+          { href: "#creations", name: "Créations" },
+          { href: "#contact", name: "Contact" },
+        ];
 
   return (
     <div className="lg:hidden">
@@ -32,30 +50,17 @@ const HamburgerMenu = () => {
             &times;
           </button>
           <nav className="mt-10 px-6">
-            <Link
-              href="#top"
-              className="block py-2 text-lg hover:bg-fuchsia-500/20"
-            >
-              Home
-            </Link>
-            <Link
-              href="#a-propos"
-              className="block py-2 text-lg hover:bg-fuchsia-500/20"
-            >
-              A propos
-            </Link>
-            <Link
-              href="#services"
-              className="block py-2 text-lg hover:bg-fuchsia-500/20"
-            >
-              Services
-            </Link>
-            <Link
-              href="#contact"
-              className="block py-2 text-lg hover:bg-fuchsia-500/20"
-            >
-              Contact
-            </Link>
+            {" "}
+            <ul className=" text-white">
+              {links.map((link) => (
+                <li
+                  key={link.href}
+                  className="hover:colorPrimaryStack block py-2 text-lg"
+                >
+                  <InternalLink href={link.href} name={link.name} />
+                </li>
+              ))}
+            </ul>
           </nav>
         </div>
       )}
