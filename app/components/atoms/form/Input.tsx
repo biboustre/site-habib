@@ -1,7 +1,8 @@
 import React from "react";
 
 interface InputProps {
-  label: string;
+  placeholder: string;
+  label?: string;
   type: string;
   name: string;
   value: string;
@@ -9,6 +10,7 @@ interface InputProps {
 }
 
 const Input: React.FC<InputProps> = ({
+  placeholder,
   label,
   type,
   name,
@@ -25,7 +27,8 @@ const Input: React.FC<InputProps> = ({
       id={name}
       value={value}
       onChange={onChange}
-      className="mt-1 w-full rounded border border-gray-700 bg-gray-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+      placeholder={placeholder}
+      className=" h-12 w-full rounded border border-gray-400 bg-white p-2 text-black focus:outline-none focus:ring-2 focus:ring-gray-400"
       required
     />
   </div>

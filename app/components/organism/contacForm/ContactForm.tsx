@@ -6,8 +6,6 @@ import { useSubmitContactForm } from "@/app/hooks/use_Submit_Contact_Form";
 import { submitContactFormData } from "@/app/types";
 import Image from "next/image";
 
-
-
 export default function ContactForm() {
   const [formData, setFormData] = useState<submitContactFormData>({
     firstName: "",
@@ -34,18 +32,23 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="flex w-full flex-col gap-20 lg:flex-row lg:justify-between">
+    <section className="flex w-full flex-col md:flex-row lg:justify-between lg:px-[50px]">
       {/* Section gauche avec texte et informations */}
-      <section className="lg:w-1/2">
-        <Image src="/images/contact.webp" alt="contact" width={500} height={500} />
+      <section className="bg-zinc-900 md:w-1/2">
+        <Image
+          src="/images/contact.webp"
+          alt="contact"
+          width={500}
+          height={500}
+        />
       </section>
 
-      <section className="lg:w-1/2">
+      <section className="bg-white p-5 md:w-1/2 md:p-10 lg:p-12 ">
         <form onSubmit={onSubmit} className="space-y-6 ">
           <div className="flex space-x-4">
             <div className="w-1/2">
               <Input
-                label="Prénom"
+                placeholder="Prénom"
                 type="text"
                 name="firstName"
                 value={formData.firstName}
@@ -54,7 +57,7 @@ export default function ContactForm() {
             </div>
             <div className="w-1/2">
               <Input
-                label="Nom"
+                placeholder="Nom"
                 type="text"
                 name="lastName"
                 value={formData.lastName}
@@ -63,26 +66,26 @@ export default function ContactForm() {
             </div>
           </div>
           <Input
-            label="Email"
+            placeholder="Email"
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
           />
           <Input
-            label="Tel"
+            placeholder="Tel"
             type="tel"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
           />
           <Textarea
-            label="Message"
             name="message"
             value={formData.message}
             onChange={handleChange}
+            placeholder="Message"
           />
-          <SubmitButton />
+          <SubmitButton text="Envoyer un message" />
         </form>
         {successMessage && (
           <div className="mt-4 text-green-500">{successMessage}</div>

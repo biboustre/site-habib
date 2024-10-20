@@ -4,8 +4,6 @@ import DuplicatedText from "../../atoms/duplicateText/DuplicateText";
 import { arrayItemsContact } from "@/app/data/data";
 
 export default function ContactSection() {
-  
-
   return (
     <section className="flex flex-col items-center gap-16 bg-black py-16 text-white ">
       <section className="mb-12 text-center">
@@ -20,7 +18,7 @@ export default function ContactSection() {
         </p>
       </section>
 
-      <section className="flex flex-col justify-center gap-20 sm:flex-row">
+      <section className="flex flex-col gap-20 md:w-full md:flex-row md:justify-around ">
         {arrayItemsContact.map((item) => (
           <ContactItem
             key={item.id}

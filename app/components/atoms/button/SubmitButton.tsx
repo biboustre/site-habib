@@ -1,13 +1,17 @@
 import React from "react";
 
-const SubmitButton: React.FC = () => (
-  <div className="text-right">
+interface SubmitButtonProps {
+  text: string;
+}
+
+const SubmitButton: React.FC<SubmitButtonProps> = ({ text }) => (
+  <div className="text-left">
     {/* Je dois utiliser le composant btnRounded !!!!  */}
     <button
       type="submit"
-      className="bgPrimaryStack rounded px-4 py-2 font-medium tracking-widest text-black hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      className="bgPrimaryStack w-full rounded-full p-5 text-[13px] font-medium uppercase  tracking-widest text-black hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-blue-500 lg:w-3/5"
     >
-      Send message
+      {text}
     </button>
   </div>
 );

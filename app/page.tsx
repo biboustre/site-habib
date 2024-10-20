@@ -3,10 +3,10 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import BannerMain from "@/app/components/molecules/banner/BannerMain";
-import ServiceSection from "./features/serviceSection/ServiceSection";
 import AboutSection from "./features/about/AboutSection";
 import UserSelectionModal from "./features/userSelectionModal/User_Selection_Modal";
 import NosCreationSection from "./components/molecules/NosCreationSection/NosCreationSection";
+import ServiceSection from "./features/serviceSection/ServiceSection";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);

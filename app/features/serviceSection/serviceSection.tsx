@@ -16,8 +16,8 @@ export default function ServiceSection() {
         {serviceDescriptions.map((description) => (
           <ServiceDescription
             key={description.id}
-            title={description.title}
             text={description.text}
+            icon={description.icon}
           />
         ))}
       </section>
