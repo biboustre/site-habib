@@ -36,20 +36,19 @@ html {
 
   .active-link {
     position: relative;
-    color: rgb(232, 197, 1); 
+    color: rgb(232, 197, 1);
   }
 
   .active-link::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
-    bottom: -2px; 
+    bottom: -2px;
     width: 100%;
-    height: 2px; 
+    height: 2px;
     background-color: rgb(232, 197, 1);
     transition: left 0.3s ease-out;
   }
-
 
   /******************************************************************************/
   .icon {
@@ -67,9 +66,7 @@ html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-
-
-/* BUTTON*********************************************************************/
+  /* BUTTON*********************************************************************/
   .btnMain {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 0 1px 4px 3px rgba(200, 122, 13, 0.526);
@@ -90,16 +87,38 @@ html {
     box-shadow: 0 8px 12px rgba(50, 89, 180, 0.588);
   }
 
-
-
+  /* COLOR****************************************************************** */
 
   .bgPrimary {
-    background: #23074d;
+    /* background: #23074d;
     background: -webkit-linear-gradient(to right, #cc5333, #23074d);
-    background: linear-gradient(to right, #cc5333, #23074d);
+    background: linear-gradient(to right, #cc5333, #23074d); */
     /* background: #0f0c29; 
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
+    /* background: #4b6cb7;
+    background: -webkit-linear-gradient(to top, #182848, #4b6cb7);
+    background: linear-gradient(to top, #182848, #4b6cb7); */
+    background: rgb(2, 0, 36);
+    background: -moz-linear-gradient(
+      14deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 35, 90, 1) 51%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      14deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 35, 90, 1) 51%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background: linear-gradient(
+      14deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 35, 90, 1) 51%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
   }
 
   .bgHamburger {
@@ -117,16 +136,23 @@ html {
     background-color: #000000;
   }
 
- .bgFooter {
-  background-color: #001722;
- }
+  .bgFooter {
+    background-color: #001722;
+  }
 
+  .colorPrimaryStack {
+    color: #ffbd39;
+  }
 
- .colorPrimaryStack{
-    color: #ffbd39
- }
+  .bgPrimaryStack {
+    background-color: #ffbd39;
+  }
 
- .bgPrimaryStack{
-    background-color: #ffbd39
- }
+  /* SHADOW CLASS******************************************/
+  .shadow-white {
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.665),
+      0 -1px 6px rgba(255, 255, 255, 0.424),
+      1px 0 6px rgba(255, 255, 255, 0.424),
+      -1px 0 6px rgba(255, 255, 255, 0.424);
+  }
 }

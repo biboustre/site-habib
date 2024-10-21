@@ -5,7 +5,7 @@ import { arrayItemsContact } from "@/app/data/data";
 
 export default function ContactSection() {
   return (
-    <section className="flex flex-col items-center gap-16 bg-black py-16 text-white ">
+    <section id="contact" className="flex scroll-mt-[100px] flex-col items-center gap-16 bg-black pt-16 text-white ">
       <section className="mb-12 text-center">
         <DuplicatedText
           text="Contacte"

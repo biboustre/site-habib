@@ -7,7 +7,7 @@ import HamburgerMenu from "../../features/hamburgerMenu/HamburgerMenu";
 export default function ClientHeader() {
   const pathname = usePathname(); 
 
-  const headerBgClass = pathname === "/" ? "bgPrimary" : "bgHeaderStack";
+  const headerBgClass = pathname === "/" ? "bg-black" : "bgHeaderStack";
 
   return (
     <Header className={headerBgClass}>

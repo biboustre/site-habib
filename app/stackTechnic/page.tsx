@@ -3,7 +3,7 @@ import CompetenceSection from "../components/molecules/competenceSection/Compete
 import BannerStackTechnic from "../components/molecules/banner/BannerStackTechnic";
 import PortfolioSection from "../components/molecules/portfolioSection/PortfolioSection";
 import ContactSection from "../components/molecules/contactSection/ContactSection";
-import CvSection from "../features/CV/CuriculomSection";
+import CvSection from "../features/CV/CvSection";
 
 export default function StackTechnic() {
   return (

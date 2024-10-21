@@ -1,81 +1,51 @@
 "use client";
 
-import BtnMain from "@/app/components/atoms/button/BtnMain";
 import ContactForm from "@/app/components/organism/contacForm/ContactForm";
+import FooterColumn from "./FooterColumn";
+import FooterContact from "./FooterContact";
+import SocialsLinks from "@/app/components/atoms/socials/socialsLinks/SocialsLinks";
 
 export default function Footer() {
   return (
     <footer
-      id="contact"
-      className="flex scroll-mt-[100px] flex-col items-center gap-20 bg-black p-10 md:items-start lg:p-20"
+      className="flex scroll-mt-[100px] flex-col items-center gap-32 bg-black px-10 pt-40   "
     >
       <ContactForm />
-      <BtnMain
-        href="/stackTechnic"
-        label="Stack technique"
-        classNameBtn="btnStack bg-gray-800"
-      />
+
+      <div className="grid w-full gap-10 text-lg md:grid-cols-2 md:text-xl lg:grid-cols-3 ">
+        <FooterColumn
+          title="À propos"
+          content={
+            <>
+              <p>
+                Loin, très loin, derrière les <br /> montagnes des mots, loin
+                des <br /> pays de Vokalia et de Consonantia, <br /> vivent les
+                textes aveugles.
+              </p>
+              <SocialsLinks className="mt-4" />
+            </>
+          }
+        />
+        <hr className="md:hidden" />
+        <FooterColumn
+          title="Services"
+          links={[
+            "Conception de sites Web",
+            "Développement Web",
+            "Stratégie d'entreprise",
+            "Analyse des données",
+            "Conception graphique",
+          ]}
+        />
+        <hr className="md:hidden" />
+        <FooterContact />
+      </div>
+      <div className="mx-auto py-20  text-gray-500">
+        <p>
+          Copyright © 2024 Tous droits réservés
+          <span className="text-red-500"> ♥ </span>MAAMAR BENHADJAR Habib
+        </p>
+      </div>
     </footer>
   );
-}
-
-{
-  /* <footer
-      id="contactFooter"
-      className="bgFooter flex flex-col justify-between px-6 py-14 text-white md:h-[60vh]"
-    >
-      <section className=" mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
-        <section>
-          <h3 className="mb-4 text-lg font-bold">Contact</h3>
-          <p>web&apos;ibou</p>
-          <p>Fréjus</p>
-          <p>Email : Habib-MB@outlook.com</p>
-          <p>Téléphone : 06 74 32 48 32</p>
-          <BtnMain href="/stackTechnic" label="Stack technique" />
-        </section>
-
-        <nav>
-          <h3 className="mb-4 text-lg font-bold">Liens utiles</h3>
-          <ul className="space-y-2">
-            <li>
-              <AnchorLink href="">À propos</AnchorLink>
-            </li>
-            <li>
-              <AnchorLink href="">Services</AnchorLink>
-            </li>
-            <li>
-              <AnchorLink href="">FAQ</AnchorLink>
-            </li>
-          </ul>
-        </nav>
-
-        <section>
-          <h3 className="mb-4 text-lg font-bold">Suivez-nous</h3>
-          <nav className="mb-4 flex space-x-4">
-            <SocialsLinks />
-          </nav>
-          <p>
-            Inscrivez-vous à notre newsletter pour recevoir nos dernières
-            nouvelles.
-          </p>
-          <form className="mt-2">
-            <input
-              type="email"
-              className="w-full rounded bg-gray-700 px-3 py-2 text-white placeholder:text-gray-400"
-              placeholder="Votre email"
-            />
-            <button className="mt-2 w-full rounded bg-blue-600 py-2 hover:bg-blue-700">
-              S&apos;inscrire
-            </button>
-          </form>
-        </section>
-      </section>
-
-      <section className="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
-        <p>&copy; 2024 Web&apos;ibou. Tous droits réservés.</p>
-        <a href="/legal" className="hover:text-gray-400">
-          Mentions légales
-        </a>
-      </section>
-    </footer> */
 }

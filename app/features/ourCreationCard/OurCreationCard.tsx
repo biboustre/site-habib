@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-interface CreationCardProps {
+interface ourCreationCardProps {
   title: string;
   description: string;
   imageUrl: string;
@@ -11,7 +11,7 @@ interface CreationCardProps {
   isReversed?: boolean;
 }
 
-export default function CreationCard({
+export default function OurCreationCard({
   title,
   description,
   imageUrl,
@@ -19,10 +19,10 @@ export default function CreationCard({
   className,
   classNameImg,
   isReversed = false,
-}: CreationCardProps) {
+}: ourCreationCardProps) {
   return (
     <section
-      className={`flex flex-col rounded-lg px-2 md:flex-row ${
+      className={`flex flex-col rounded-lg px-1 md:h-[400px] md:flex-row ${
         isReversed ? "md:flex-row-reverse" : ""
       }  ${className}`}
     >
@@ -30,14 +30,16 @@ export default function CreationCard({
         <Image
           src={imageUrl}
           alt={imageAlt}
-          width={500}
-          height={500}
-          className={`size-full h-[200px]  rounded-t-lg object-cover md:rounded-lg ${classNameImg}`}
+          width={200}
+          height={200}
+          className={` size-full rounded-t-lg  object-cover md:rounded-lg ${classNameImg}`}
         />
       </figure>
-      <figcaption className="flex flex-col justify-center p-6 md:w-1/2">
-        <h2 className="mb-4 text-2xl font-bold">{title}</h2>
-        <p className="text-gray-700">{description}</p>
+      <figcaption className="flex flex-col  pl-2 pt-6 md:w-1/2 md:items-center md:px-20">
+        <h2 className="mb-4 text-2xl font-bold text-white md:text-4xl">
+          {title}
+        </h2>
+        <p className="text-lg tracking-wide text-white">{description}</p>
       </figcaption>
     </section>
   );

@@ -5,6 +5,7 @@ import SubmitButton from "@/app/components/atoms/button/SubmitButton";
 import { useSubmitContactForm } from "@/app/hooks/use_Submit_Contact_Form";
 import { submitContactFormData } from "@/app/types";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState<submitContactFormData>({
@@ -31,10 +32,14 @@ export default function ContactForm() {
     handleSubmit(formData);
   };
 
+  const pathname = usePathname();
+
+  const bgForm = pathname === "/" ? "bgFooter" : "bg-zinc-900";
+
   return (
     <section className="flex w-full flex-col md:flex-row lg:justify-between lg:px-[50px]">
       {/* Section gauche avec texte et informations */}
-      <section className="bg-zinc-900 md:w-1/2">
+      <section className={`md:w-1/2 ${bgForm}`}>
         <Image
           src="/images/contact.webp"
           alt="contact"

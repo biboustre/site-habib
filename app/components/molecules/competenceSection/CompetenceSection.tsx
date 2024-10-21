@@ -51,8 +51,8 @@ export default function CompetenceSection() {
     >
       <DuplicatedText
         text="Compétences"
-        className="text-center text-[45px] font-bold text-white"
-        duplicatedClassName=" font-bold text-white opacity-10"
+        className=" text-white"
+        duplicatedClassName="text-white"
       />
       <h2 className="mb-5 text-center text-xl tracking-wide text-white">
         Voici mes compétences principales
