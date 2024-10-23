@@ -1,5 +1,5 @@
 import DuplicatedText from "@/app/components/atoms/duplicateText/DuplicateText";
-import CompetenceCard from "@/app/components/molecules/competenceCard/CompetenceCard";
+import CompetenceCard from "@/app/components/molecules/cards/competenceCard/CompetenceCard";
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import {

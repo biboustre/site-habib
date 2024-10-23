@@ -33,11 +33,10 @@ export default function ContactForm() {
   };
 
   const pathname = usePathname();
-
   const bgForm = pathname === "/" ? "bgFooter" : "bg-zinc-900";
 
   return (
-    <section className="flex w-full flex-col md:flex-row lg:justify-between lg:px-[50px]">
+    <section className="flex w-full flex-col md:flex-row lg:justify-between lg:px-[50px] xl:h-[800px]">
       {/* Section gauche avec texte et informations */}
       <section className={`md:w-1/2 ${bgForm}`}>
         <Image
@@ -48,8 +47,8 @@ export default function ContactForm() {
         />
       </section>
 
-      <section className="bg-white p-5 md:w-1/2 md:p-10 lg:p-12 ">
-        <form onSubmit={onSubmit} className="space-y-6 ">
+      <section className="bg-white p-5 md:w-1/2 md:p-10 lg:p-12">
+        <form onSubmit={onSubmit} className="space-y-6 xl:w-full xl:space-y-20">
           <div className="flex space-x-4">
             <div className="w-1/2">
               <Input

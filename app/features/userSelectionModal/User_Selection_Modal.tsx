@@ -25,7 +25,7 @@ const UserSelectionModal: React.FC<UserSelectionModalProps> = ({
       onRequestClose={onRequestClose}
       contentLabel="User Type Selection"
       className="fixed inset-0 flex items-center justify-center bg-black/50"
-      overlayClassName="fixed inset-0 bg-black/50"
+      overlayClassName="fixed z-30 inset-0 bg-black/50"
     >
       <div className="rounded-lg bg-white p-8 shadow-lg">
         <h2 className="mb-4 text-2xl font-bold">

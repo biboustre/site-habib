@@ -1,18 +1,18 @@
 import React from "react";
 
-interface ServiceDescriptionProps {
+interface ServiceCardProps {
   text: string;
   icon: React.ReactNode;
   className?: string;
   title: string;
 }
 
-export default function ServiceDescription({
+export default function ServiceCard({
   text,
   icon,
   className,
   title,
-}: ServiceDescriptionProps) {
+}: ServiceCardProps) {
   return (
     <section
       className={`bgFooter flex w-full flex-col items-center justify-between gap-9 p-5  ${className}`}

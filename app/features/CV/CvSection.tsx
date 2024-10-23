@@ -1,5 +1,5 @@
 import React from "react";
-import CvCard from "@/app/components/molecules/cvCard/CvCard"; // Chemin vers ton composant
+import CvCard from "@/app/components/molecules/cards/cvCard/CvCard"; // Chemin vers ton composant
 import { cvData } from "@/app/data/data"; // Chemin vers ton fichier de données
 import DuplicatedText from "@/app/components/atoms/duplicateText/DuplicateText";
 

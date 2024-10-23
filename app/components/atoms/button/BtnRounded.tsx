@@ -11,7 +11,7 @@ export default function BtnRounded({ text, href, className }: BtnRoundedProps) {
   return (
     <Link
       href={href}
-      className={`rounded-full px-8 py-3 text-lg font-semibold tracking-widest text-black ${className}`}
+      className={`rounded-full px-8 py-4 text-lg font-semibold tracking-widest text-black ${className}`}
     >
       {text}
     </Link>

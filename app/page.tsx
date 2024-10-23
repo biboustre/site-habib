@@ -8,6 +8,7 @@ import UserSelectionModal from "./features/userSelectionModal/User_Selection_Mod
 import NosCreationSection from "./components/molecules/NosCreationSection/NosCreationSection";
 import ServiceSection from "./features/serviceSection/ServiceSection";
 import ContactSection from "./components/molecules/contactSection/ContactSection";
+import EmploySection from "./components/molecules/employSection/EmploySection";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -36,6 +37,7 @@ export default function Home() {
       <AboutSection />
       <ServiceSection />
       <NosCreationSection />
+      <EmploySection />
       <ContactSection />
       <UserSelectionModal
         isOpen={isModalOpen}

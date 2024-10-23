@@ -1,3 +1,4 @@
+import { usePathname } from "next/navigation";
 import React from "react";
 
 interface ContactItemProps {
@@ -11,9 +12,12 @@ export default function ContactItem({
   title,
   description,
 }: ContactItemProps) {
+  const pathname = usePathname();
+  const bgIcon = pathname === "/" ? "bgFooter" : "bg-gray-800";
+
   return (
     <section className="flex w-32 flex-col items-center text-center">
-      <section className="colorPrimaryStack mb-4 rounded-full bg-gray-800 p-10 text-3xl">
+      <section className={`colorPrimaryStack mb-4 rounded-full p-10 text-3xl ${bgIcon}`}>
         {icon}
       </section>
       <h3 className="font-bold">{title}</h3>
