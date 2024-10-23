@@ -1,6 +1,6 @@
 import React from "react";
 import ServiceCard from "../../components/molecules/cards/serviceCard/ServiceCard";
-import { serviceDescriptions } from "@/app/data/data";
+import { cardService } from "@/app/data/cardServiceData";
 import DuplicatedText from "@/app/components/atoms/duplicateText/DuplicateText";
 
 export default function ServiceSection() {
@@ -12,7 +12,7 @@ export default function ServiceSection() {
     >
       <DuplicatedText text="Ce que nous proposons" className="text-white" />
       <section className="flex flex-col gap-20  px-5 pb-20 text-justify text-lg font-semibold text-white lg:flex-row lg:gap-5  xl:px-20 ">
-        {serviceDescriptions.map((description) => (
+        {cardService.map((description) => (
           <ServiceCard
             key={description.id}
             text={description.text}

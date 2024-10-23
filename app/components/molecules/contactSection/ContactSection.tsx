@@ -1,7 +1,7 @@
 import React from "react";
 import ContactItem from "./ContactItem";
 import DuplicatedText from "../../atoms/duplicateText/DuplicateText";
-import { arrayItemsContact } from "@/app/data/data";
+import { itemsContact } from "@/app/data/itemsContactData";
 
 export default function ContactSection() {
   return (
@@ -19,7 +19,7 @@ export default function ContactSection() {
       </section>
 
       <section className="flex flex-col gap-20 md:w-full md:flex-row md:justify-around ">
-        {arrayItemsContact.map((item) => (
+        {itemsContact.map((item) => (
           <ContactItem
             key={item.id}
             icon={item.icon}

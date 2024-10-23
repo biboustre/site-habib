@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { cardData } from "../../../data/cardData";
+import { cardRecruteur } from "../../../data/cardRecruteurData";
 import DuplicatedText from "../../atoms/duplicateText/DuplicateText";
 import CardStats from "../cards/cardStats/CardStats";
 import BtnRounded from "../../atoms/button/BtnRounded";
 
-const EmploySection: React.FC = () => {
+const RecruteurSection: React.FC = () => {
   return (
     <section className="flex h-screen scroll-mt-[100px] flex-col  gap-20 bg-black text-white md:gap-40">
       <DuplicatedText className="mt-10" text="Vous êtes recruteur ?" />
@@ -42,7 +42,7 @@ const EmploySection: React.FC = () => {
         </div>
 
         <div className="absolute top-[-70px] mb-16 hidden w-full gap-8 md:flex md:justify-center  ">
-          {cardData.map((card, id) => (
+          {cardRecruteur.map((card, id) => (
             <CardStats key={id} value={card.value} label={card.label} />
           ))}
         </div>
@@ -51,4 +51,4 @@ const EmploySection: React.FC = () => {
   );
 };
 
-export default EmploySection;
+export default RecruteurSection;
