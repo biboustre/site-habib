@@ -28,6 +28,7 @@ export default function Home() {
 
   return (
     <>
+    {/*  img banner à compresser et mettre au format webp*/}
       <BannerMain
         title="Web'ibou"
         text="Solution </br> WEB </br> & </br>DESIGN"
