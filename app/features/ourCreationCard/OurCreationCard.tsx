@@ -32,7 +32,7 @@ export default function OurCreationCard({
           alt={imageAlt}
           width={200}
           height={200}
-          className={` size-full rounded-t-lg  object-cover md:rounded-lg ${classNameImg}`}
+          className={`size-full  rounded-t-lg object-cover md:rounded-lg ${classNameImg}`}
         />
       </figure>
       <figcaption className="flex flex-col  pl-2 pt-6 md:w-1/2 md:items-center md:px-20">
