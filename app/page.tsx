@@ -31,7 +31,7 @@ export default function Home() {
       <BannerMain
         title="Web'ibou"
         text="Solution </br> WEB </br> & </br>DESIGN"
-        src="/images/IMG1.webp"
+        src="/images/IMG17.jpg"
         alt="photo de profil"
       />
       <AboutSection />

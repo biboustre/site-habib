@@ -1,18 +1,18 @@
 export const  cardNosCreation = [
     {
       id: 1,
-      title: "Application Happy Day",
+      title: "Application Ladésion",
       category: "APPLICATION MOBILE",
       description: "Description détaillée de l'application Happy Day.",
       imageSrc: "/images/ladesion.webp",
     },
     {
       id: 2,
-      title: "Application Montagne",
+      title: "Application France-Engin",
       category: "APPLICATION MOBILE",
       description:
         "Description de l'application Montagne pour les amateurs de randonnée.",
-      imageSrc: "/images/photo_ordinateur_2.webp",
+      imageSrc: "/images/France-engin2.webp",
     },
     {
       id: 3,
