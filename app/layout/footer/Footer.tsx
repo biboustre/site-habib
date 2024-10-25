@@ -19,8 +19,8 @@ export default function Footer() {
             <>
               <p>
                 Loin, très loin, derrière les <br /> montagnes des mots, loin
-                des <br /> pays de Vokalia et de Consonantia, <br /> vivent les
-                textes aveugles.
+                des <br /> pays de cacahuète et fricassé, <br /> vivent les
+                textes pâtes à tartiner mordjene.
               </p>
               <SocialsLinks className="mt-4" />
             </>

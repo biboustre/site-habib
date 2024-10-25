@@ -22,7 +22,7 @@ export default function OurCreationCard({
 }: ourCreationCardProps) {
   return (
     <section
-      className={`flex flex-col rounded-lg px-1 md:h-[400px] md:flex-row ${
+      className={`flex flex-col rounded-lg px-1 md:h-[400px] md:flex-row 2xl:h-[550px] ${
         isReversed ? "md:flex-row-reverse" : ""
       }  ${className}`}
     >

@@ -1,6 +1,6 @@
 import React from "react";
 import PortfolioCard from "../../../features/portfolioCard/PortfolioCard";
-import { card } from "@/app/data/data";
+import { cardNosCreation } from "@/app/data/cardCreationData";
 import DuplicatedText from "@/app/components/atoms/duplicateText/DuplicateText";
 
 interface PortfolioSectionProps {
@@ -19,7 +19,7 @@ export default function PortfolioSection({ className }: PortfolioSectionProps) {
         duplicatedClassName=" font-bold text-white opacity-10"
       />
       <section className="flex flex-col gap-10 px-2 md:grid md:grid-cols-2 lg:grid-cols-3">
-        {card.map((card) => (
+        {cardNosCreation.map((card) => (
           <PortfolioCard
             key={card.id}
             title={card.title}

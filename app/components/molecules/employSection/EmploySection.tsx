@@ -36,7 +36,7 @@ const RecruteurSection: React.FC = () => {
             <BtnRounded
               className="bgPrimaryStack"
               text="Portolio"
-              href="/StackTechnic"
+              href="/stackTechnic"
             />
           </section>
         </div>
