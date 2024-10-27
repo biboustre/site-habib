@@ -18,7 +18,7 @@ const RecruteurSection: React.FC = () => {
           objectFit="cover"
         />
 
-        <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 space-y-8 text-center">
+        <div className="absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 space-y-8 text-center">
           <h2 className="text-4xl font-extrabold md:text-5xl">
             Je suis <span className="colorPrimaryStack">Disponible</span> en
             freelance/CDI
@@ -27,21 +27,21 @@ const RecruteurSection: React.FC = () => {
             A small river named Duden flows by their place and supplies it with
             the necessary regelialia.
           </p>
-          <section className="space-x-10">
+          <section className="flex justify-center md:space-x-10">
             <BtnRounded
-              className="bgPrimaryStack"
+              className="bgPrimaryStack text-sm"
               text="Contactez-moi"
               href="#contact"
             />
             <BtnRounded
-              className="bgPrimaryStack"
+              className="bgPrimaryStack text-sm"
               text="Portolio"
               href="/stackTechnic"
             />
           </section>
         </div>
 
-        <div className="absolute top-[-70px] mb-16 hidden w-full gap-8 md:flex md:justify-center  ">
+        <div className="absolute top-[-70px] mb-16 hidden w-full gap-8 sm:flex md:justify-center  ">
           {cardRecruteur.map((card, id) => (
             <CardStats key={id} value={card.value} label={card.label} />
           ))}

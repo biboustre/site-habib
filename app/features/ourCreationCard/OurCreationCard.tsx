@@ -26,20 +26,22 @@ export default function OurCreationCard({
         isReversed ? "md:flex-row-reverse" : ""
       }  ${className}`}
     >
-      <figure className="md:w-1/2 ">
+      <figure className="relative h-72 md:size-full md:w-1/2 ">
         <Image
           src={imageUrl}
           alt={imageAlt}
-          width={200}
-          height={200}
-          className={`size-full  rounded-t-lg object-cover md:rounded-lg ${classNameImg}`}
+          layout="fill"
+          objectFit="cover"
+          className={`rounded-t-lg  md:rounded-lg ${classNameImg}`}
         />
       </figure>
-      <figcaption className="flex flex-col  pl-2 pt-6 md:w-1/2 md:items-center md:px-20">
-        <h2 className="mb-4 text-2xl font-bold text-white md:text-4xl">
+      <figcaption className="flex flex-col items-center pt-6 md:w-1/2 md:px-3 lg:px-10">
+        <h2 className="mb-4 text-2xl text-center font-bold text-white md:text-4xl">
           {title}
         </h2>
-        <p className="text-lg tracking-wide text-white">{description}</p>
+        <p className=" text-center text-base tracking-wide text-white md:text-center">
+          {description}
+        </p>
       </figcaption>
     </section>
   );
