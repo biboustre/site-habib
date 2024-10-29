@@ -7,7 +7,7 @@ import BtnRounded from "../../atoms/button/BtnRounded";
 
 const RecruteurSection: React.FC = () => {
   return (
-    <section className="flex h-screen scroll-mt-[100px] flex-col  gap-20 bg-black text-white md:gap-40">
+    <section className="flex h-screen scroll-mt-[100px] flex-col  gap-20 bg-black text-white sm:gap-40">
       <DuplicatedText className="mt-10" text="Vous êtes recruteur ?" />
       {/*  <Image> avec layout="fill" nécessite que son parent soit en relative et dimensions explicites. */}
       <section className="relative h-3/5 w-full">
@@ -18,7 +18,7 @@ const RecruteurSection: React.FC = () => {
           objectFit="cover"
         />
 
-        <div className="absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 space-y-8 text-center">
+        <section className="absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 space-y-8 text-center">
           <h2 className="text-4xl font-extrabold md:text-5xl">
             Je suis <span className="colorPrimaryStack">Disponible</span> en
             freelance/CDI
@@ -39,7 +39,7 @@ const RecruteurSection: React.FC = () => {
               href="/stackTechnic"
             />
           </section>
-        </div>
+        </section>
 
         <div className="absolute top-[-70px] mb-16 hidden w-full gap-8 sm:flex md:justify-center  ">
           {cardRecruteur.map((card, id) => (

@@ -19,8 +19,8 @@ export const  cardNosCreation = [
       title: "Site de recettes",
       category: "CONCEPTION WEB",
       description:
-        "Description du site de recettes avec des fonctionnalités de recherche et filtrage.",
-      imageSrc: "/images/photo_ordinateur_1.webp",
+        "Dans ce projet, j'ai conçu un portfolio interactif pour une architecte d'intérieur. Ce site présente une galerie dynamique où chaque projet est illustré, offrant aux visiteurs un aperçu de ses compétences et de son style. Grâce à une interface de connexion sécurisée, l'architecte peut gérer son portfolio en ajoutant, modifiant ou supprimant ses travaux facilement. Un formulaire de contact intégré permet aux clients potentiels de la joindre directement, facilitant les échanges et les opportunités professionnelles. Ce portfolio met en avant son travail avec un design épuré et intuitif, optimisé pour une navigation fluide et une présentation soignée de ses réalisations.",
+      imageSrc: "/images/sophie2.png",
     },
   ];
   

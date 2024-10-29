@@ -14,7 +14,7 @@ export default function DuplicatedText({
   return (
     
     <h1
-      className={`relative z-10 text-center text-[45px] font-bold sm:text-[65px] 2xl:text-7xl ${className}`}
+      className={`relative z-10 text-center text-[45px] font-bold md:text-[65px] 2xl:text-7xl ${className}`}
     >
       <span dangerouslySetInnerHTML={{ __html: text }} />
       <span
