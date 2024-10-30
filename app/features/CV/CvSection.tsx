@@ -15,8 +15,10 @@ export default function CvSection() {
         duplicatedClassName=" font-bold text-white opacity-10"
       />
       <p className="mt-4 max-w-xl text-center text-gray-400">
-        Une petite rivière, appelée Duden, coule à côté de chez eux et leur
-        fournit les regelialia nécessaires. C&apos;est un pays paradisiaque.
+        Découvrez mon parcours et mon expérience en développement web et mobile.
+        Diplômé d&apos;un Bac+2, j&apos;ai travaillé sur divers projets en tant que
+        développeur front-end, avec un focus sur la création d&apos;interfaces
+        modernes et fonctionnelles pour des clients variés.
       </p>
 
       <div className="mt-12 grid max-w-5xl grid-cols-1 gap-8 px-4 md:grid-cols-2">

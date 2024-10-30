@@ -50,7 +50,7 @@ html {
     transition: left 0.3s ease-out;
   }
 
-  /******************************************************************************/
+  /*ICON*****************************************************************************/
   .icon {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -67,17 +67,17 @@ html {
   }
 
   /* BUTTON*********************************************************************/
-  .btnMain {
+   .btn-main {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    box-shadow: 0 1px 4px 3px rgba(200, 122, 13, 0.526);
+    box-shadow: 0 3px 4px 4px  rgb(255, 255, 255);
   }
 
-  .btnMain:hover {
+  .btn-main:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 12px rgba(117, 52, 160, 0.106);
   }
 
-  .btnStack {
+  /* .btnStack {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 0 1px 4px 3px rgba(195, 183, 167, 0.526);
   }
@@ -85,11 +85,12 @@ html {
   .btnStack:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 12px rgba(50, 89, 180, 0.588);
-  }
+  }  */
 
   /* COLOR****************************************************************** */
 
   .bgPrimary {
+    background-color: #ffbd39;
     /* background: #23074d;
     background: -webkit-linear-gradient(to right, #cc5333, #23074d);
     background: linear-gradient(to right, #cc5333, #23074d); */
@@ -99,7 +100,7 @@ html {
     /* background: #4b6cb7;
     background: -webkit-linear-gradient(to top, #182848, #4b6cb7);
     background: linear-gradient(to top, #182848, #4b6cb7); */
-    background: rgb(2, 0, 36);
+    /* background: rgb(2, 0, 36);
     background: -moz-linear-gradient(
       14deg,
       rgba(2, 0, 36, 1) 0%,
@@ -118,7 +119,7 @@ html {
       rgba(0, 35, 90, 1) 51%,
       rgba(0, 212, 255, 1) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1); */
   }
 
   .bgHamburger {

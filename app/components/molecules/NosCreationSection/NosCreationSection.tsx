@@ -9,7 +9,10 @@ export default function NosCreationSection() {
       id="creations"
       className="bgFooter flex scroll-mt-[100px] flex-col gap-32 pb-40 pt-20 lg:px-16 2xl:px-[350px]"
     >
-      <DuplicatedText className="text-white" text="Nos créations" />
+      <DuplicatedText
+        className="pt-3  text-[35px] text-white  sm:text-[65px]"
+        text="Nos créations"
+      />
       <section className="flex flex-col gap-24 md:gap-40">
         {cardNosCreation.map((card, index) => (
           <OurCreationCard

@@ -51,7 +51,7 @@ export default function CompetenceSection() {
     >
       <DuplicatedText
         text="Compétences"
-        className=" text-white"
+        className=" "
         duplicatedClassName="text-white"
       />
       <h2 className="mb-5 text-center text-xl tracking-wide text-white">

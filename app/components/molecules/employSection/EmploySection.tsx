@@ -8,7 +8,10 @@ import BtnRounded from "../../atoms/button/BtnRounded";
 const RecruteurSection: React.FC = () => {
   return (
     <section className="flex h-screen scroll-mt-[100px] flex-col  gap-20 bg-black text-white sm:gap-40">
-      <DuplicatedText className="mt-10" text="Vous êtes recruteur ?" />
+      <DuplicatedText
+        className="mt-10 pt-3  text-[35px] text-white  sm:text-[65px]"
+        text="Vous êtes recruteur ?"
+      />
       {/*  <Image> avec layout="fill" nécessite que son parent soit en relative et dimensions explicites. */}
       <section className="relative h-3/5 w-full">
         <Image
@@ -41,7 +44,7 @@ const RecruteurSection: React.FC = () => {
           </section>
         </section>
 
-        <div className="absolute top-[-70px] mb-16 hidden w-full gap-8 sm:flex md:justify-center  ">
+        <div className="absolute top-[-70px] hidden w-full gap-8 sm:flex md:justify-center  ">
           {cardRecruteur.map((card, id) => (
             <CardStats key={id} value={card.value} label={card.label} />
           ))}

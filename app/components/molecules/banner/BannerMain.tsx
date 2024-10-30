@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import BtnMain from "../../atoms/button/BtnMain";
 import { BannerMainProps } from "../../../types";
+import BtnRounded from "../../atoms/button/BtnRounded";
 
 export default function BannerMain({
   title,
@@ -25,10 +25,10 @@ export default function BannerMain({
             dangerouslySetInnerHTML={{ __html: text }}
           />
         )}
-        <BtnMain
+        <BtnRounded
           href="#contact"
-          classNameBtn="mt-10 bgPrimary"
-          label="Contactez-nous"
+          className="btn-main bgPrimaryStack mt-10 py-6"
+          text="Contactez-nous"
         />
       </section>
       <section>

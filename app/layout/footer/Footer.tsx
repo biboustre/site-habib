@@ -18,9 +18,7 @@ export default function Footer() {
           content={
             <>
               <p>
-                Loin, très loin, derrière les <br /> montagnes des mots, loin
-                des <br /> pays de cacahuète et fricassé, <br /> vivent les
-                textes pâtes à tartiner mordjene.
+              Nous sommes une équipe de développeurs passionnés, spécialisés dans la création de sites et d’applications web sur mesure. Notre mission : vous offrir des solutions digitales modernes et performantes, adaptées à vos besoins, tout en restant accessibles et compétitives. En alliant créativité et expertise technique, nous accompagnons nos clients dans la réalisation de leurs projets avec des prix attractifs et un service personnalisé.
               </p>
               <SocialsLinks className="mt-4" />
             </>
