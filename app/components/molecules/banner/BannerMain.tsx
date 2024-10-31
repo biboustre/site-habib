@@ -27,7 +27,7 @@ export default function BannerMain({
         )}
         <BtnRounded
           href="#contact"
-          className="btn-main bgPrimaryStack mt-10 py-6"
+          className="hover:bg-yellow-500 bgPrimaryStack mt-10 py-6"
           text="Contactez-nous"
         />
       </section>

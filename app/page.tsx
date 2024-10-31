@@ -32,7 +32,7 @@ export default function Home() {
       <BannerMain
         title="Web'ibou"
         text="Solution </br> WEB </br> & </br>DESIGN"
-        src="/images/IMG14.jpg"
+        src="/images/IMG17.jpg"
         alt="photo de profil"
       />
       <AboutSection />
