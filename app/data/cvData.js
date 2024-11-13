@@ -5,7 +5,7 @@ export const cvData = [
       title: "Bac+2 Développeur Web & Mobile",
       institution: "Openclassrooms",
       description:
-        "Une petite rivière, appelée Duden, coule à côté de chez eux et leur fournit les regelialia nécessaires. C'est un pays paradisiaque.",
+        "Bac+2 en développement web et mobile, réalisation de projets concrets en auto-apprentissage, accompagné d'un mentor. Cette expérience m'a permis de développer mon autonomie, d'apprendre à résoudre des problèmes par moi-même et de renforcer ma capacité à m'adapter aux défis techniques.",
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ export const cvData = [
       title: "Développeur front-end",
       institution: "JuandJu",
       description:
-        "Une petite rivière, appelée Duden, coule à côté de chez eux et leur fournit les regelialia nécessaires. C'est un pays paradisiaque.",
+        "Développeur front-end, spécialisé en React, Next.js et TypeScript. Ce stage au sein de l'entreprise JuandJu m'a permis de travailler sur des projets ambitieux, notamment une application nommée ladésion, dédiée à la gestion des adhésions et des événements pour des associations, ainsi qu'une application e-commerce, France-Engin"
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ export const cvData = [
       title: "Développeur front-end",
       institution: "Web'ibou",
       description:
-        "Une petite rivière, appelée Duden, coule à côté de chez eux et leur fournit les regelialia nécessaires. C'est un pays paradisiaque.",
+        "Site e-commerce classique de vêtements pour femmes, réalisé en Nextjs, typescript et Tailwindcss.",
     },
     {
       id: 4,
@@ -29,6 +29,6 @@ export const cvData = [
       title: "Développeur front-end",
       institution: "Web'ibou",
       description:
-        "Une petite rivière, appelée Duden, coule à côté de chez eux et leur fournit les regelialia nécessaires. C'est un pays paradisiaque.",
+        "Développement de mon site personnel et portfolio en Next.js, TypeScript et TailwindCSS, en appliquant les meilleures pratiques de code. Mise en place de composants réutilisables, structuration optimisée des dossiers et fichiers, et optimisation SEO, y compris la gestion des images.",
     },
   ];

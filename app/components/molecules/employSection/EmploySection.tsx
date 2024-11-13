@@ -27,8 +27,7 @@ const RecruteurSection: React.FC = () => {
             freelance/CDI
           </h2>
           <p className="mx-auto max-w-md font-semibold md:text-lg">
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia.
+          Que ce soit en CDI ou en freelance, je serais ravi de collaborer avec une entreprise pour apporter mes compétences en développement web. Passionné et engagé, je suis prêt à relever de nouveaux défis et à contribuer activement à vos projets.
           </p>
           <section className="flex justify-center md:space-x-10">
             <BtnRounded
@@ -44,11 +43,11 @@ const RecruteurSection: React.FC = () => {
           </section>
         </section>
 
-        <div className="absolute top-[-70px] hidden w-full gap-8 sm:flex md:justify-center  ">
+        <section className="absolute top-[-70px] hidden w-full gap-8 sm:flex md:justify-center  ">
           {cardRecruteur.map((card, id) => (
             <CardStats key={id} value={card.value} label={card.label} />
           ))}
-        </div>
+        </section>
       </section>
     </section>
   );
