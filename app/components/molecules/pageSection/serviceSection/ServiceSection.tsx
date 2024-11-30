@@ -1,7 +1,7 @@
 import React from "react";
-import ServiceCard from "../../components/molecules/cards/serviceCard/ServiceCard";
+import ServiceCard from "../../cards/serviceCard/ServiceCard";
 import { cardService } from "@/app/data/cardServiceData";
-import DuplicatedText from "@/app/components/atoms/duplicateText/DuplicateText";
+import DuplicatedText from "@/app/components/atoms/duplicatedText/DuplicatedText";
 
 export default function ServiceSection() {
   return (

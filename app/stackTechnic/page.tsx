@@ -1,9 +1,9 @@
 import React from "react";
-import CompetenceSection from "../components/molecules/competenceSection/CompetenceSection";
+import CompetenceSection from "../components/molecules/pageSection/competenceSection/CompetenceSection";
 import BannerStackTechnic from "../components/molecules/banner/BannerStackTechnic";
-import PortfolioSection from "../components/molecules/portfolioSection/PortfolioSection";
-import ContactSection from "../components/molecules/contactSection/ContactSection";
-import CvSection from "../features/CV/CvSection";
+import PortfolioSection from "../components/molecules/pageSection/portfolioSection/PortfolioSection";
+import ContactSection from "../components/molecules/pageSection/contactSection/ContactSection";
+import CvSection from "../components/molecules/pageSection/cvSection/CvSection";
 
 export default function StackTechnic() {
   return (

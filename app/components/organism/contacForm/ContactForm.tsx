@@ -33,7 +33,7 @@ export default function ContactForm() {
   };
 
   const pathname = usePathname();
-  const bgForm = pathname === "/" ? "bgFooter" : "bg-zinc-900";
+  const bgForm = pathname === "/" ? "bgFooter" : "bg-gray-800";
 
   return (
     <section className="flex w-full flex-col md:flex-row lg:justify-between lg:px-[50px] 2xl:h-[850px]">

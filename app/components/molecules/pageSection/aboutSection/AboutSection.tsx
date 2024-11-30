@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import DuplicatedText from "@/app/components/atoms/duplicateText/DuplicateText";
+import DuplicatedText from "@/app/components/atoms/duplicatedText/DuplicatedText";
 import BtnRounded from "@/app/components/atoms/button/BtnRounded";
 import CardStats from "@/app/components/molecules/cards/cardStats/CardStats";
 import { cardRecruteur } from "@/app/data/cardRecruteurData";
@@ -33,7 +33,9 @@ export default function AboutSection() {
             sommes prêts à vous accompagner dans votre transformation digitale
           </h2>
           <p className="mx-auto max-w-md text-[17px] font-bold md:text-lg">
-          Notre mission est de vous aider à développer des outils performants, parfaitement adaptés à vos besoins, et de vous accompagner vers la réussite de vos projets web et mobile.
+            Notre mission est de vous aider à développer des outils performants,
+            parfaitement adaptés à vos besoins, et de vous accompagner vers la
+            réussite de vos projets web et mobile.
           </p>
           <section className="flex justify-center md:space-x-10">
             <BtnRounded

@@ -1,7 +1,7 @@
 import React from "react";
-import OurCreationCard from "../../../features/ourCreationCard/OurCreationCard";
+import OurCreationCard from "../../../../features/ourCreationCard/OurCreationCard";
 import { cardNosCreation } from "@/app/data/cardCreationData";
-import DuplicatedText from "../../atoms/duplicateText/DuplicateText";
+import DuplicatedText from "@/app/components/atoms/duplicatedText/DuplicatedText";
 
 export default function NosCreationSection() {
   return (

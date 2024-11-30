@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
-import InternalLink from "../links/internalLink/InternalLink";
-import SocialsLinks from "../socials/socialsLinks/SocialsLinks";
+import InternalLink from "../../navigation/links/internalLink/InternalLink";
+import SocialsLinks from "../../socials/socialsLinks/SocialsLinks";
 
 export default function NavHeader() {
   const [activeLink, setActiveLink] = useState<string>("");
@@ -11,7 +11,7 @@ export default function NavHeader() {
   const links =
     pathname === "/stackTechnic"
       ? [
-          { href: "#competence", name: "Compétences" },
+          { href: "#competences", name: "Compétences" },
           { href: "#projets", name: "Projets" },
           { href: "#cv", name: "CV" },
           { href: "#contact", name: "Contact" },

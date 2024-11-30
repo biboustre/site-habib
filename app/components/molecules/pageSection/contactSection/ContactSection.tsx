@@ -2,7 +2,7 @@
 
 import React from "react";
 import ContactItem from "./ContactItem";
-import DuplicatedText from "../../atoms/duplicateText/DuplicateText";
+import DuplicatedText from "../../../atoms/duplicatedText/DuplicatedText";
 import { itemsContact } from "@/app/data/itemsContactData";
 import { usePathname } from "next/navigation";
 
@@ -16,11 +16,12 @@ export default function ContactSection() {
       className="flex scroll-mt-[100px] flex-col items-center gap-16 bg-black text-white sm:pt-16 "
     >
       <section className="mb-12 text-center">
-        <DuplicatedText
+        {/* <DuplicatedText
           text="Contacte"
-          className="pt-3  text-[35px] text-white  sm:text-[65px]"
+          className="text-center  text-white"
           duplicatedClassName=" font-bold text-white opacity-10"
-        />
+        /> */}
+        <DuplicatedText text="Contact" className="text-center text-white" duplicatedClassName=" font-bold text-white opacity-10" />
         {pathname === "/" && (
           <p className="mx-auto mt-4 w-[70%] text-gray-400 sm:text-xl">
             Besoin d&apos;informations ou d&apos;un devis ? N&apos;hésitez pas à

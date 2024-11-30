@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import { cardRecruteur } from "../../../data/cardRecruteurData";
-import DuplicatedText from "../../atoms/duplicateText/DuplicateText";
-import CardStats from "../cards/cardStats/CardStats";
-import BtnRounded from "../../atoms/button/BtnRounded";
+import { cardRecruteur } from "@/app/data/cardRecruteurData";
+import DuplicatedText from "../../../atoms/duplicatedText/DuplicatedText";
+import CardStats from "../../cards/cardStats/CardStats";
+import BtnRounded from "../../../atoms/button/BtnRounded";
 
 const RecruteurSection: React.FC = () => {
   return (

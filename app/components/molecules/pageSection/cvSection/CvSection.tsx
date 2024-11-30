@@ -1,7 +1,7 @@
 import React from "react";
 import CvCard from "@/app/components/molecules/cards/cvCard/CvCard"; // Chemin vers ton composant
 import { cvData } from "@/app/data/cvData"; // Chemin vers ton fichier de données
-import DuplicatedText from "@/app/components/atoms/duplicateText/DuplicateText";
+import DuplicatedText from "@/app/components/atoms/duplicatedText/DuplicatedText";
 
 export default function CvSection() {
   return (
@@ -16,9 +16,9 @@ export default function CvSection() {
       />
       <p className="mt-4 max-w-xl text-center text-gray-400">
         Découvrez mon parcours et mon expérience en développement web et mobile.
-        Diplômé d&apos;un Bac+2, j&apos;ai travaillé sur divers projets en tant que
-        développeur front-end, avec un focus sur la création d&apos;interfaces
-        modernes et fonctionnelles pour des clients variés.
+        Diplômé d&apos;un Bac+2, j&apos;ai travaillé sur divers projets en tant
+        que développeur front-end, avec un focus sur la création
+        d&apos;interfaces modernes et fonctionnelles.
       </p>
 
       <div className="mt-12 grid max-w-5xl grid-cols-1 gap-8 px-4 md:grid-cols-2">

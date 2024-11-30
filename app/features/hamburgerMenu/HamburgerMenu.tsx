@@ -1,6 +1,6 @@
 "use client";
 
-import InternalLink from "@/app/components/atoms/links/internalLink/InternalLink";
+import InternalLink from "@/app/components/atoms/navigation/links/internalLink/InternalLink";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 

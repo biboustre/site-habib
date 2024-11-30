@@ -1,7 +1,7 @@
 import React from "react";
 import PortfolioCard from "../../../features/portfolioCard/PortfolioCard";
 import { cardNosCreation } from "@/app/data/cardCreationData";
-import DuplicatedText from "@/app/components/atoms/duplicateText/DuplicateText";
+import DuplicatedText from "@/app/components/atoms/duplicatedText/DuplicatedText";
 
 interface PortfolioSectionProps {
   className?: string;

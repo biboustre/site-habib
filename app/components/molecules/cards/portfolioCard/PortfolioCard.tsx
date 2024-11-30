@@ -40,12 +40,12 @@ export default function PortfolioCard({
       </section>
 
       <aside
-        className={`duration-400 absolute inset-0 z-30 flex flex-col justify-center bg-amber-400/80 p-3 shadow-lg transition-opacity ${
+        className={`duration-400 absolute inset-0 z-30 flex flex-col justify-center bg-amber-500 px-4 shadow-lg transition-opacity ${
           isHovered ? "opacity-100" : "opacity-0"
         }`}
       >
         <h3 className="text-2xl font-bold text-black">{title}</h3>
-        <p className="mt-2 text-white">{description}</p>
+        <p className="mt-2 text-white text-[14px] font-semibold">{description}</p>
       </aside>
     </section>
   );

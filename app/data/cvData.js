@@ -13,7 +13,7 @@ export const cvData = [
       title: "Développeur front-end",
       institution: "JuandJu",
       description:
-        "Développeur front-end, spécialisé en React, Next.js et TypeScript. Ce stage au sein de l'entreprise JuandJu m'a permis de travailler sur des projets ambitieux, notamment une application nommée ladésion, dédiée à la gestion des adhésions et des événements pour des associations, ainsi qu'une application e-commerce, France-Engin"
+        "Développeur front-end, spécialisé en React, Next.js et TypeScript. Ce stage au sein de l'entreprise JuandJu m'a permis de travailler sur des projets ambitieux, notamment une application nommée ladésion, dédiée à la gestion des adhésions et des événements pour des associations, ainsi qu'une application e-commerce, France-Engin."
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ export const cvData = [
       title: "Développeur front-end",
       institution: "Web'ibou",
       description:
-        "Site e-commerce classique de vêtements pour femmes, réalisé en Nextjs, typescript et Tailwindcss.",
+        "Site e-commerce de vêtements pour femmes, réalisé en Nextjs, typescript et Tailwindcss.",
     },
     {
       id: 4,

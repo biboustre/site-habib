@@ -1,4 +1,4 @@
-import DuplicatedText from "@/app/components/atoms/duplicateText/DuplicateText";
+import DuplicatedText from "@/app/components/atoms/duplicatedText/DuplicatedText";
 import CompetenceCard from "@/app/components/molecules/cards/competenceCard/CompetenceCard";
 import React from "react";
 import { FaReact } from "react-icons/fa";
