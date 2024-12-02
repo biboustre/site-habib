@@ -56,7 +56,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Web'ibou",
-              url: "https://votre-site.com",
+              url: "https://Web'ibou.com",
               description:
                 "Web'ibou propose des services de création de sites web, d'applications, de maquettes, de logos, de design graphique, d'hébergement de sites et d'optimisation. Découvrez comment nous pouvons vous aider à concrétiser vos idées.",
               author: {
@@ -65,7 +65,7 @@ export default function RootLayout({
               },
             }),
           }}
-        />%
+        />
       </Head>
       <body className="flex h-full flex-col bg-black ">
         <ClientHeader />
