@@ -1,6 +1,8 @@
+import React from "react";
+
 export interface BannerMainProps {
-    title?: string;
-    text?: string;
+    title?: React.ReactNode;
+    text?: React.ReactNode;
     src: string;
     alt: string;
     classNameImage?: string;

@@ -22,8 +22,9 @@ export default function BannerMain({
         {text && (
           <h2
             className="mb-16 text-center text-3xl font-semibold tracking-wider text-white md:text-start md:text-4xl lg:text-5xl 2xl:text-7xl"
-            dangerouslySetInnerHTML={{ __html: text }}
-          />
+          >
+            {text}
+          </h2>
         )}
         <BtnRounded
           href="#contact"

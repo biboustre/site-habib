@@ -12,6 +12,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  max-width: 1800px;
+  margin: auto;
+}
+
 @layer components {
   .underline-animation {
     position: relative;

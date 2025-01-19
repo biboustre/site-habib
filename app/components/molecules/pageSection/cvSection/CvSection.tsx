@@ -1,13 +1,24 @@
+'use client';
+
 import React from "react";
 import CvCard from "@/app/components/molecules/cards/cvCard/CvCard"; // Chemin vers ton composant
 import { cvData } from "@/app/data/cvData"; // Chemin vers ton fichier de données
 import DuplicatedText from "@/app/components/atoms/duplicatedText/DuplicatedText";
+import AnimatedSection from "@/app/features/animatedSection/AnimatedSection";
+import { motion } from "framer-motion";
 
 export default function CvSection() {
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 70 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.8 } }
+  };
   return (
-    <section
+    <AnimatedSection>
+    <motion.section
       id="cv"
       className="flex scroll-mt-[100px] flex-col items-center bg-black py-16"
+      variants={itemVariants}
     >
       <DuplicatedText
         text="CV"
@@ -21,7 +32,8 @@ export default function CvSection() {
         d&apos;interfaces modernes et fonctionnelles.
       </p>
 
-      <div className="mt-12 grid max-w-5xl grid-cols-1 gap-8 px-4 md:grid-cols-2">
+      <motion.section className="mt-12 grid max-w-5xl grid-cols-1 gap-8 px-4 md:grid-cols-2"
+      variants={itemVariants}>
         {cvData.map((item) => (
           <CvCard
             key={item.id}
@@ -31,7 +43,8 @@ export default function CvSection() {
             description={item.description}
           />
         ))}
-      </div>
-    </section>
+      </motion.section>
+    </motion.section>
+    </AnimatedSection>
   );
 }

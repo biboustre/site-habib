@@ -28,8 +28,40 @@ export default function Home() {
   };
 
   return (
-    <>
-      {/* <Head>
+    <>      {/*  img banner à compresser et mettre au format webp*/}
+      <BannerMain
+        title={
+          <>
+            Web<span className="colorPrimaryStack">&apos;ibou</span>
+          </>
+        }
+        text={
+          <>
+            <span className="font-semibold">Solution<br /> <span className="font-extrabold">WEB</span> <br /></span>
+            <span className="colorPrimaryStack font-extrabold">&</span> <br />
+            <span className="font-extrabold">DESIGN</span>
+          </>
+        }
+        src="/images/IMG17.jpg"
+        alt="photo de profil"
+      />
+      <AboutSection />
+      <ServiceSection />
+      <NosCreationSection />
+      <EmploySection />
+      <ContactSection />
+      <UserSelectionModal
+        isOpen={isModalOpen}
+        onRequestClose={() => setIsModalOpen(false)}
+        onClientClick={handleClientClick}
+      />
+    </>
+  );
+}
+
+
+
+{/* <Head>
         <title>Web&pos;ibou - Création de sites web et design graphique</title>
         <meta
           name="description"
@@ -68,23 +100,3 @@ export default function Home() {
           }}
         />
       </Head> */}
-      {/*  img banner à compresser et mettre au format webp*/}
-      <BannerMain
-        title="Web'ibou"
-        text="Solution </br> WEB </br> & </br>DESIGN"
-        src="/images/IMG17.jpg"
-        alt="photo de profil"
-      />
-      <AboutSection />
-      <ServiceSection />
-      <NosCreationSection />
-      <EmploySection />
-      <ContactSection />
-      <UserSelectionModal
-        isOpen={isModalOpen}
-        onRequestClose={() => setIsModalOpen(false)}
-        onClientClick={handleClientClick}
-      />
-    </>
-  );
-}

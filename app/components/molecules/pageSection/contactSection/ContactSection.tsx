@@ -5,17 +5,27 @@ import ContactItem from "./ContactItem";
 import DuplicatedText from "../../../atoms/duplicatedText/DuplicatedText";
 import { itemsContact } from "@/app/data/itemsContactData";
 import { usePathname } from "next/navigation";
+import AnimatedSection from "@/app/features/animatedSection/AnimatedSection";
+import { motion } from "framer-motion";
 
 export default function ContactSection() {
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 70 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.8 } }
+  };
 
   const pathname = usePathname();
 
   return (
-    <section
+    <AnimatedSection>
+    <motion.section
       id="contact"
       className="flex scroll-mt-[100px] flex-col items-center gap-16 bg-black text-white sm:pt-16 "
+      variants={itemVariants}
     >
-      <section className="mb-12 text-center">
+      <motion.section className="mb-12 text-center"
+      variants={itemVariants}>
         <DuplicatedText text="Contact" className="text-center text-white" duplicatedClassName=" font-bold text-white opacity-10" />
         {pathname === "/" && (
           <p className="mx-auto mt-4 w-[70%] text-gray-400 sm:text-xl">
@@ -24,9 +34,10 @@ export default function ContactSection() {
             pouvons vous aider à concrétiser vos idées.
           </p>
         )}
-      </section>
+      </motion.section>
 
-      <section className="flex flex-col gap-20 md:w-full md:flex-row md:justify-around ">
+      <motion.section className="flex flex-col gap-20 md:w-full md:flex-row md:justify-around "
+      variants={itemVariants}>
         {itemsContact.map((item) => (
           <ContactItem
             key={item.id}
@@ -35,8 +46,9 @@ export default function ContactSection() {
             description={item.description}
           />
         ))}
-      </section>
-    </section>
+      </motion.section>
+    </motion.section>
+    </AnimatedSection>
   );
 }
 
