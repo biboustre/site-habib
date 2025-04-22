@@ -7,7 +7,7 @@ interface CardStatsProps {
 
 const CardStats: React.FC<CardStatsProps> = ({ value, label }) => {
   return (
-    <section className="bgFooter w-48 flex flex-col items-center rounded-lg py-8 lg:w-56 text-white">
+    <section className="bgFooter flex w-48 flex-col items-center rounded-lg py-8 text-white lg:w-56">
       <span className="colorPrimaryStack text-3xl font-bold">{value}</span>
       <span className="mt-2 text-lg">{label}</span>
     </section>

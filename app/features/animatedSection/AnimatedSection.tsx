@@ -7,8 +7,8 @@ interface AnimatedSectionProps {
 }
 
 const sectionVariants = {
-  hidden: { opacity: 0, y: 70 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  hidden: { opacity: 0, y: 150 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } },
 };
 
  function AnimatedSection ({ children, className }: AnimatedSectionProps) {

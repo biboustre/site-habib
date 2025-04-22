@@ -19,6 +19,7 @@ export default function NavHeader() {
       : [
           { href: "#services", name: "Services" },
           { href: "#a-propos", name: "A propos" },
+          { href: "/stackTechnic", name: "Portfolio" },
           { href: "#creations", name: "Créations" },
           { href: "#contact", name: "Contact" },
         ];

@@ -15,14 +15,16 @@ export default function ServiceCard({
 }: ServiceCardProps) {
   return (
     <section
-      className={`bgFooter flex w-full flex-col items-center justify-between gap-9 p-5 2xl:h-[700px] ${className}`}
+      className={`bgFooter flex w-full flex-col items-center justify-between gap-9 py-10 md:h-[500px] 2xl:h-[600px] ${className}`}
     >
-      <h1 className="white text-5xl md:text-6xl 2xl:text-8xl">{icon}</h1>
-      <h2 className="colorPrimaryStack text-center text-2xl font-bold md:text-3xl 2xl:text-5xl">
+      <h1 className="text-5xl text-slate-100 md:text-6xl 2xl:text-8xl ">
+        {icon}
+      </h1>
+      <h2 className="colorPrimaryStack max-w-[400px] text-center text-2xl font-bold tracking-wide md:text-3xl">
         {title}
       </h2>
-      <section className="flex flex-col items-center justify-center gap-3">
-        <p className="text-center text-base tracking-wider text-white sm:text-lg 2xl:text-3xl">
+      <section className="flex max-w-[400px] flex-col items-center justify-center gap-3">
+        <p className="text-center text-base tracking-wider text-slate-100 sm:text-lg 2xl:text-xl">
           {text}
         </p>
       </section>

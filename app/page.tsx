@@ -7,9 +7,9 @@ import BannerMain from "@/app/components/molecules/banner/BannerMain";
 import AboutSection from "./components/molecules/pageSection/aboutSection/AboutSection";
 import UserSelectionModal from "./features/userSelectionModal/User_Selection_Modal";
 import NosCreationSection from "./components/molecules/pageSection/NosCreationSection/NosCreationSection";
-import ServiceSection from "./components/molecules/pageSection/serviceSection/ServiceSection";
+import NousProposons from "./components/molecules/pageSection/ceQueNousProposons/NousProposons";
 import ContactSection from "./components/molecules/pageSection/contactSection/ContactSection";
-import EmploySection from "./components/molecules/pageSection/employSection/EmploySection";
+import EmploySection from "./components/molecules/pageSection/recruteurSection/RecruteurSection";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -46,7 +46,7 @@ export default function Home() {
         alt="photo de profil"
       />
       <AboutSection />
-      <ServiceSection />
+      <NousProposons />
       <NosCreationSection />
       <EmploySection />
       <ContactSection />

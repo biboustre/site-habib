@@ -1,44 +1,40 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import DuplicatedText from "@/app/components/atoms/duplicatedText/DuplicatedText";
-import BtnRounded from "@/app/components/atoms/button/BtnRounded";
-import CardStats from "@/app/components/molecules/cards/cardStats/CardStats";
 import { cardRecruteur } from "@/app/data/cardRecruteurData";
+import DuplicatedText from "../../../atoms/duplicatedText/DuplicatedText";
+import CardStats from "../../cards/cardStats/CardStats";
+import BtnRounded from "../../../atoms/button/BtnRounded";
 import AnimatedSection from "@/app/features/animatedSection/AnimatedSection";
-import { motion } from "framer-motion";
 
-export default function AboutSection() {
-  const itemVariants = {
-    hidden: { opacity: 0, y: 150 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } },
-  };
+const RecruteurSection: React.FC = () => {
+  
 
   // en faire un composant reutilisable !!!!!!!!!
   return (
     <AnimatedSection className="min-h-auto space-y-36">
-      <motion.section variants={itemVariants}>
+      <section>
         <DuplicatedText
-          className="mx-auto max-w-[1000px]  pt-11 md:pt-[55px]"
+          className="mt-10 pt-10 text-[35px] text-white sm:text-[65px]"
           duplicatedClassName="pt-10"
-          text="Nous créons et améliorons les produits Web et mobiles"
+          text="Vous êtes recruteur ?"
         />
-      </motion.section>
-      <motion.section
-        className="relative h-[550px] w-full"
-        variants={itemVariants}
+      </section>
+      <section
+        className="relative h-[550px]  w-full"
       >
         <Image
           src="/images/IMG-PAYSAGE-ENEIGER-2.webp"
           alt="photo de profil"
           fill
-          loading="lazy"
-          quality={100}
           className="object-cover"
+          quality={100}
+          loading="lazy"
         />
 
-        <motion.section
+        <section
           className="absolute inset-0 z-10 flex w-full flex-col justify-center gap-10 text-center"
-          variants={itemVariants}
         >
           <section className="space-y-10 pt-10 text-white">
             <h2 className="mx-auto max-w-[900px] text-2xl font-extrabold tracking-wide md:text-4xl">
@@ -56,27 +52,28 @@ export default function AboutSection() {
 
           <section className="flex justify-center md:space-x-10">
             <BtnRounded
-              className="bgPrimaryStack text-lg"
+              className="bgPrimaryStack text-sm"
               text="Contactez-moi"
               href="#contact"
             />
             <BtnRounded
-              className="bgPrimaryStack text-lg"
+              className="bgPrimaryStack text-sm"
               text="Portolio"
               href="/stackTechnic"
             />
           </section>
-        </motion.section>
+        </section>
 
-        <motion.section
+        <section
           className="absolute top-[-70px] hidden w-full gap-8 sm:flex md:justify-center"
-          variants={itemVariants}
         >
           {cardRecruteur.map((card, id) => (
             <CardStats key={id} value={card.value} label={card.label} />
           ))}
-        </motion.section>
-      </motion.section>
+        </section>
+      </section>
     </AnimatedSection>
   );
-}
+};
+
+export default RecruteurSection;

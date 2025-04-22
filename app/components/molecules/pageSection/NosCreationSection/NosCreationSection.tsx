@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 
 export default function NosCreationSection() {
   const itemVariants = {
-    hidden: { opacity: 0, y: 70 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.8 } },
+    hidden: { opacity: 0, y: 150 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } },
   };
   return (
     <AnimatedSection>
@@ -23,11 +23,11 @@ export default function NosCreationSection() {
           className="pt-3  text-[35px] text-white  sm:text-[65px]"
           text="Nos créations"
         />
-        <motion.section variants={itemVariants} className="flex flex-col gap-24 md:gap-40">
+        <motion.section variants={itemVariants} className="flex flex-col gap-24 md:gap-20">
           {cardNosCreation.map((card, index) => (
             <motion.section
             key={card.id} 
-            className="flex flex-col gap-24 md:gap-40"
+            className="flex flex-col gap-24 md:gap-20"
             variants={itemVariants}
           >
             <OurCreationCard

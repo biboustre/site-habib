@@ -9,17 +9,17 @@ interface DuplicatedTextProps {
 export default function DuplicatedText({
   text,
   className = "",
-  duplicatedClassName = "",
-}: DuplicatedTextProps) {
+}: // duplicatedClassName = "",
+DuplicatedTextProps) {
   return (
     <h1
-      className={`relative z-10 pt-1 text-center  text-[35px] font-bold text-white  sm:text-[65px] 2xl:text-7xl ${className}`}
+      className={`relative z-10 mx-auto  pt-1 text-center text-2xl font-bold text-white md:text-4xl 2xl:text-5xl ${className}`}
     >
       {text}
-      <span
+      {/* <span
         className={`absolute inset-0 -top-1 z-[-1] text-[93px] font-bold opacity-10 md:-top-12 md:text-[80px] ${duplicatedClassName}`}
         aria-hidden="true"
-      >{text}</span>
+      >{text}</span> */}
     </h1>
   );
 }
