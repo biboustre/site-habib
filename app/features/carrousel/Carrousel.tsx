@@ -1,10 +1,13 @@
-import React from "react";
+'use client';
+
+import React, { useState } from "react";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Link from "next/link";
 import TextDuCarrousel from "@/app/features/carrousel/TextDuCarrousel";
+import ModalProjet from "../modals/ModaleProjet";
 
 interface ImageData {
   src: string;
@@ -27,6 +30,19 @@ const Carousel: React.FC<CarouselProps> = ({
   className,
   children,
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalData, setModalData] = useState<ImageData | null>(null);
+
+  const handleImageClick = (image: ImageData) => {
+    setModalData(image);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setModalData(null);
+  };
+
   const defaultSettings = {
     dots: true,
     infinite: true,
@@ -52,7 +68,7 @@ const Carousel: React.FC<CarouselProps> = ({
 
   const mergedSettings = { ...defaultSettings, ...settings };
 
-   // Dupliquez les images pour simuler un défilement infini fluide
+  // Dupliquez les images pour simuler un défilement infini fluide
   //  const duplicatedImages = images ? [...images, ...images] : [];
 
   return (
