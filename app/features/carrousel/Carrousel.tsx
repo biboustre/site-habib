@@ -38,6 +38,7 @@ const Carousel: React.FC<CarouselProps> = ({
     arrows: false,
     centerMode: true,
     centerPadding: "30%",
+    // cssEase: "linear",
     responsive: [
       {
         breakpoint: 950,
@@ -51,12 +52,15 @@ const Carousel: React.FC<CarouselProps> = ({
 
   const mergedSettings = { ...defaultSettings, ...settings };
 
+   // Dupliquez les images pour simuler un défilement infini fluide
+  //  const duplicatedImages = images ? [...images, ...images] : [];
+
   return (
     <>
       <Slider {...mergedSettings}>
         {images &&
           images.map((image, index) => (
-            <section key={index} className="px-2 py-10">
+            <section key={index} className="">
               {image.src ? (
                 image.href ? (
                   <Link
@@ -97,11 +101,15 @@ const Carousel: React.FC<CarouselProps> = ({
       </Slider>
 
       <style jsx global>{`
-        .slick-center p {
+        .slick-center p,
+        .slick-center h2,
+        .slick-center h1 {
           opacity: 1 !important;
           transform: scale(1) !important;
         }
-        .slick-slide p {
+        .slick-slide:not(.slick-center) p,
+        .slick-slide:not(.slick-center) h2,
+        .slick-slide:not(.slick-center) h1 {
           opacity: 0.4;
           transform: scale(0.8);
         }
@@ -114,6 +122,11 @@ const Carousel: React.FC<CarouselProps> = ({
 
         .slick-slider {
           padding-bottom: 50px;
+        }
+
+        .slick-track {
+          display: flex !important;
+          gap: 60px; /* Ajoute un espacement entre les slides */
         }
 
         @media (max-width: 600px) {

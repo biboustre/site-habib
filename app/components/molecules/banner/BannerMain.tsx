@@ -20,15 +20,13 @@ export default function BannerMain({
           {title}
         </h1>
         {text && (
-          <h2
-            className="mb-16 text-center text-3xl font-semibold tracking-wider text-white md:text-start md:text-4xl lg:text-5xl 2xl:text-7xl"
-          >
+          <h2 className="mb-16 text-center text-3xl font-semibold tracking-wider text-white md:text-start md:text-4xl lg:text-5xl 2xl:text-7xl">
             {text}
           </h2>
         )}
         <BtnRounded
           href="#contact"
-          className="bgPrimaryStack mt-10 py-6 hover:bg-yellow-500"
+          className="bgPrimaryStack mt-10 py-6 opacity-80"
           text="Contactez-nous"
         />
       </section>

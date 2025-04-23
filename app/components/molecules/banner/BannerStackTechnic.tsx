@@ -15,7 +15,7 @@ export default function BannerStackTechnic() {
         <h1 className="text-center text-5xl font-bold md:text-start md:text-[66px]">
           Je suis{" "}
           <span className="colorPrimaryStack">
-            Habib <br /> Maamar
+            Habib <br /> de Web&apos;ibou
           </span>
         </h1>
         <p className="text-center text-3xl font-semibold tracking-wide md:text-start">

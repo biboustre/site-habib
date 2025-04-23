@@ -12,7 +12,7 @@ export default function Footer() {
     >
       <ContactForm />
 
-      <div className="grid w-full gap-10 text-lg md:grid-cols-2 md:text-xl lg:grid-cols-3 ">
+      <div className="grid w-full gap-10 md:text-lg md:grid-cols-2  lg:grid-cols-3 ">
         <FooterColumn
           title="À propos"
           content={
@@ -41,7 +41,7 @@ export default function Footer() {
       <div className="mx-auto py-20  text-gray-500">
         <p>
           Copyright © 2024 Tous droits réservés
-          <span className="text-red-500"> ♥ </span>MAAMAR BENHADJAR Habib
+          <span className="text-yellow-600"> ♥ </span>MAAMAR BENHADJAR Habib
         </p>
       </div>
     </footer>

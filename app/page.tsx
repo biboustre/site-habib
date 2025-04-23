@@ -3,13 +3,14 @@
 import React, { useEffect, useState } from "react";
 // import Head from "next/head";
 import Modal from "react-modal";
-import BannerMain from "@/app/components/molecules/banner/BannerMain";
+// import BannerMain from "@/app/components/molecules/banner/BannerMain";
 import AboutSection from "./components/molecules/pageSection/aboutSection/AboutSection";
 import UserSelectionModal from "./features/userSelectionModal/User_Selection_Modal";
 import NosCreationSection from "./components/molecules/pageSection/NosCreationSection/NosCreationSection";
 import NousProposons from "./components/molecules/pageSection/ceQueNousProposons/NousProposons";
 import ContactSection from "./components/molecules/pageSection/contactSection/ContactSection";
 import EmploySection from "./components/molecules/pageSection/recruteurSection/RecruteurSection";
+import BannerHomeLayout from "./components/molecules/banner/BannerHomeLayout";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -28,23 +29,8 @@ export default function Home() {
   };
 
   return (
-    <>      {/*  img banner à compresser et mettre au format webp*/}
-      <BannerMain
-        title={
-          <>
-            Web<span className="colorPrimaryStack">&apos;ibou</span>
-          </>
-        }
-        text={
-          <>
-            <span className="font-semibold">Solution<br /> <span className="font-extrabold">WEB</span> <br /></span>
-            <span className="colorPrimaryStack font-extrabold">&</span> <br />
-            <span className="font-extrabold">DESIGN</span>
-          </>
-        }
-        src="/images/IMG17.jpg"
-        alt="photo de profil"
-      />
+    <>
+    <BannerHomeLayout />
       <AboutSection />
       <NousProposons />
       <NosCreationSection />

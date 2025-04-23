@@ -1,7 +1,7 @@
 import React from "react";
 import CompetenceSection from "../components/molecules/pageSection/competenceSection/CompetenceSection";
 import BannerStackTechnic from "../components/molecules/banner/BannerStackTechnic";
-import PortfolioSection from "../components/molecules/pageSection/portfolioSection/PortfolioSection";
+import Projet from "../components/molecules/pageSection/projetSection/Projet";
 import ContactSection from "../components/molecules/pageSection/contactSection/ContactSection";
 import CvSection from "../components/molecules/pageSection/cvSection/CvSection";
 
@@ -11,7 +11,7 @@ export default function StackTechnic() {
     <section className="md:px-20 xl:px-40">
       <BannerStackTechnic />
       <CompetenceSection />
-      <PortfolioSection />
+      <Projet />
       <CvSection />
       <ContactSection />
     </section>

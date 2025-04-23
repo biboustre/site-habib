@@ -13,9 +13,10 @@ html {
 }
 
 body{
-  max-width: 1800px;
+  max-width: 1800px ;
   margin: auto;
 }
+
 
 @layer components {
   .underline-animation {
@@ -161,4 +162,12 @@ body{
       1px 0 6px rgba(255, 255, 255, 0.424),
       -1px 0 6px rgba(255, 255, 255, 0.424);
   }
+}
+
+
+/* Parralaxe  sans ralentissement ou effet */
+.parallaxe {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
