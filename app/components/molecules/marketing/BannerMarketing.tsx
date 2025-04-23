@@ -7,6 +7,7 @@ import CardStats from "../cards/cardStats/CardStats";
 interface BannerMarketingProps {
   title: (string | { text: string; className?: string })[];
   subtitle: string;
+  text: string;
   backgroundImage: string;
   buttons: { text: string; href: string }[];
   stats?: { value: string; label: string }[];
@@ -18,6 +19,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
   backgroundImage,
   buttons,
   stats,
+  text,
 }) => {
   return (
     <section className="min-h-auto space-y-36">
@@ -25,7 +27,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
         <DuplicatedText
           className="mx-auto max-w-[1000px] pt-11 md:pt-[55px]"
           duplicatedClassName="pt-10"
-          text="Nous créons et améliorons les produits Web et mobiles"
+          text={text}
         />
       </section>
 

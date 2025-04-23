@@ -19,7 +19,7 @@ export default function CardProjet({
   category,
   imageSrc,
   alt,
-  description,
+  // description,
   className,
   onClick, // Utilisation de la prop onClick
 }: CardProjet) {
@@ -59,7 +59,7 @@ export default function CardProjet({
       </section>
       <button
         onClick={onClick} // Déclenche la fonction onClick passée en prop
-        className="mt-4 w-full bg-gray-800/55 py-2 text-center text-white font-semibold hover:bg-slate-800"
+        className="mt-4 w-full bg-gray-800/55 py-2 text-center font-semibold text-white hover:bg-slate-800"
       >
         Voir plus
       </button>
