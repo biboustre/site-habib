@@ -14,7 +14,7 @@
     category: "APPLICATION WEB/MOBILE",
     description:
       "Application E-commerce de Vente de Véhicules et Matériel de Chantier. J'ai développé une application e-commerce dédiée à la vente de véhicules et de matériel de chantier. Elle permet aux utilisateurs de naviguer facilement parmi une large sélection d’engins, avec la possibilité d’acheter par marque et de choisir entre des modèles neufs ou d’occasion. Cette plateforme vise à simplifier le processus d’achat en ligne, en offrant des informations claires et un accès rapide aux produits recherchés.",
-    imageSrc: "/images/France-engin2.PNG",
+    imageSrc: "/images/france-engin.jpg",
     alt: "France Engin",
   },
   {

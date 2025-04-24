@@ -26,7 +26,6 @@ export default function NosCreationSection() {
   };
 
   const customSettings = {
-    dots: false,
     autoplaySpeed: 2500,
   };
 
@@ -66,6 +65,13 @@ export default function NosCreationSection() {
           description={modalData.description}
         />
       )}
+     {/* <style jsx global>{`
+        .slick-track {
+          display: flex !important;
+          justify-content: center;
+          gap: 0px; 
+        }
+      `}</style> */}
     </AnimatedSection>
   );
 }

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -28,26 +28,24 @@ const Carousel: React.FC<CarouselProps> = ({
   className,
   children,
 }) => {
-
-
   const defaultSettings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     centerMode: true,
-    centerPadding: "30%",
+    centerPadding: "22%",
     // cssEase: "linear",
     responsive: [
       {
         breakpoint: 950,
         settings: {
           slidesToShow: 1,
-          centerPadding: "0",
+          centerPadding: "19%",
         },
       },
     ],
@@ -129,7 +127,15 @@ const Carousel: React.FC<CarouselProps> = ({
 
         .slick-track {
           display: flex !important;
-          gap: 60px; /* Ajoute un espacement entre les slides */
+          justify-content: center;
+          gap: 60px;
+        }
+
+        .slick-slide {
+          display: flex !important;
+          justify-content: center;
+          align-items: center;
+          text-align: center; /* Assurez-vous que le contenu est centré */
         }
 
         @media (max-width: 600px) {

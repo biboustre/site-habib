@@ -15,7 +15,7 @@ export default function ServiceCard({
 }: ServiceCardProps) {
   return (
     <section
-      className={`bgFooter flex w-full flex-col items-center justify-between gap-9 py-10 md:h-[500px] 2xl:h-[600px] ${className}`}
+      className={`bgFooter flex size-auto flex-col items-center justify-between gap-9 rounded-xl px-2 py-10 sm:size-[550px] sm:rounded-full ${className}`}
     >
       <h1 className="text-5xl text-slate-100 md:text-6xl 2xl:text-8xl ">
         {icon}

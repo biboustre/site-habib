@@ -6,7 +6,7 @@ export default function AboutSection() {
   // en faire un composant reutilisable !!!!!!!!!
   return (
     <BannerMarketing
-      text="Nous créons et améliorons des applications web et mobiles"
+      text="Nous créons et améliorons des sites/apps web et mobiles"
       title={[
         "Vous avez un ",
         { text: "PROJET AMBITIEUX ?", className: "colorPrimaryStack" },

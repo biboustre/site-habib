@@ -16,7 +16,7 @@ function BannerHomeLayout() {
                 <span className="font-extrabold">DESIGN</span>
               </>
             }
-            src="/images/IMG17.jpg"
+            src="/images/photo_ordinateur_1.webp"
             alt="photo de profil"
             />
   )

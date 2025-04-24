@@ -11,6 +11,11 @@ export default function NousProposons() {
     hidden: { opacity: 0, y: 150 },
     visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } },
   };
+
+  const customSettings = {
+    autoplaySpeed: 2500,
+
+  };
   return (
     // j'ai mis en h-screen mais faut redisposter les elements
     <AnimatedSection>
@@ -27,7 +32,7 @@ export default function NousProposons() {
           className="flex flex-col gap-20  px-5 pb-20 text-justify text-lg font-semibold text-white lg:flex-row lg:gap-5  xl:px-20 "
           variants={itemVariants}
         > */}
-          <Carousel>
+          <Carousel settings={customSettings}>
             {cardService.map((description) => (
               <ServiceCard
                 key={description.id}

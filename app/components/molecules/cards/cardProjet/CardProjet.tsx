@@ -35,7 +35,7 @@ export default function CardProjet({
 
   return (
     <section
-      className={`relative cursor-pointer border ${className}`}
+      className={`relative w-[90vw] cursor-pointer border sm:h-[550px] sm:w-[480px] ${className}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -59,7 +59,7 @@ export default function CardProjet({
       </section>
       <button
         onClick={onClick} // Déclenche la fonction onClick passée en prop
-        className="mt-4 w-full bg-gray-800/55 py-2 text-center font-semibold text-white hover:bg-slate-800"
+        className="mt-4 w-full bg-slate-50 py-2 text-center font-semibold text-slate-800 transition duration-200 hover:bg-slate-800/50 hover:text-white"
       >
         Voir plus
       </button>
