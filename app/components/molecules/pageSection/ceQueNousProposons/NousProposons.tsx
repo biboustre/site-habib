@@ -32,7 +32,7 @@ export default function NousProposons() {
           className="flex flex-col gap-20  px-5 pb-20 text-justify text-lg font-semibold text-white lg:flex-row lg:gap-5  xl:px-20 "
           variants={itemVariants}
         > */}
-          <Carousel settings={customSettings}>
+          <Carousel settings={customSettings} classNameContainer="carousel-service">
             {cardService.map((description) => (
               <ServiceCard
                 key={description.id}
@@ -44,6 +44,11 @@ export default function NousProposons() {
           </Carousel>
         {/* </motion.section> */}
       </motion.section>
+      <style jsx global>{`
+        .carousel-service .slick-track {
+          padding-bottom: 60px !important;
+        }
+      `}</style>
     </AnimatedSection>
   );
 }

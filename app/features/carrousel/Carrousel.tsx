@@ -19,6 +19,7 @@ interface CarouselProps {
   settings?: Settings;
   className?: string;
   children?: React.ReactNode;
+  classNameContainer?: string; // Ajout de la prop classNameContainer
 }
 
 const Carousel: React.FC<CarouselProps> = ({
@@ -27,6 +28,7 @@ const Carousel: React.FC<CarouselProps> = ({
   texts,
   className,
   children,
+  classNameContainer, // Utilisation de la prop classNameContainer
 }) => {
   const defaultSettings = {
     dots: true,
@@ -38,14 +40,14 @@ const Carousel: React.FC<CarouselProps> = ({
     autoplaySpeed: 3000,
     arrows: false,
     centerMode: true,
-    centerPadding: "22%",
+    centerPadding: "25%",
     // cssEase: "linear",
     responsive: [
       {
         breakpoint: 950,
         settings: {
           slidesToShow: 1,
-          centerPadding: "19%",
+          centerPadding: "0",
         },
       },
     ],
@@ -58,7 +60,7 @@ const Carousel: React.FC<CarouselProps> = ({
 
   return (
     <>
-      <Slider {...mergedSettings}>
+      <Slider {...mergedSettings} className={classNameContainer}>
         {images &&
           images.map((image, index) => (
             <section key={index} className="">
@@ -122,14 +124,16 @@ const Carousel: React.FC<CarouselProps> = ({
         }
 
         .slick-slider {
-          padding-bottom: 50px;
+          padding-bottom: 0px;
         }
 
         .slick-track {
-          display: flex !important;
-          justify-content: center;
-          gap: 60px;
+          // display: flex !important;
+          // justify-content: center;
+          // gap: 60px;
         }
+
+        
 
         .slick-slide {
           display: flex !important;
@@ -149,6 +153,8 @@ const Carousel: React.FC<CarouselProps> = ({
             transform: scale(0.8);
           }
         }
+
+        
       `}</style>
     </>
   );

@@ -32,13 +32,11 @@ export default function BannerMain({
       </section>
       <section>
         <Image
-          className="h-[calc(100vh-6rem)] w-full"
+          className="h-[calc(100vh-6rem)] w-full object-cover"
           src={src}
           alt={alt}
           width={width}
-          height={height}
-          objectFit="cover"
-        />
+          height={height}        />
       </section>
     </section>
   );

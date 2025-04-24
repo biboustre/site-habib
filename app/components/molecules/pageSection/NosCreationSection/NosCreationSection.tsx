@@ -33,13 +33,13 @@ export default function NosCreationSection() {
     <AnimatedSection>
       <section
         id="creations"
-        className="bgFooter relative flex scroll-mt-[100px] flex-col gap-32 pb-40 pt-20"
+        className=" bgFooter relative flex scroll-mt-[100px] flex-col gap-32 pb-40 pt-20"
       >
         <DuplicatedText
           className="pt-3 text-[35px] text-white sm:text-[65px]"
           text="Nos créations"
         />
-        <Carousel settings={customSettings}>
+        <Carousel settings={customSettings} classNameContainer="nos-creation-carousel">
           {cardCreation.map((card) => (
             <CardProjet
               key={card.id}
@@ -65,11 +65,9 @@ export default function NosCreationSection() {
           description={modalData.description}
         />
       )}
-     {/* <style jsx global>{`
-        .slick-track {
-          display: flex !important;
-          justify-content: center;
-          gap: 0px; 
+      {/* <style jsx global>{`
+        .nos-creation-carousel .slick-track {
+          padding-bottom: 0px !important;
         }
       `}</style> */}
     </AnimatedSection>

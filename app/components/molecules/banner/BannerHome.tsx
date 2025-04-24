@@ -1,7 +1,7 @@
 import React from 'react'
 import BannerMain from './BannerMain'
 
-function BannerHomeLayout() {
+function BannerHome() {
   return (
     <BannerMain
             title={
@@ -22,4 +22,4 @@ function BannerHomeLayout() {
   )
 }
 
-export default BannerHomeLayout
+export default BannerHome

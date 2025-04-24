@@ -10,7 +10,7 @@ import NosCreationSection from "./components/molecules/pageSection/NosCreationSe
 import NousProposons from "./components/molecules/pageSection/ceQueNousProposons/NousProposons";
 import ContactSection from "./components/molecules/pageSection/contactSection/ContactSection";
 import EmploySection from "./components/molecules/pageSection/recruteurSection/RecruteurSection";
-import BannerHomeLayout from "./components/molecules/banner/BannerHomeLayout";
+import BannerHome from "./components/molecules/banner/BannerHome";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <>
-    <BannerHomeLayout />
+      <BannerHome />
       <AboutSection />
       <NousProposons />
       <NosCreationSection />
@@ -45,9 +45,8 @@ export default function Home() {
   );
 }
 
-
-
-{/* <Head>
+{
+  /* <Head>
         <title>Web&pos;ibou - Création de sites web et design graphique</title>
         <meta
           name="description"
@@ -85,4 +84,5 @@ export default function Home() {
             }),
           }}
         />
-      </Head> */}
+      </Head> */
+}

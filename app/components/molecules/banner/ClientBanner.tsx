@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import BannerHomeLayout from "@/app/components/molecules/banner/BannerHomeLayout";
+import BannerHomeLayout from "@/app/components/molecules/banner/BannerHome";
 import BannerStackTechnic from "@/app/components/molecules/banner/BannerStackTechnic";
 
 export default function ClientBanner() {

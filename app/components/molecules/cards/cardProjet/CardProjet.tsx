@@ -47,8 +47,9 @@ export default function CardProjet({
         <Image
           src={imageSrc}
           alt={alt}
-          layout="fill"
-          objectFit="cover"
+          fill          
+          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 480px"
+          className="object-cover"
           priority
           quality={100}
         />
