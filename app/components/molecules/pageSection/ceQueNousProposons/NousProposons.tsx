@@ -26,7 +26,7 @@ export default function NousProposons() {
       >
         <DuplicatedText
           text="Ce que nous proposons"
-          className="pt-3  text-[35px] text-white  sm:text-[65px]"
+          className="pt-3  text-[35px] text-white md:text-[55px]"
         />
         {/* <motion.section
           className="flex flex-col gap-20  px-5 pb-20 text-justify text-lg font-semibold text-white lg:flex-row lg:gap-5  xl:px-20 "

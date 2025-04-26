@@ -58,7 +58,7 @@ export default function CompetenceSection() {
     <AnimatedSection>
     <motion.section
       id="competences"
-      className="relative flex scroll-mt-[100px] flex-col gap-10 bg-black pb-36"
+      className="relative flex scroll-mt-[100px] flex-col gap-10 bg-black pb-36 md:px-20"
       variants={itemVariants}
     >
       <DuplicatedText

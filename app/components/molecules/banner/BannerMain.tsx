@@ -24,11 +24,13 @@ export default function BannerMain({
             {text}
           </h2>
         )}
-        <BtnRounded
-          href="#contact"
-          className="bgPrimaryStack mt-10 py-6 opacity-80"
-          text="Contactez-nous"
-        />
+        <section className="flex justify-center md:justify-start">
+          <BtnRounded
+            href="#contact"
+            className="bgPrimaryStack mt-10 py-6 text-center opacity-80"
+            text="Contactez-nous"
+          />
+        </section>
       </section>
       <section>
         <Image
@@ -36,7 +38,8 @@ export default function BannerMain({
           src={src}
           alt={alt}
           width={width}
-          height={height}        />
+          height={height}
+        />
       </section>
     </section>
   );

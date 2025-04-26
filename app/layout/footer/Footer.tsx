@@ -7,18 +7,23 @@ import SocialsLinks from "@/app/components/atoms/socials/socialsLinks/SocialsLin
 
 export default function Footer() {
   return (
-    <footer
-      className="flex scroll-mt-[100px] flex-col items-center gap-32 bg-black px-10 pt-40   "
-    >
+    <footer className="flex scroll-mt-[100px] flex-col items-center gap-32 bg-black md:px-2 lg:px-10 pt-40   ">
       <ContactForm />
 
-      <div className="grid w-full gap-10 md:text-lg md:grid-cols-2  lg:grid-cols-3 ">
+      <div className="grid w-full gap-10 md:grid-cols-2 md:text-lg  lg:grid-cols-3 ">
         <FooterColumn
           title="À propos"
           content={
             <>
               <p>
-              Nous sommes une équipe de développeurs passionnés, spécialisés dans la création de sites et d’applications web sur mesure. Notre mission : vous offrir des solutions digitales modernes et performantes, adaptées à vos besoins, tout en restant accessibles et compétitives. En alliant créativité et expertise technique, nous accompagnons nos clients dans la réalisation de leurs projets avec des prix attractifs et un service personnalisé.
+                Nous sommes une équipe de développeurs passionnés, spécialisés
+                dans la création de sites et d&apos;applications web sur mesure.
+                Notre mission : vous offrir des solutions digitales modernes et
+                performantes, adaptées à vos besoins, tout en restant
+                accessibles et compétitives. En alliant créativité et expertise
+                technique, nous accompagnons nos clients dans la réalisation de
+                leurs projets avec des prix attractifs et un service
+                personnalisé.
               </p>
               <SocialsLinks className="mt-4" />
             </>
@@ -28,10 +33,14 @@ export default function Footer() {
         <FooterColumn
           title="Services"
           links={[
-            "Conception de sites Web",
-            "Développement Web",
-            "Stratégie d'entreprise",
-            "Analyse des données",
+            "Développement Web/Mobiles",
+            "Développement d'applications",
+            "Conception de logos/Maquettes",
+            "Optimisation SEO",
+            "Optimisation de la performance",
+            "Intégration de systèmes de paiement",
+            "Solutions e-commerce",
+            "Création de sites vitrines",
             "Conception graphique",
           ]}
         />

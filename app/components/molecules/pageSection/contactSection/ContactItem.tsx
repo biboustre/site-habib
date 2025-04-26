@@ -17,7 +17,7 @@ export default function ContactItem({
   const bgIcon = pathname === "/" ? "bgFooter" : "bg-gray-800";
 
   return (
-    <section className="flex w-32 flex-col items-center text-center">
+    <section className="flex w-32 flex-col items-center text-center transform transition-all duration-300 hover:scale-125">
       <section className={`colorPrimaryStack mb-4 rounded-full p-10 text-3xl ${bgIcon}`}>
         {icon}
       </section>

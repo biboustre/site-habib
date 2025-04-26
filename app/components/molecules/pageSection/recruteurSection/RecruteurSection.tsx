@@ -19,7 +19,8 @@ const RecruteurSection: React.FC = () => {
         { text: "contacter", className: "colorPrimaryStack" },
         " pour discuter de vos besoins.",
       ]}
-      subtitle="Notre mission est de vous aider à développer des outils performants, parfaitement adaptés à vos besoins, et de vous accompagner vers la réussite de vos projets web et mobile."
+      subtitle="Je suis à l'écoute de toutes propositions et je serais ravi d'échanger avec vous. 
+      Je suis disponible pour un entretien afin de discuter de mes compétences et de la manière dont je peux contribuer à votre équipe."
       backgroundImage="/images/IMG-PAYSAGE-ENEIGER-2.webp"
       buttons={[
         { text: "Contactez-moi", href: "#contact" },

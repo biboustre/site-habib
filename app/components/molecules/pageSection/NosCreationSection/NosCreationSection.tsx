@@ -8,7 +8,7 @@ import cardCreation from "@/app/data/cardCreationData";
 import CardProjet from "../../cards/cardProjet/CardProjet";
 import ModalProjet from "@/app/features/modals/ModaleProjet";
 
-export default function NosCreationSection() {
+export default function NosCreationSection({className}: { className?: string }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState<{
     title?: string;
@@ -33,7 +33,7 @@ export default function NosCreationSection() {
     <AnimatedSection>
       <section
         id="creations"
-        className=" bgFooter relative flex scroll-mt-[100px] flex-col gap-32 pb-40 pt-20"
+        className={`bgFooter relative flex scroll-mt-[100px] flex-col gap-32 pb-40 pt-20 ${className}`}
       >
         <DuplicatedText
           className="pt-3 text-[35px] text-white sm:text-[65px]"
@@ -47,6 +47,7 @@ export default function NosCreationSection() {
               title={card.title}
               category={card.category}
               imageSrc={card.imageSrc}
+              videoSrc={card.videoSrc}
               description={card.description}
               alt={card.description}
               className="border-none"

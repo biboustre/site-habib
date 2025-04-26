@@ -4,14 +4,15 @@ import BannerStackTechnic from "../components/molecules/banner/BannerStackTechni
 import Projet from "../components/molecules/pageSection/projetSection/Projet";
 import ContactSection from "../components/molecules/pageSection/contactSection/ContactSection";
 import CvSection from "../components/molecules/pageSection/cvSection/CvSection";
+import NosCreationSection from "../components/molecules/pageSection/NosCreationSection/NosCreationSection";
 
 export default function StackTechnic() {
   return (
     <>
-    <section className="md:px-20 xl:px-40">
+    <section className=" 2xl:px-40">
       <BannerStackTechnic />
       <CompetenceSection />
-      <Projet />
+      <NosCreationSection className="bg-black" />
       <CvSection />
       <ContactSection />
     </section>

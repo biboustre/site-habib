@@ -8,7 +8,8 @@ interface CardProjet {
   title?: string;
   category: string;
   description?: string;
-  imageSrc: string;
+  imageSrc?: string;
+  videoSrc?: string; // Ajout de la prop videoSrc
   alt: string;
   className?: string;
   onClick?: () => void; // Ajout de la prop onClick
@@ -18,6 +19,7 @@ export default function CardProjet({
   title,
   category,
   imageSrc,
+  videoSrc, // Utilisation de la prop videoSrc
   alt,
   // description,
   className,
@@ -44,15 +46,34 @@ export default function CardProjet({
           ${isHovered ? "opacity-90" : "opacity-100"}
           `}
       >
-        <Image
-          src={imageSrc}
-          alt={alt}
-          fill          
-          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 480px"
-          className="object-cover"
-          priority
-          quality={100}
-        />
+       
+        {/* Image ou vidéo de fond */}
+      {videoSrc ? (
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="size-full object-cover"
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+      ) : (
+        <figure>
+          {/* Image de fond desktop */}
+          {imageSrc && (
+            <Image
+              src={imageSrc}
+              alt={alt}
+              fill
+              quality={100}
+              className={`object-cover`}
+              priority
+            />
+          )}
+          {/* Image de fond mobile */}
+        </figure>
+      )}
         <aside className="absolute inset-x-0 bottom-0 z-20 flex h-[190px] flex-col justify-center gap-5 bg-gray-800/55 pl-8">
           <p className="text-lg font-bold text-white">{category}</p>
           <h2 className="text-4xl font-bold text-white">{title}</h2>

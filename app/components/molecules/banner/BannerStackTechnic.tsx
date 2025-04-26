@@ -10,7 +10,7 @@ export default function BannerStackTechnic() {
   ];
 
   return (
-    <section className="flex h-[calc(100vh-6rem)] flex-col items-center justify-center gap-20 bg-black text-white md:items-start md:justify-start md:gap-14 md:pt-32">
+    <section className="flex h-[calc(100vh-6rem)] flex-col items-center justify-center gap-20 bg-black text-white md:items-start md:justify-start md:px-20 lg:px-36 md:gap-14 md:pt-32">
       <section className="space-y-10">
         <h1 className="text-center text-5xl font-bold md:text-start md:text-[66px]">
           Je suis{" "}

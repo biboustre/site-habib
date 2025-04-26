@@ -22,7 +22,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
   text,
 }) => {
   return (
-    <section className="min-h-auto space-y-36">
+    <section className="h-auto space-y-36">
       <section>
         <DuplicatedText
           className="mx-auto max-w-[1000px] pt-11 md:pt-[55px]"
@@ -33,10 +33,10 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
 
       {/* Section avec l'image de fond et le contenu */}
       <section
-        className="parallaxe"
+        className="parallaxe h-auto"
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       >
-        <section className="relative h-[550px] w-full">
+        <section className="relative h-screen md:h-[550px] w-full">
           {/* Section des statistiques */}
           {stats && (
             <section className="absolute top-[-68px] hidden w-full gap-8 sm:flex md:justify-center">
@@ -46,7 +46,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
             </section>
           )}
           <section className="absolute inset-0 z-10 flex w-full flex-col justify-center gap-10 text-center">
-            <section className="space-y-10 pt-10 text-white">
+            <section className="space-y-10 md:pt-10 text-white">
               <h2 className="mx-auto max-w-[800px] text-2xl font-extrabold tracking-wide md:text-3xl">
                 {title.map((part, index) =>
                   typeof part === "string" ? (
