@@ -142,17 +142,26 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
         ))}
       </section>
 
-      {/* Figure avec l'image */}
       <figure className="w-full lg:flex lg:w-1/2 lg:items-center lg:justify-center">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          width={550}
-          height={500}
-          quality={100}
-          loading="lazy"
-          className="h-[450px] w-full cursor-default overflow-hidden rounded-lg shadow-lg shadow-slate-700 transition duration-300 hover:scale-105"
-        />
+        <motion.div
+          whileHover={{ rotate: 720 }} // 3 tours rapides (360° x 3)
+          whileTap={{ rotate: -720 }} // Retour en sens inverse
+          transition={{
+            duration: 0.2, // Durée de l'animation
+            ease: "easeInOut", // Transition fluide
+          }}
+          className="h-[450px] w-full cursor-default overflow-hidden rounded-lg shadow-lg shadow-slate-700 transition duration-200"
+        >
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            width={550}
+            height={500}
+            quality={100}
+            loading="lazy"
+            className="size-full object-cover"
+          />
+        </motion.div>
       </figure>
     </section>
   );

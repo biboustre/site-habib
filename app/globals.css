@@ -216,7 +216,7 @@ body {
 }
 
 .animate-background {
-  animation: background-color-animation 3s infinite ;
+  animation: background-color-animation 3s infinite;
 }
 
 /* Animation ultra fluide de défilement de couleur de fond */
@@ -232,18 +232,17 @@ body {
 .animate-background-scroll {
   background: linear-gradient(
     90deg,
-    #df9f3e , /* Orange très sombre */
-    #c0764b, /* Orange foncé */
-    #ff7e5f, /* Orange doux */
-    #ffa94d, /* Orange clair */
-    #ff7e5f, /* Retour à l'orange doux */
-    #c0764b, /* Retour à l'orange foncé */
-    #df9f3e /* Retour à l'orange très sombre */
+    #df9f3e,
+    /* Orange très sombre */ #c0764b,
+    /* Orange foncé */ #ff7e5f,
+    /* Orange doux */ #ffa94d,
+    /* Orange clair */ #ff7e5f,
+    /* Retour à l'orange doux */ #c0764b,
+    /* Retour à l'orange foncé */ #df9f3e /* Retour à l'orange très sombre */
   );
   background-size: 400% 400%; /* Taille étendue pour un défilement fluide */
   animation: ultra-smooth-scroll 3s linear infinite; /* Animation fluide et continue */
 }
-
 
 /* Animation de défilement de pointillés effet gravier */
 @keyframes gravel-scroll {
@@ -257,14 +256,15 @@ body {
 
 .animate-gravel {
   background-color: #0a0a0a; /* Fond gris sombre */
-  background-image: 
-    radial-gradient(circle, rgba(255, 255, 255, 0.42) 1px, transparent 1px),
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.42) 1px,
+      transparent 1px
+    ),
     linear-gradient(90deg, #000000, #1a1a1a); /* Dégradé gris sombre */
   background-size: 30px 30px, 100% 100%; /* Taille des pointillés et du dégradé */
   animation: gravel-scroll 8s linear infinite; /* Animation fluide */
 }
-
-
 
 /* Animation de dégradé fluide multicolore */
 @keyframes gradient-flow {
@@ -282,17 +282,43 @@ body {
 .animate-gradient {
   background: linear-gradient(
     90deg,
-    #ff9a9e, /* Rose clair */
-    #fad0c4, /* Rose pâle */
-    #fbc2eb, /* Violet clair */
-    #a18cd1, /* Violet doux */
-    #fbc2eb, /* Retour au violet clair */
-    #fad0c4, /* Retour au rose pâle */
-    #ff9a9e /* Retour au rose clair */
+    #ff9a9e,
+    /* Rose clair */ #fad0c4,
+    /* Rose pâle */ #fbc2eb,
+    /* Violet clair */ #a18cd1,
+    /* Violet doux */ #fbc2eb,
+    /* Retour au violet clair */ #fad0c4,
+    /* Retour au rose pâle */ #ff9a9e /* Retour au rose clair */
   );
   background-size: 200% 200%; /* Taille étendue pour un défilement fluide */
   animation: gradient-flow 10s ease infinite; /* Animation fluide et continue */
 }
 
+/* Keyframes pour l'animation de texte des cards service graphique */
+@keyframes text-gradient-flow {
+  /* 0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  } */
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
 
-/* border dashed custom */
+/* Classe pour le texte animé */
+.animate-text-gradient {
+  background: linear-gradient(270deg, #ff7e5f, #942fb9, #ff7e5f);
+
+  background-size: 200% 200%; /* Étend la taille du dégradé */
+  -webkit-background-clip: text; /* Applique le dégradé uniquement au texte */
+  -webkit-text-fill-color: transparent; /* Rend le fond du texte transparent */
+  animation: text-gradient-flow 3s ease infinite; /* Animation fluide et infinie */
+}
