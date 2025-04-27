@@ -21,12 +21,12 @@ const services = [
 
 function ServicesGraphique() {
   return (
-    <section className="flex h-auto flex-col items-center justify-center gap-14 bg-neutral-950 px-2 py-32 text-white sm:px-3 md:px-0 lg:flex-row lg:items-stretch">
+    <section className="bg-gblack flex h-auto flex-col items-center justify-center gap-14 px-2 py-32 text-white sm:px-3 md:px-0 lg:flex-row lg:items-stretch">
       {/* Conteneur gauche (Texte + Cartes) */}
-      <section className="flex flex-col gap-24 lg:w-2/3">
+      <section className="flex flex-col gap-16 lg:w-2/3">
         {/* Texte de la section */}
-        <section className="btn-gradient flex cursor-default items-center justify-center rounded-lg shadow-2xl shadow-yellow-900  transition duration-300 hover:scale-95 md:justify-start ">
-          <h1 className="colorPrimaryStack max-w-[1200px] p-10 text-center text-2xl font-bold hover:text-white lg:text-start xl:text-3xl 2xl:py-16">
+        <section className="btn-gradient flex cursor-default items-center justify-center rounded-lg bg-neutral-900/30 shadow-lg shadow-yellow-900  transition duration-300 hover:scale-95 md:justify-start ">
+          <h1 className="colorPrimaryStack max-w-[1200px] p-10 text-center text-2xl font-bold hover:text-white lg:text-start xl:text-[25px] 2xl:py-16 2xl:text-3xl">
             Nous proposons une gamme de services de design graphique. Que ce
             soit pour la création de flyers, logos, ou de cartes de restaurant.
           </h1>
@@ -37,7 +37,7 @@ function ServicesGraphique() {
           {services.map((service, index) => (
             <section
               key={index}
-              className="btn-gradient flex h-[250px] max-h-[350px] w-full max-w-[500px] basis-full  cursor-default flex-col gap-10 overflow-hidden rounded-3xl bg-neutral-900/30   p-5 shadow-lg  shadow-yellow-900 duration-300 hover:scale-95 md:min-h-[350px] md:basis-1/3 lg:size-[20vw]"
+              className="btn-gradient flex h-[250px] max-h-[350px] w-full max-w-[500px] basis-full  cursor-default flex-col gap-10 overflow-hidden rounded-3xl bg-neutral-900/30   p-5 shadow-sm  shadow-yellow-900 duration-300 hover:scale-95 md:min-h-[350px] md:basis-1/3 lg:size-[20vw]"
             >
               <h2 className="colorPrimaryStack text-xl font-bold md:text-2xl">
                 {service.title}

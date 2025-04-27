@@ -12,7 +12,7 @@ export default function BannerMain({
   height = 300,
 }: BannerMainProps) {
   return (
-    <section id="top" className="relative bg-slate-50 ">
+    <section id="top" className="relative bg-black">
       <section
         className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:left-96 2xl:left-[700px]`}
       >

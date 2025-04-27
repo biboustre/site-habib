@@ -22,7 +22,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
   text,
 }) => {
   return (
-    <section className="h-auto space-y-36">
+    <section className="h-auto space-y-36 bg-black">
       <section>
         <DuplicatedText
           className="mx-auto max-w-[1000px] pt-11 md:pt-[55px]"

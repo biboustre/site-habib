@@ -21,7 +21,7 @@ export default function NousProposons() {
     <AnimatedSection>
       <motion.section
         id="services"
-        className="flex  scroll-mt-[100px] flex-col gap-20 bg-black pb-32 pt-20 2xl:h-screen 2xl:gap-44"
+        className="flex  scroll-mt-[100px] flex-col gap-20 bg-gradient-to-b from-black via-gray-800 to-black pb-32 pt-20 2xl:h-screen 2xl:gap-44"
         variants={itemVariants}
       >
         <DuplicatedText

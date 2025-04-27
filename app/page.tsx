@@ -12,6 +12,7 @@ import ContactSection from "./components/molecules/pageSection/contactSection/Co
 import EmploySection from "./components/molecules/pageSection/recruteurSection/RecruteurSection";
 import BannerHome from "./components/molecules/banner/BannerHome";
 import ServicesGraphique from "./components/organism/serviceGraphique/ServicesGraphique";
+import ServicesDeveloppement from "./components/organism/serviceDeveloppement/ServicesDeveloppement";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -35,6 +36,7 @@ export default function Home() {
       <AboutSection />
       <NousProposons />
       <ServicesGraphique />
+      <ServicesDeveloppement />
       <NosCreationSection />
       <EmploySection />
       <ContactSection />
