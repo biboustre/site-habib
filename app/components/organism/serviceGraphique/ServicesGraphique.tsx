@@ -25,7 +25,7 @@ function ServicesGraphique() {
       {/* Conteneur gauche (Texte + Cartes) */}
       <section className="flex flex-col gap-16 lg:w-2/3">
         {/* Texte de la section */}
-        <section className="btn-gradient flex cursor-default items-center justify-center rounded-lg bg-neutral-900/30 shadow-lg shadow-yellow-900  transition duration-300 hover:scale-95 md:justify-start ">
+        <section className="btn-gradient flex cursor-default items-center justify-center rounded-lg transition duration-300 hover:scale-95 md:justify-start ">
           <h1 className="colorPrimaryStack max-w-[1200px] p-10 text-center text-2xl font-bold hover:text-white lg:text-start xl:text-[25px] 2xl:py-16 2xl:text-3xl">
             Nous proposons une gamme de services de design graphique. Que ce
             soit pour la création de flyers, logos, ou de cartes de restaurant.

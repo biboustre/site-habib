@@ -36,17 +36,17 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
         className="parallaxe h-auto"
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       >
-        <section className="relative h-screen md:h-[550px] w-full">
+        <section className="relative h-screen w-full md:h-[550px]">
           {/* Section des statistiques */}
           {stats && (
-            <section className="absolute top-[-68px] hidden w-full gap-8 sm:flex md:justify-center">
+            <section className="absolute top-[-68px] hidden w-full gap-8 sm:flex md:justify-center ">
               {stats.map((stat, index) => (
                 <CardStats key={index} value={stat.value} label={stat.label} />
               ))}
             </section>
           )}
           <section className="absolute inset-0 z-10 flex w-full flex-col justify-center gap-10 text-center">
-            <section className="space-y-10 md:pt-10 text-white">
+            <section className="space-y-10 text-white md:pt-10">
               <h2 className="mx-auto max-w-[800px] text-2xl font-extrabold tracking-wide md:text-3xl">
                 {title.map((part, index) =>
                   typeof part === "string" ? (

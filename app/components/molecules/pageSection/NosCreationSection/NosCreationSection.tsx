@@ -37,7 +37,7 @@ export default function NosCreationSection({
     <AnimatedSection>
       <section
         id="creations"
-        className={`relative flex scroll-mt-[100px] flex-col gap-32 bg-gradient-to-b from-black via-gray-800 to-black pb-40 pt-20 ${className}`}
+        className={`relative flex scroll-mt-[100px] flex-col gap-32 bg-gradient-to-b from-black via-gray-900 to-black pb-40 pt-20 ${className}`}
       >
         <DuplicatedText
           className="pt-3 text-[35px] text-white sm:text-[65px]"
