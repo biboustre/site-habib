@@ -28,6 +28,12 @@ export default function CardProjet({
 }: CardProjet) {
   const [isFlipped, setIsFlipped] = useState<boolean>(false); // État pour gérer la rotation
 
+  // Fonction pour gérer le clic (utile pour les écrans tactiles)
+  const handleCardClick = () => {
+    setIsFlipped((prev) => !prev); // Inverse l'état actuel
+  };
+
+
   return (
     <section
       className={`relative mb-24 h-auto w-[90vw] cursor-pointer sm:w-[480px] 2xl:w-[600px] ${className}`}
@@ -39,6 +45,7 @@ export default function CardProjet({
         }}
         onMouseEnter={() => setIsFlipped(true)} // Retourne la carte au survol
         onMouseLeave={() => setIsFlipped(false)} // Remet la carte à l'état initial
+        onClick={handleCardClick} // Gère le clic pour les écrans tactiles
       >
         {/* Conteneur des deux faces */}
         <motion.div

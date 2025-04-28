@@ -4,6 +4,11 @@ import React, { useState } from "react";
 export const CardsServiceGraphique = ({ service }: { service: { title: string; description:string };
   }) => {
     const [isFlipped, setIsFlipped] = useState<boolean>(false); // État pour gérer la rotation
+
+    // Fonction pour gérer le clic (utile pour les écrans tactiles)
+  const handleCardClick = () => {
+    setIsFlipped((prev) => !prev); // Inverse l'état actuel
+  };
   
     return (
       <div
@@ -14,6 +19,7 @@ export const CardsServiceGraphique = ({ service }: { service: { title: string; d
         }}
         onMouseEnter={() => setIsFlipped(true)} // Retourne la carte au survol
         onMouseLeave={() => setIsFlipped(false)} // Remet la carte à l'état initial
+        onClick={handleCardClick} // Gère le clic pour les écrans tactiles
       >
         {/* Conteneur des deux faces */}
         <motion.div
@@ -31,7 +37,7 @@ export const CardsServiceGraphique = ({ service }: { service: { title: string; d
               backfaceVisibility: "hidden", // Cache la face arrière
             }}
           >
-            SURVOLEZ-MOI !!
+            SURVOLEZ-MOI !! <br /> OU <br /> CLIQUEZ !!
           </div>
   
           {/* Face arrière */}

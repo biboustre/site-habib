@@ -38,13 +38,21 @@ const Carousel: React.FC<CarouselProps> = ({
     slidesToScroll: 1,
     // autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false,
     centerMode: true,
     centerPadding: "25%",
     // cssEase: "linear",
+    arrows: false,
     responsive: [
       {
-        breakpoint: 950,
+        breakpoint: 1050,
+        settings: {
+          // slidesToShow: 1,
+          // centerPadding: "0",
+          centerPadding: "15%",
+        },
+      },
+      {
+        breakpoint: 958,
         settings: {
           slidesToShow: 1,
           centerPadding: "0",
@@ -133,8 +141,6 @@ const Carousel: React.FC<CarouselProps> = ({
           // gap: 60px;
         }
 
-        
-
         .slick-slide {
           display: flex !important;
           justify-content: center;
@@ -153,8 +159,6 @@ const Carousel: React.FC<CarouselProps> = ({
             transform: scale(0.8);
           }
         }
-
-        
       `}</style>
     </>
   );
