@@ -21,7 +21,7 @@ export default function ContactSection() {
     <AnimatedSection>
     <motion.section
       id="contact"
-      className="flex scroll-mt-[100px] flex-col items-center gap-16 bg-black text-white sm:pt-16 "
+      className="flex scroll-mt-[100px] flex-col items-center gap-16 text-white sm:pt-16 "
       variants={itemVariants}
     >
       <motion.section className="mb-12 text-center"

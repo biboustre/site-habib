@@ -1,5 +1,6 @@
 import React from "react";
-import ServiceSection from "./ServiceSection";
+import ChildServiceDeveloppement from "./ChildServiceDeveloppement";
+import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 
 const services = [
   {
@@ -36,18 +37,16 @@ const services = [
 
 function ServicesDeveloppement() {
   return (
-    <section className="animate-gravel  parallaxe relative flex h-auto flex-col items-center justify-center gap-52 py-32 text-white sm:px-0 lg:px-10">
-      {/* Dégradé pointillé animé */}
-      {/* <div className="animate-dots absolute inset-0"></div> */}
-      {/* Première section */}
-      <ServiceSection
+    <section className="animate-gravel  parallaxe relative flex h-auto flex-col items-center justify-center gap-32 py-20 text-white sm:px-0 lg:px-10">
+      <TitleAnimeGradient title="Développement sur Mesure : Sites Web, Applications Web et Mobiles" className="text-center" />
+
+      <ChildServiceDeveloppement
         services={services.slice(0, 3)} // Mapper les services de l'index 0 à 2
         imageSrc="/images/pexel5.webp"
         imageAlt="Développement"
       />
 
-      {/* Deuxième section */}
-      <ServiceSection
+      <ChildServiceDeveloppement
         className="md:flex-row-reverse"
         services={services.slice(3)} // Mapper les services de l'index 3 à la fin
         justifyLogic={(index) =>

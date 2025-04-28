@@ -67,7 +67,7 @@ export default function RootLayout({
           }}
         />
       </Head>
-      <body className="flex h-full flex-col  bg-black">
+      <body className="flex h-full flex-col  bg-neutral-950 ">
         <ClientHeader />
         <main className="mt-[90px]">{children}</main>
         <Footer />

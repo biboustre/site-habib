@@ -96,35 +96,6 @@ body {
 
   .bgPrimary {
     background-color: #ffbd39;
-    /* background: #23074d;
-    background: -webkit-linear-gradient(to right, #cc5333, #23074d);
-    background: linear-gradient(to right, #cc5333, #23074d); */
-    /* background: #0f0c29; 
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
-    /* background: #4b6cb7;
-    background: -webkit-linear-gradient(to top, #182848, #4b6cb7);
-    background: linear-gradient(to top, #182848, #4b6cb7); */
-    /* background: rgb(2, 0, 36);
-    background: -moz-linear-gradient(
-      14deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(0, 35, 90, 1) 51%,
-      rgba(0, 212, 255, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      14deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(0, 35, 90, 1) 51%,
-      rgba(0, 212, 255, 1) 100%
-    );
-    background: linear-gradient(
-      14deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(0, 35, 90, 1) 51%,
-      rgba(0, 212, 255, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1); */
   }
 
   .bgHamburger {
@@ -233,15 +204,15 @@ body {
   background: linear-gradient(
     90deg,
     #df9f3e,
-    /* Orange très sombre */ #c0764b,
-    /* Orange foncé */ #ff7e5f,
-    /* Orange doux */ #ffa94d,
-    /* Orange clair */ #ff7e5f,
-    /* Retour à l'orange doux */ #c0764b,
-    /* Retour à l'orange foncé */ #df9f3e /* Retour à l'orange très sombre */
+     #c0764b,
+     #ff7e5f,
+     #ffa94d,
+     #ff7e5f,
+     #c0764b,
+     #df9f3e 
   );
-  background-size: 400% 400%; /* Taille étendue pour un défilement fluide */
-  animation: ultra-smooth-scroll 3s linear infinite; /* Animation fluide et continue */
+  background-size: 400% 400%; 
+  animation: ultra-smooth-scroll 3s linear infinite; 
 }
 
 /* Animation de défilement de pointillés effet gravier */
@@ -255,15 +226,15 @@ body {
 }
 
 .animate-gravel {
-  background-color: #0a0a0a; /* Fond gris sombre */
+  background-color: #0a0a0a; 
   background-image: radial-gradient(
       circle,
-      rgba(255, 255, 255, 0.42) 1px,
+      rgba(189, 119, 5, 0.42) 1px,
       transparent 1px
     ),
-    linear-gradient(90deg, #000000, #1a1a1a); /* Dégradé gris sombre */
-  background-size: 30px 30px, 100% 100%; /* Taille des pointillés et du dégradé */
-  animation: gravel-scroll 8s linear infinite; /* Animation fluide */
+    linear-gradient(90deg, #000000, #1a1a1a); 
+  background-size: 30px 30px, 100% 100%; 
+  animation: gravel-scroll 8s linear infinite; 
 }
 
 /* Animation de dégradé fluide multicolore */
@@ -288,10 +259,10 @@ body {
     /* Violet clair */ #a18cd1,
     /* Violet doux */ #fbc2eb,
     /* Retour au violet clair */ #fad0c4,
-    /* Retour au rose pâle */ #ff9a9e /* Retour au rose clair */
+    /* Retour au rose pâle */ #ff9a9e 
   );
   background-size: 200% 200%; /* Taille étendue pour un défilement fluide */
-  animation: gradient-flow 10s ease infinite; /* Animation fluide et continue */
+  animation: gradient-flow 10s ease infinite; 
 }
 
 /* Keyframes pour l'animation de texte des cards service graphique */
@@ -318,7 +289,27 @@ body {
   background: linear-gradient(270deg, #ff7e5f, #942fb9, #ff7e5f);
 
   background-size: 200% 200%; /* Étend la taille du dégradé */
-  -webkit-background-clip: text; /* Applique le dégradé uniquement au texte */
+  background-clip: text; /* Applique le dégradé uniquement au texte */
   -webkit-text-fill-color: transparent; /* Rend le fond du texte transparent */
   animation: text-gradient-flow 3s ease infinite; /* Animation fluide et infinie */
+}
+
+.hover-text-white:hover {
+  /* -webkit-background-clip: unset; */
+  -webkit-text-fill-color: white;
+}
+
+
+
+
+
+.animate-bg-gradient {
+  background: linear-gradient(270deg, #ff7e5f, #942fb9, #ff7e5f);
+
+  background-size: 800% 800%; /* Étend la taille du dégradé */
+  animation: text-gradient-flow 3s ease-in infinite; /* Animation fluide et infinie */
+}
+
+.hover-bg-white:hover {
+  background: white;
 }

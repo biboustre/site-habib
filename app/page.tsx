@@ -5,14 +5,14 @@ import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 // import BannerMain from "@/app/components/molecules/banner/BannerMain";
 import AboutSection from "./components/molecules/pageSection/aboutSection/AboutSection";
-import UserSelectionModal from "./features/userSelectionModal/User_Selection_Modal";
+// import UserSelectionModal from "./features/userSelectionModal/User_Selection_Modal";
 import NosCreationSection from "./components/molecules/pageSection/NosCreationSection/NosCreationSection";
 import NousProposons from "./components/molecules/pageSection/ceQueNousProposons/NousProposons";
 import ContactSection from "./components/molecules/pageSection/contactSection/ContactSection";
 import EmploySection from "./components/molecules/pageSection/recruteurSection/RecruteurSection";
 import BannerHome from "./components/molecules/banner/BannerHome";
-import ServicesGraphique from "./components/organism/serviceGraphique/ServicesGraphique";
-import ServicesDeveloppement from "./components/organism/serviceDeveloppement/ServicesDeveloppement";
+import SectionServicesGraphique from "./components/organism/sectionsSercvices/serviceGraphique/SectionServicesGraphique";
+import SectionServicesDeveloppement from "./components/organism/sectionsSercvices/serviceDeveloppement/ServicesDeveloppement";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -35,16 +35,16 @@ export default function Home() {
       <BannerHome />
       <AboutSection />
       <NousProposons />
-      <ServicesGraphique />
-      <ServicesDeveloppement />
+      <SectionServicesGraphique />
+      <SectionServicesDeveloppement />
       <NosCreationSection />
       <EmploySection />
       <ContactSection />
-      <UserSelectionModal
+      {/* <UserSelectionModal
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
         onClientClick={handleClientClick}
-      />
+      /> */}
     </>
   );
 }

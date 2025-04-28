@@ -34,7 +34,7 @@ const ModalProjet: React.FC<ModalProps> = ({
           ✕
         </button>
         <h2 className="mb-4 text-center text-2xl font-bold">{title}</h2>
-        <p className="text-gray-700 text-center">{description}</p>
+        <p className="text-center text-gray-700">{description}</p>
       </div>
     </div>
   );

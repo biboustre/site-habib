@@ -7,7 +7,7 @@ import SocialsLinks from "@/app/components/atoms/socials/socialsLinks/SocialsLin
 
 export default function Footer() {
   return (
-    <footer className="flex scroll-mt-[100px] flex-col items-center gap-32 bg-black md:px-2 lg:px-10 pt-40   ">
+    <footer className="flex scroll-mt-[100px] flex-col items-center gap-32  md:px-2 lg:px-10 pt-40   ">
       <ContactForm />
 
       <div className="grid w-full gap-10 md:grid-cols-2 md:text-lg  lg:grid-cols-3 ">

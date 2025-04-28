@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import DuplicatedText from "@/app/components/atoms/duplicatedText/DuplicatedText";
 import AnimatedSection from "@/app/features/animatedSection/AnimatedSection";
 import Carousel from "@/app/features/carrousel/Carrousel";
 import cardCreation from "@/app/data/cardCreationData";
 import CardProjet from "../../cards/cardProjet/CardProjet";
 import ModalProjet from "@/app/features/modals/ModaleProjet";
+import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 
 export default function NosCreationSection({
   className,
@@ -37,12 +37,15 @@ export default function NosCreationSection({
     <AnimatedSection>
       <section
         id="creations"
-        className={`relative flex scroll-mt-[100px] flex-col gap-32 bg-gradient-to-b from-black via-gray-900 to-black pb-40 pt-20 ${className}`}
+        className={`animate-gravel parallaxe relative flex scroll-mt-[90px] flex-col  gap-32 pb-40 pt-20 ${className}`}
       >
-        <DuplicatedText
-          className="pt-3 text-[35px] text-white sm:text-[65px]"
-          text="Nos créations"
+        <section className="flex justify-center">
+          <TitleAnimeGradient
+          className=" "
+          title="Nos créations"
         />
+        </section>
+        
         <Carousel
           settings={customSettings}
           classNameContainer="nos-creation-carousel"
