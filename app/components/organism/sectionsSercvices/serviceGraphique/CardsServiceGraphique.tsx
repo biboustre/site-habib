@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 
-export const CardsServiceGraphique = ({
-    service,
-  }: {
-    service: { title: string; description: string };
+export const CardsServiceGraphique = ({ service }: { service: { title: string; description:string };
   }) => {
-    const [isFlipped, setIsFlipped] = useState(false); // État pour gérer la rotation
+    const [isFlipped, setIsFlipped] = useState<boolean>(false); // État pour gérer la rotation
   
     return (
       <div

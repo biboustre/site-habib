@@ -39,12 +39,15 @@ export default function ContactForm() {
     <section className="flex w-full flex-col md:flex-row lg:w-[90%] lg:justify-between 2xl:h-[800px]">
       {/* Section gauche avec texte et informations */}
       <section className={`md:w-1/2 ${bgForm}`}>
-        <Image
-          src="/images/contact.webp"
-          alt="contact"
-          width={500}
-          height={500}
-        />
+        <figure className="size-full relative">
+          <Image
+            src="/images/pexel1.webp"
+            alt="contact"
+            fill
+            quality={100}
+            className="object-cover"
+          />
+        </figure>
       </section>
 
       <section className="bg-white p-5 md:w-1/2 md:p-10 xl:p-12">

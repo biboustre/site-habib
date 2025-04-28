@@ -23,7 +23,7 @@ const services = [
 
 function SectionServicesGraphique() {
   return (
-    <section className="bg-neutral-950 flex h-auto flex-col items-center justify-center gap-14 px-2 py-28 text-white sm:px-3 md:px-0 lg:flex-row lg:items-stretch">
+    <section className="flex h-auto flex-col items-center justify-center gap-14 bg-neutral-950 px-2 py-28 text-white sm:px-3 md:px-0 lg:flex-row lg:items-stretch">
       {/* Conteneur gauche (Texte + Cartes) */}
       <section className="flex flex-col gap-16 lg:w-2/3">
         <TitleAnimeGradient

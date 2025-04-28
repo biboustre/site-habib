@@ -1,4 +1,4 @@
-import { FaSearch, FaPuzzlePiece, FaGlobe } from "react-icons/fa";
+import { FaSearch, FaPuzzlePiece, FaGlobe, FaCamera } from "react-icons/fa";
 
 export const cardService = [
   {
@@ -24,5 +24,11 @@ export const cardService = [
     title: "Création graphique et identité visuelle",
     text: "Nous vous accompagnons dans la création de votre identité visuelle, incluant la conception de logos, flyers et de designs graphiques. Notre objectif est de vous aider à vous démarquer avec des visuels uniques et professionnels.",
     icon: <FaPuzzlePiece />,
+  },
+  {
+    id: 5,
+    title: "Photographie et Vidéo : Capturez et Sublimez Vos Moments",
+    text: "Capturez vos moments précieux grâce à nos services de photographie et de vidéo professionnels. Que ce soit pour des événements, des projets personnels ou professionnels, nous capturons chaque instant avec précision et créativité. Nous proposons également des services de montage vidéo pour sublimer vos contenus et raconter votre histoire de manière unique et impactante.",
+    icon: <FaCamera />, 
   },
 ];

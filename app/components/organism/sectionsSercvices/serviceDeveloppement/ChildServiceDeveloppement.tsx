@@ -41,7 +41,7 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
 
   return (
     <section
-      className={`flex flex-col items-center justify-center gap-20 md:flex-row ${className}`}
+      className={`flex max-w-[1200px] flex-col items-center justify-center gap-20 md:w-full md:flex-row 2xl:max-w-[1400px] 2xl:gap-32 ${className}`}
     >
       {/* Section des services */}
       <section className="flex w-full flex-col gap-10 md:px-5 lg:w-1/2 lg:px-0">

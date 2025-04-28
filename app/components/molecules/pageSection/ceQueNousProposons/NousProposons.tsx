@@ -14,14 +14,13 @@ export default function NousProposons() {
 
   const customSettings = {
     autoplaySpeed: 2500,
-
   };
   return (
     // j'ai mis en h-screen mais faut redisposter les elements
     <AnimatedSection>
       <motion.section
         id="services"
-        className="flex  scroll-mt-[100px] flex-col gap-20 animate-gravel parallaxe  pb-32 pt-20 2xl:h-screen 2xl:gap-44"
+        className="animate-gravel  parallaxe flex scroll-mt-[100px] flex-col gap-20  pb-32 pt-20 2xl:h-[80vh] 2xl:gap-44"
         variants={itemVariants}
       >
         <DuplicatedText
@@ -32,16 +31,19 @@ export default function NousProposons() {
           className="flex flex-col gap-20  px-5 pb-20 text-justify text-lg font-semibold text-white lg:flex-row lg:gap-5  xl:px-20 "
           variants={itemVariants}
         > */}
-          <Carousel settings={customSettings} classNameContainer="carousel-service">
-            {cardService.map((description) => (
-              <ServiceCard
-                key={description.id}
-                text={description.text}
-                icon={description.icon}
-                title={description.title}
-              />
-            ))}
-          </Carousel>
+        <Carousel
+          settings={customSettings}
+          classNameContainer="carousel-service"
+        >
+          {cardService.map((description) => (
+            <ServiceCard
+              key={description.id}
+              text={description.text}
+              icon={description.icon}
+              title={description.title}
+            />
+          ))}
+        </Carousel>
         {/* </motion.section> */}
       </motion.section>
       <style jsx global>{`

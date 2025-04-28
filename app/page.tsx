@@ -13,6 +13,7 @@ import EmploySection from "./components/molecules/pageSection/recruteurSection/R
 import BannerHome from "./components/molecules/banner/BannerHome";
 import SectionServicesGraphique from "./components/organism/sectionsSercvices/serviceGraphique/SectionServicesGraphique";
 import SectionServicesDeveloppement from "./components/organism/sectionsSercvices/serviceDeveloppement/ServicesDeveloppement";
+import ServicePhotographie from "./components/organism/sectionsSercvices/servicePhotographie/ServicePhotographgie";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -38,6 +39,7 @@ export default function Home() {
       <SectionServicesGraphique />
       <SectionServicesDeveloppement />
       <NosCreationSection />
+      <ServicePhotographie />
       <EmploySection />
       <ContactSection />
       {/* <UserSelectionModal
