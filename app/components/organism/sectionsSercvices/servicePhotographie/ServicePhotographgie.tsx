@@ -2,8 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
+import CarouselEmbla from "@/app/features/carouselTest/CarouselEmbla";
 
 const services = [
   {
@@ -11,21 +12,21 @@ const services = [
     title: "Photographie Professionnelle",
     description:
       "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
-    imageSrc: "/images/photographie1.jpg",
+    imageSrc: "/images/pexel1.webp",
   },
   {
     id: 2,
     title: "Vidéo Créative",
     description:
       "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
-    imageSrc: "/images/video1.jpg",
+    imageSrc: "/images/pexel2.webp",
   },
   {
     id: 3,
     title: "Montage Vidéo",
     description:
       "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
-    imageSrc: "/images/montage1.jpg",
+    imageSrc: "/images/pexel3.webp",
   },
 ];
 
@@ -33,7 +34,7 @@ export default function ServicePhotographie() {
   return (
     <section className="relative h-auto bg-neutral-950 px-5 py-20  pb-40">
       {/* Titre principal */}
-      <section className="flex h-auto flex-col items-center justify-center gap-14 text-center max-w-[1900px] mx-auto">
+      <section className="mx-auto flex h-auto max-w-[1900px] flex-col items-center justify-center gap-14 text-center">
         <motion.section
           className="text-center text-3xl font-bold sm:text-4xl lg:text-5xl"
           initial={{ opacity: 0, y: 150 }}
@@ -67,7 +68,7 @@ export default function ServicePhotographie() {
         </motion.p>
 
         {/* Cards des services */}
-        <section className="grid w-full grid-cols-1 gap-10 pt-16 sm:grid-cols-2 lg:grid-cols-3 2xl:pt-20">
+        {/* <section className="grid w-full grid-cols-1 gap-10 pt-16 sm:grid-cols-2 lg:grid-cols-3 2xl:pt-20">
           {services.map((service) => (
             <motion.section
               key={service.id}
@@ -81,7 +82,6 @@ export default function ServicePhotographie() {
                 delay: service.id * 0.2,
               }}
             >
-              {/* Image */}
               <figure className="relative h-64 w-full">
                 <Image
                   src={service.imageSrc}
@@ -91,7 +91,6 @@ export default function ServicePhotographie() {
                 />
               </figure>
 
-              {/* Contenu */}
               <aside className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 p-5 text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100 2xl:gap-5">
                 <h2 className="text-xl font-bold 2xl:text-3xl">
                   {service.title}
@@ -102,6 +101,10 @@ export default function ServicePhotographie() {
               </aside>
             </motion.section>
           ))}
+        </section> */}
+        <section className="h-auto w-full">
+          <CarouselEmbla items={services}  loop={true} />
+          {/* <CarouselSwiperJS /> */}
         </section>
       </section>
     </section>

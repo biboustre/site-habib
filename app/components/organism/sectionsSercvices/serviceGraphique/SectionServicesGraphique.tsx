@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { CardsServiceGraphique } from "./CardsServiceGraphique";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
+import CarouselEmbla from "@/app/features/carouselTest/CarouselEmbla";
 
 const services = [
   {
@@ -18,6 +19,30 @@ const services = [
     title: "Carte de restaurant",
     description:
       "Nous créons des designs attractifs pour vos cartes de restaurant et snack.",
+  },
+];
+
+const slider = [
+  {
+    id: 1,
+    title: "Photographie Professionnelle",
+    description:
+      "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
+    imageSrc: "/images/pexel1.webp",
+  },
+  {
+    id: 2,
+    title: "Vidéo Créative",
+    description:
+      "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
+    imageSrc: "/images/pexel2.webp",
+  },
+  {
+    id: 3,
+    title: "Montage Vidéo",
+    description:
+      "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
+    imageSrc: "/images/pexel3.webp",
   },
 ];
 
@@ -41,7 +66,7 @@ function SectionServicesGraphique() {
       </section>
 
       {/* Image à droite */}
-      <figure className="h-auto w-full cursor-default overflow-hidden rounded-lg shadow-lg shadow-slate-700 transition duration-300 hover:scale-105 lg:w-1/5">
+      {/* <figure className="h-auto w-full cursor-default overflow-hidden rounded-lg shadow-lg shadow-slate-700 transition duration-300 hover:scale-105 lg:w-1/5">
         <Image
           src="/images/photo_ordinateur_1.webp"
           alt="Graphique"
@@ -51,7 +76,10 @@ function SectionServicesGraphique() {
           className="h-[400px] w-full object-cover md:h-full lg:w-full"
           loading="lazy"
         />
-      </figure>
+      </figure> */}
+      <section className="cursor-pointer rounded-lg shadow-lg shadow-slate-700 transition duration-300 hover:scale-105 lg:w-1/5">
+        <CarouselEmbla items={slider} loop={true} classContentFigure=""/>
+      </section>
     </section>
   );
 }

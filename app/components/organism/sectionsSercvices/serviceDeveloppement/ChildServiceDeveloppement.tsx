@@ -1,6 +1,7 @@
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion"; // Import Framer Motion
+import CarouselEmbla from "@/app/features/carouselTest/CarouselEmbla";
 
 interface Service {
   number: number;
@@ -16,12 +17,36 @@ interface ChildServiceDeveloppementProps {
   className?: string; // Ajout de la prop className
 }
 
+const servicesDev = [
+  {
+    id: 1,
+    title: "Photographie Professionnelle",
+    description:
+      "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
+    imageSrc: "/images/pexel1.webp",
+  },
+  {
+    id: 2,
+    title: "Vidéo Créative",
+    description:
+      "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
+    imageSrc: "/images/pexel2.webp",
+  },
+  {
+    id: 3,
+    title: "Montage Vidéo",
+    description:
+      "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
+    imageSrc: "/images/pexel3.webp",
+  },
+];
+
 const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
   services,
   justifyLogic = (index) =>
     index % 2 === 0 ? "md:justify-start" : "md:justify-end", // Logique par défaut
-  imageSrc,
-  imageAlt,
+  // imageSrc,
+  // imageAlt,
   className, // Ajout de la prop className
 }) => {
   // Variants pour l'animation des cartes
@@ -70,7 +95,7 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
         ))}
       </section>
 
-      <figure className="w-full lg:flex lg:w-1/2 lg:items-center lg:justify-center">
+      {/* <figure className="w-full lg:flex lg:w-1/2 lg:items-center lg:justify-center">
         <motion.div
           whileHover={{ rotate: 720 }} // 3 tours rapides (360° x 3)
           whileTap={{ rotate: -720 }} // Retour en sens inverse
@@ -90,7 +115,11 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
             className="size-full object-cover"
           />
         </motion.div>
-      </figure>
+        
+      </figure> */}
+      <section className="w-full lg:flex lg:w-1/2 lg:items-center lg:justify-center">
+        <CarouselEmbla items={servicesDev} loop={true} classContentFigure="sm:h-[500px]" />
+      </section>
     </section>
   );
 };

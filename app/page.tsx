@@ -15,6 +15,7 @@ import SectionServicesGraphique from "./components/organism/sectionsSercvices/se
 import SectionServicesDeveloppement from "./components/organism/sectionsSercvices/serviceDeveloppement/ServicesDeveloppement";
 import ServicePhotographie from "./components/organism/sectionsSercvices/servicePhotographie/ServicePhotographgie";
 
+
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(true);
 
@@ -42,6 +43,7 @@ export default function Home() {
       <ServicePhotographie />
       <EmploySection />
       <ContactSection />
+  
       {/* <UserSelectionModal
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
