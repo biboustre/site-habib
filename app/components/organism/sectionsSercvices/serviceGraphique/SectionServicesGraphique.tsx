@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { CardsServiceGraphique } from "./CardsServiceGraphique";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 import CarouselEmbla from "@/app/features/carouselTest/CarouselEmbla";
