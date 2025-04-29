@@ -117,54 +117,33 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const services = [
+const sliderServicesPhotographie = [
   {
     id: 1,
-    title: "Développement Web",
+    title: "Photographie Professionnelle",
     description:
-      "Création de sites web modernes, performants et optimisés pour tous les appareils. Nous utilisons les dernières technologies pour garantir une expérience utilisateur exceptionnelle.",
+      "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
     imageSrc: "/images/pexel1.webp",
   },
   {
     id: 2,
-    title: "Développement Mobile",
+    title: "Vidéo Créative",
     description:
-      "Applications mobiles natives et hybrides, conçues pour offrir des performances optimales et une expérience utilisateur fluide sur iOS et Android.",
-    imageSrc: "/images/pexel1.webp",
+      "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
+    imageSrc: "/images/pexel2.webp",
   },
   {
     id: 3,
-    title: "SEO & Performance",
+    title: "Montage Vidéo",
     description:
-      "Optimisation de votre site pour les moteurs de recherche et amélioration des performances pour un chargement rapide et une meilleure visibilité.",
-    imageSrc: "/images/pexel1.webp",
-  },
-  {
-    id: 4,
-    title: "Accessibilité",
-    description:
-      "Conception de sites accessibles à tous, respectant les normes WCAG pour garantir une expérience inclusive.",
-    imageSrc: "/images/pexel1.webp",
-  },
-  {
-    id: 5,
-    title: "Bonnes Pratiques",
-    description:
-      "Code propre, maintenable et respectant les standards de l'industrie pour garantir la qualité et la pérennité de vos projets.",
-    imageSrc: "/images/pexel1.webp",
-  },
-  {
-    id: 6,
-    title: "Design UI/UX",
-    description:
-      "Création d'interfaces utilisateur intuitives et esthétiques, centrées sur l'utilisateur pour une navigation fluide et agréable.",
-    imageSrc: "/images/pexel1.webp",
+      "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
+    imageSrc: "/images/pexel3.webp",
   },
 ];
 
 export default function ServicePhotographie() {
   return (
-    <section className="relative bg-gradient-to-b from-black via-neutral-900 to-black px-6 py-20 text-white">
+    <section className="relative bg-gradient-to-b from-black via-neutral-800 to-black px-6 py-20 text-white">
       {/* Titre principal */}
       <motion.section
         className="mx-auto max-w-4xl text-center"
@@ -185,7 +164,7 @@ export default function ServicePhotographie() {
 
       {/* Services */}
       <section className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-        {services.map((service) => (
+        {sliderServicesPhotographie.map((service) => (
           <motion.div
             key={service.id}
             className="group relative overflow-hidden rounded-xl bg-neutral-800/60 shadow-lg transition-transform duration-500 hover:scale-105"
@@ -220,7 +199,7 @@ export default function ServicePhotographie() {
       >
         <a
           href="#contact"
-          className="rounded-full bg-gradient-to-r from-purple-600 to-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-110"
+          className="rounded-full animate-bg-gradient px-8 py-4 text-lg font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-110"
         >
           Contactez-nous
         </a>
