@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 import { BannerMainProps } from "../../../types";
 import BtnRounded from "../../atoms/button/BtnRounded";
@@ -6,10 +6,10 @@ import BtnRounded from "../../atoms/button/BtnRounded";
 export default function BannerMain({
   title,
   text,
-  src,
-  alt,
-  width = 500,
-  height = 300,
+  // src,
+  // alt,
+  // width = 500,
+  // height = 300,
 }: BannerMainProps) {
   return (
     <section id="top" className="relative bg-black">
@@ -32,14 +32,14 @@ export default function BannerMain({
           />
         </section>
       </section>
-      <section>
-        <Image
+      <section className="h-screen ">
+        {/* <Image
           className="h-[calc(100vh-6rem)] w-full object-cover"
           src={src}
           alt={alt}
           width={width}
           height={height}
-        />
+        /> */}
       </section>
     </section>
   );

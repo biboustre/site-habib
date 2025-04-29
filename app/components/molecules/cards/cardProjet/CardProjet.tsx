@@ -33,13 +33,12 @@ export default function CardProjet({
     setIsFlipped((prev) => !prev); // Inverse l'état actuel
   };
 
-
   return (
     <section
       className={`relative mb-24 h-auto w-[90vw] cursor-pointer sm:w-[480px] 2xl:w-[600px] ${className}`}
     >
-      <div
-        className="relative h-[400px] 2xl:h-[500px]"
+      <section
+        className="relative h-[600px] sm:h-[400px] 2xl:h-[500px] rounded-t-2xl overflow-hidden"
         style={{
           perspective: "800px", // Perspective pour l'effet 3D
         }}
@@ -48,7 +47,7 @@ export default function CardProjet({
         onClick={handleCardClick} // Gère le clic pour les écrans tactiles
       >
         {/* Conteneur des deux faces */}
-        <motion.div
+        <motion.section
           className="relative size-full"
           style={{
             transformStyle: "preserve-3d", // Permet de gérer les faces en 3D
@@ -57,14 +56,14 @@ export default function CardProjet({
           transition={{ duration: 0.4, ease: "easeInOut" }} // Animation fluide
         >
           {/* Face avant */}
-          <div
+          <section
             className="absolute inset-0 flex flex-col justify-between bg-gray-800/55 text-xl font-bold text-white"
             style={{
               backfaceVisibility: "hidden", // Cache la face arrière
             }}
           >
             {/* Vidéo ou image */}
-            <div className="flex grow items-center justify-center">
+            <section className="flex grow items-center justify-center">
               {videoSrc ? (
                 <video
                   autoPlay
@@ -89,7 +88,7 @@ export default function CardProjet({
                   )}
                 </figure>
               )}
-            </div>
+            </section>
 
             {/* Titre et catégorie en bas */}
             <div className="z-10 bg-black/50 p-4 text-center md:py-10">
@@ -100,10 +99,10 @@ export default function CardProjet({
                 {title}
               </h2>
             </div>
-          </div>
+          </section>
 
           {/* Face arrière */}
-          <div
+          <section
             className="absolute inset-0 flex flex-col gap-5 bg-gray-800/90 p-5 text-center text-white"
             style={{
               backfaceVisibility: "hidden", // Cache la face avant
@@ -113,13 +112,13 @@ export default function CardProjet({
             <p className="text-lg font-bold">{category}</p>
             <h2 className="text-4xl font-bold">{title}</h2>
             {description && <p className="text-sm">{description}</p>}
-          </div>
-        </motion.div>
-      </div>
+          </section>
+        </motion.section>
+      </section>
 
       <button
         onClick={onClick} // Déclenche la fonction onClick passée en prop
-        className="mt-4 w-full  bg-slate-800/50 py-2 text-center font-semibold uppercase tracking-wider text-white transition duration-200"
+        className="mt-4 w-full  bg-slate-800/50 py-2 text-center font-semibold uppercase tracking-wider text-white transition duration-200 rounded-b-"
       >
         Survolez l&apos;image !!
       </button>

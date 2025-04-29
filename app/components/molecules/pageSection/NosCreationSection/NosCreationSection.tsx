@@ -41,7 +41,7 @@ export default function NosCreationSection({
       >
         <section className="flex justify-center">
           <TitleAnimeGradient
-          classNameH1="2xl:text-6xl"
+          classNameH1="lg:text-6xl font-extrabold"
           title="Nos créations"
         />
         </section>

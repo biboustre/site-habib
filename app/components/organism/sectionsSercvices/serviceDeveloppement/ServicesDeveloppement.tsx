@@ -38,7 +38,7 @@ const services = [
 function ServicesDeveloppement() {
   return (
     <section className="animate-gravel  parallaxe relative flex h-auto flex-col items-center justify-center gap-32 py-20 text-white sm:px-0 lg:px-10">
-      <TitleAnimeGradient title="Développement sur Mesure : Sites Web, Applications Web et Mobiles" className="text-center" />
+      <TitleAnimeGradient title="Développement sur Mesure : Sites Web, Applications Web et Mobiles" className="text-center " classNameH1="lg:text-6xl font-extrabold mx-auto max-w-[1000px] tracking-wide" />
 
       <ChildServiceDeveloppement
         services={services.slice(0, 3)} // Mapper les services de l'index 0 à 2

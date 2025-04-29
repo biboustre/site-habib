@@ -61,7 +61,7 @@ interface CarouselEmblaProps {
 
 export default function CarouselEmbla({
   items,
-  autoplayDelay = 2500, // Valeur par défaut : 3 secondes
+  autoplayDelay = 6000, // Valeur par défaut : 3 secondes
   loop = true, // Valeur par défaut : boucle activée
   classContentFigure,
 }: CarouselEmblaProps) {
@@ -71,25 +71,25 @@ export default function CarouselEmbla({
   return (
     <section
       ref={emblaRef}
-      className="relative mx-auto w-full max-w-6xl overflow-hidden py-10"
+      className="relative mx-auto size-full max-w-6xl overflow-hidden "
     >
-      <div className="flex">
+      <div className="flex h-full">
         {items.map((item) => (
           <section
             key={item.id}
-            className={`relative h-60 flex-[0_0_100%]  ${classContentFigure}`}
+            className={`relative h-full flex-[0_0_100%] cursor-pointer px-2 ${classContentFigure}`}
           >
             <figure className="relative size-full overflow-hidden rounded-lg shadow-lg">
               <Image
                 src={item.imageSrc}
                 alt={item.title}
                 fill
-                className="object-cover"
+                className="object-cover opacity-70"
               />
-              <figcaption className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 p-4 text-white">
-                <h2 className="text-xl font-bold">{item.title}</h2>
+              <figcaption className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 p-4 gap-5 text-center text-white">
+                <h2 className="text-xl font-extrabold md:text-4xl">{item.title}</h2>
                 {item.description && (
-                  <p className="mt-2 text-sm text-gray-300">
+                  <p className=" text-lg text-gray-100 lg:text-xl lg:px-5 font-mono">
                     {item.description}
                   </p>
                 )}

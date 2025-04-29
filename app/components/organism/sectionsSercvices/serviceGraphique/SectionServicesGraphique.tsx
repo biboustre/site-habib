@@ -1,10 +1,9 @@
 import React from "react";
-// import Image from "next/image";
 import { CardsServiceGraphique } from "./CardsServiceGraphique";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 import CarouselEmbla from "@/app/features/carouselTest/CarouselEmbla";
 
-const services = [
+const slidCardsServicesGraphique = [
   {
     title: "Flyer",
     description:
@@ -22,26 +21,26 @@ const services = [
   },
 ];
 
-const slider = [
+const sliderServiceGraphique = [
   {
     id: 1,
     title: "Photographie Professionnelle",
-    description:
-      "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
+    // description:
+    //   "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
     imageSrc: "/images/pexel1.webp",
   },
   {
     id: 2,
     title: "Vidéo Créative",
-    description:
-      "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
+    // description:
+    //   "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
     imageSrc: "/images/pexel2.webp",
   },
   {
     id: 3,
     title: "Montage Vidéo",
-    description:
-      "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
+    // description:
+    //   "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
     imageSrc: "/images/pexel3.webp",
   },
 ];
@@ -55,30 +54,20 @@ function SectionServicesGraphique() {
           title="Nous proposons une gamme de services de design graphique. Que ce
             soit pour la création de flyers, logos, ou de cartes de restaurant."
           className="md:justify-start"
+          classNameH1="xl:text-4xl font-extrabold"
         />
 
         {/* Cartes de services */}
         <section className="flex w-full flex-wrap justify-center gap-14 md:flex-nowrap md:justify-normal md:gap-5 xl:gap-14 ">
-          {services.map((service, index) => (
+          {slidCardsServicesGraphique.map((service, index) => (
             <CardsServiceGraphique key={index} service={service} />
           ))}
         </section>
       </section>
 
       {/* Image à droite */}
-      {/* <figure className="h-auto w-full cursor-default overflow-hidden rounded-lg shadow-lg shadow-slate-700 transition duration-300 hover:scale-105 lg:w-1/5">
-        <Image
-          src="/images/photo_ordinateur_1.webp"
-          alt="Graphique"
-          width={350}
-          height={500}
-          quality={100}
-          className="h-[400px] w-full object-cover md:h-full lg:w-full"
-          loading="lazy"
-        />
-      </figure> */}
-      <section className="cursor-pointer rounded-lg shadow-lg shadow-slate-700 transition duration-300 hover:scale-105 lg:w-1/5">
-        <CarouselEmbla items={slider} loop={true} classContentFigure=""/>
+      <section className="h-auto w-full cursor-pointer rounded-lg shadow-lg shadow-slate-700  lg:w-1/5">
+        <CarouselEmbla items={sliderServiceGraphique} loop={true} classContentFigure="" />
       </section>
     </section>
   );

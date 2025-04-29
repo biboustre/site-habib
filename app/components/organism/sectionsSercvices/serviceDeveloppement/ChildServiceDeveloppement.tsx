@@ -17,27 +17,48 @@ interface ChildServiceDeveloppementProps {
   className?: string; // Ajout de la prop className
 }
 
-const servicesDev = [
+const servicesDeveloppement = [
   {
     id: 1,
-    title: "Photographie Professionnelle",
+    title: "Développement Web",
     description:
-      "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
+      "Création de sites web modernes, performants et optimisés pour tous les appareils. Nous utilisons les dernières technologies pour garantir une expérience utilisateur exceptionnelle.",
     imageSrc: "/images/pexel1.webp",
   },
   {
     id: 2,
-    title: "Vidéo Créative",
+    title: "Développement Mobile",
     description:
-      "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
-    imageSrc: "/images/pexel2.webp",
+      "Applications mobiles natives et hybrides, conçues pour offrir des performances optimales et une expérience utilisateur fluide sur iOS et Android.",
+    imageSrc: "/images/pexel1.webp",
   },
   {
     id: 3,
-    title: "Montage Vidéo",
+    title: "SEO & Performance",
     description:
-      "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
-    imageSrc: "/images/pexel3.webp",
+      "Optimisation de votre site pour les moteurs de recherche et amélioration des performances pour un chargement rapide et une meilleure visibilité.",
+    imageSrc: "/images/pexel1.webp",
+  },
+  {
+    id: 4,
+    title: "Accessibilité",
+    description:
+      "Conception de sites accessibles à tous, respectant les normes WCAG pour garantir une expérience inclusive.",
+    imageSrc: "/images/pexel1.webp",
+  },
+  {
+    id: 5,
+    title: "Bonnes Pratiques",
+    description:
+      "Code propre, maintenable et respectant les standards de l'industrie pour garantir la qualité et la pérennité de vos projets.",
+    imageSrc: "/images/pexel1.webp",
+  },
+  {
+    id: 6,
+    title: "Design UI/UX",
+    description:
+      "Création d'interfaces utilisateur intuitives et esthétiques, centrées sur l'utilisateur pour une navigation fluide et agréable.",
+    imageSrc: "/images/pexel1.webp",
   },
 ];
 
@@ -118,7 +139,7 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
         
       </figure> */}
       <section className="w-full lg:flex lg:w-1/2 lg:items-center lg:justify-center">
-        <CarouselEmbla items={servicesDev} loop={true} classContentFigure="sm:h-[500px]" />
+        <CarouselEmbla items={servicesDeveloppement} loop={true} classContentFigure="sm:h-[500px]" />
       </section>
     </section>
   );
