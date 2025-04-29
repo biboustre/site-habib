@@ -37,7 +37,7 @@ export default function NosCreationSection({
     <AnimatedSection>
       <section
         id="creations"
-        className={`animate-gravel parallaxe relative flex scroll-mt-[90px] flex-col  gap-32 pb-40 pt-20 ${className}`}
+        className={`bg-gradient-to-b from-black via-neutral-800 to-black relative flex scroll-mt-[90px] flex-col  gap-32 pb-40 pt-20 ${className}`}
       >
         <section className="flex justify-center">
           <TitleAnimeGradient
