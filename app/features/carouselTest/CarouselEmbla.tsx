@@ -12,20 +12,20 @@
 // ];
 
 // export default function CarouselEmbla() {
-//   const autoplay = Autoplay({ delay: 3000 });
+//   const autoplay = Autoplay({ delay: 3000, stopOnInteraction: false  });
 //   const [emblaRef] = useEmblaCarousel({ loop: true }, [autoplay]);
 
 //   return (
 //     <section ref={emblaRef} className="relative mx-auto w-full max-w-6xl py-10 overflow-hidden">
 //         <section className="flex">
 //           {carouselItems.map((item) => (
-//             <section key={item.id} className="relative h-64 flex-[0_0_100%] px-2">
+//             <section key={item.id} className="group relative h-64 flex-[0_0_100%] px-2">
 //               <figure className="relative size-full overflow-hidden rounded-lg shadow-lg">
 //                 <Image
 //                   src={item.imageSrc}
 //                   alt={item.title}
 //                   fill
-//                   className="object-cover"
+//                   className="object-cover transition-transform duration-500 group-hover:scale-110"
 //                 />
 //                 <div className="absolute inset-0 flex items-center justify-center bg-black/50 text-white">
 //                   <h2 className="text-xl font-bold">{item.title}</h2>
@@ -71,25 +71,27 @@ export default function CarouselEmbla({
   return (
     <section
       ref={emblaRef}
-      className="relative mx-auto size-full max-w-6xl overflow-hidden "
+      className=" relative mx-auto size-full max-w-[1600px] overflow-hidden "
     >
-      <div className="flex h-full">
+      <div className="flex h-full ">
         {items.map((item) => (
           <section
             key={item.id}
-            className={`relative h-full flex-[0_0_100%] cursor-pointer px-2 ${classContentFigure}`}
+            className={`group relative h-full flex-[0_0_100%] cursor-pointer px-2  ${classContentFigure}`}
           >
-            <figure className="relative size-full overflow-hidden rounded-lg shadow-lg">
+            <figure className="relative size-full overflow-hidden rounded-lg shadow-lg ">
               <Image
                 src={item.imageSrc}
                 alt={item.title}
                 fill
-                className="object-cover opacity-70"
+                className="object-cover opacity-70 transition-transform duration-500 group-hover:scale-110"
               />
-              <figcaption className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 p-4 gap-5 text-center text-white">
-                <h2 className="text-xl font-extrabold md:text-4xl">{item.title}</h2>
+              <figcaption className="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-black/50 p-4 text-center text-white">
+                <h2 className="text-2xl font-extrabold md:text-4xl">
+                  {item.title}
+                </h2>
                 {item.description && (
-                  <p className=" text-lg text-gray-100 lg:text-xl lg:px-5 font-mono">
+                  <p className=" font-mono text-xl text-gray-100 lg:px-5 lg:text-xl">
                     {item.description}
                   </p>
                 )}

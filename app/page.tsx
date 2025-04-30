@@ -13,7 +13,7 @@ import EmploySection from "./components/molecules/pageSection/recruteurSection/R
 import BannerHome from "./components/molecules/banner/BannerHome";
 import SectionServicesGraphique from "./components/organism/sectionsSercvices/serviceGraphique/SectionServicesGraphique";
 import SectionServicesDeveloppement from "./components/organism/sectionsSercvices/serviceDeveloppement/ServicesDeveloppement";
-import ServicePhotographie from "./components/organism/sectionsSercvices/servicePhotographie/ServicePhotographgie";
+import ServicePhotographie from "./components/organism/sectionsSercvices/servicePhotographie/ServicePhotographie";
 
 
 export default function Home() {

@@ -20,7 +20,7 @@ export default function NousProposons() {
     <AnimatedSection>
       <motion.section
         id="services"
-        className="animate-gravel  parallaxe flex scroll-mt-[100px] flex-col gap-20  pb-32 pt-20  2xl:gap-44"
+        className="animate-gravel  parallaxe flex scroll-mt-[100px] flex-col gap-20 px-3  pb-32 pt-20  2xl:gap-44"
         variants={itemVariants}
       >
         <DuplicatedText

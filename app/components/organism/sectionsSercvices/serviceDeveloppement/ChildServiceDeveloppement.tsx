@@ -101,17 +101,17 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
             custom={index} // Passe l'index pour le décalage
             variants={cardVariants} // Applique les variantes
           >
-            <div className="btn-gradient flex w-[95%] max-w-[450px] cursor-pointer gap-5  rounded-3xl bg-neutral-800/60 p-7 duration-300 hover:scale-110 md:w-auto lg:w-auto">
+            <section className="btn-gradient flex w-[95%] max-w-[450px] cursor-pointer gap-5  rounded-3xl bg-neutral-800/60 p-7 duration-300 hover:scale-110 md:w-auto lg:w-auto">
               {/* Cercle avec le numéro */}
-              <p className="animate-bg-gradient flex size-20 items-center  justify-center rounded-full bg-black/50 bg-gradient-to-r text-xl font-bold shadow-lg shadow-neutral-900">
+              <p className="animate-bg-gradient flex size-20 shrink-0 items-center  justify-center rounded-full bg-black/50 bg-gradient-to-r text-xl font-bold shadow-lg shadow-neutral-900">
                 <span>{service.number}</span>
               </p>
               {/* Contenu avec le titre et le texte */}
-              <section className="w-1/2">
+              <section className="flex grow flex-col">
                 <h2 className="text-2xl font-bold">{service.title}</h2>
-                <p className="text-sm text-gray-300">{service.text}</p>
+                <p className="text-lg text-gray-300">{service.text}</p>
               </section>
-            </div>
+            </section>
           </motion.section>
         ))}
       </section>
@@ -138,8 +138,12 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
         </motion.div>
         
       </figure> */}
-      <section className="w-full lg:flex lg:w-1/2 lg:items-center lg:justify-center">
-        <CarouselEmbla items={servicesDeveloppement} loop={true} classContentFigure="sm:h-[500px]" />
+      <section className="h-[400px] w-full md:h-auto lg:flex lg:w-1/2 lg:items-center lg:justify-center ">
+        <CarouselEmbla
+          items={servicesDeveloppement}
+          loop={true}
+          classContentFigure="sm:h-[500px] "
+        />
       </section>
     </section>
   );

@@ -13,7 +13,6 @@ interface CardProjet {
   videoSrc?: string; // Ajout de la prop videoSrc
   alt: string;
   className?: string;
-  onClick?: () => void; // Ajout de la prop onClick
 }
 
 export default function CardProjet({
@@ -24,7 +23,6 @@ export default function CardProjet({
   videoSrc, // Utilisation de la prop videoSrc
   alt,
   className,
-  onClick, // Utilisation de la prop onClick
 }: CardProjet) {
   const [isFlipped, setIsFlipped] = useState<boolean>(false); // État pour gérer la rotation
 
@@ -38,7 +36,7 @@ export default function CardProjet({
       className={`relative mb-24 h-auto w-[90vw] cursor-pointer sm:w-[480px] 2xl:w-[600px] ${className}`}
     >
       <section
-        className="relative h-[600px] sm:h-[400px] 2xl:h-[500px] rounded-t-2xl overflow-hidden"
+        className="relative h-[500px] overflow-hidden rounded-2xl sm:h-[400px] 2xl:h-[500px]"
         style={{
           perspective: "800px", // Perspective pour l'effet 3D
         }}
@@ -91,37 +89,31 @@ export default function CardProjet({
             </section>
 
             {/* Titre et catégorie en bas */}
-            <div className="z-10 bg-black/50 p-4 text-center md:py-10">
+            <aside className="z-10 bg-black/50 p-4 text-center md:py-10">
               <p className="text-sm font-semibold uppercase md:text-xl">
                 {category}
               </p>
               <h2 className="text-lg font-bold text-white md:text-2xl">
                 {title}
               </h2>
-            </div>
+            </aside>
           </section>
 
           {/* Face arrière */}
-          <section
-            className="absolute inset-0 flex flex-col gap-5 bg-gray-800/90 p-5 text-center text-white"
+          <aside
+            className="absolute inset-0 flex flex-col gap-5 bg-gray-800/90 px-3 py-5 text-center text-white"
             style={{
               backfaceVisibility: "hidden", // Cache la face avant
               transform: "rotateY(180deg)", // Face arrière tournée à 180°
             }}
           >
-            <p className="text-lg font-bold">{category}</p>
-            <h2 className="text-4xl font-bold">{title}</h2>
-            {description && <p className="text-sm">{description}</p>}
-          </section>
+            {/* <p className="text-lg font-bold">{category}</p> */}
+            <h2 className="text-3xl font-bold lg:text-4xl">{title}</h2>
+            {description && <p className="text-base">{description}</p>}
+          </aside>
         </motion.section>
       </section>
 
-      <button
-        onClick={onClick} // Déclenche la fonction onClick passée en prop
-        className="mt-4 w-full  bg-slate-800/50 py-2 text-center font-semibold uppercase tracking-wider text-white transition duration-200 rounded-b-"
-      >
-        Survolez l&apos;image !!
-      </button>
     </section>
   );
 }

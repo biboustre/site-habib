@@ -2,7 +2,7 @@ import React from "react";
 
 function TitleAnimeGradient({
   title,
-  className,
+  // className,
   classNameH1,
 }: {
   title: string;
@@ -10,13 +10,16 @@ function TitleAnimeGradient({
   classNameH1?: string;
 }) {
   return (
-    <section
-      className={`${className} btn-gradient flex cursor-pointer rounded-2xl transition duration-300 hover:scale-95`}
+    // <section
+    //   className={`${className} btn-gradient flex cursor-pointer rounded-2xl transition duration-300 hover:scale-95`}
+    // >
+    <h1
+      className={`animate-text-gradient btn-gradient hover-text-white max-w-[1000px] cursor-pointer rounded-2xl p-10 text-center text-2xl font-bold transition duration-300 hover:scale-95 2xl:py-16 ${classNameH1}`}
     >
-      <h1 className={`animate-text-gradient hover-text-white max-w-[1000px] p-10 text-2xl font-bold 2xl:py-16 ${classNameH1}`}>
-        {title}
-      </h1>
-    </section>
+      {title}
+      {/* {typeof title === "string" ? title : String(title)} */}
+    </h1>
+    // </section>
   );
 }
 

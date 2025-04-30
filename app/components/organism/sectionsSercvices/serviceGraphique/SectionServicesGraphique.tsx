@@ -54,7 +54,7 @@ function SectionServicesGraphique() {
           title="Nous proposons une gamme de services de design graphique. Que ce
             soit pour la création de flyers, logos, ou de cartes de restaurant."
           className="md:justify-start"
-          classNameH1="xl:text-4xl font-extrabold"
+          classNameH1="xl:text-4xl font-extrabold md:text-start text-3xl"
         />
 
         {/* Cartes de services */}
@@ -66,8 +66,12 @@ function SectionServicesGraphique() {
       </section>
 
       {/* Image à droite */}
-      <section className="h-auto w-full cursor-pointer rounded-lg shadow-lg shadow-slate-700  lg:w-1/5">
-        <CarouselEmbla items={sliderServiceGraphique} loop={true} classContentFigure="" />
+      <section className="h-[400px] w-full cursor-pointer rounded-lg shadow-lg shadow-slate-700 lg:h-auto  lg:w-1/5">
+        <CarouselEmbla
+          items={sliderServiceGraphique}
+          loop={true}
+          classContentFigure=""
+        />
       </section>
     </section>
   );

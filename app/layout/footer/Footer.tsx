@@ -7,10 +7,10 @@ import SocialsLinks from "@/app/components/atoms/socials/socialsLinks/SocialsLin
 
 export default function Footer() {
   return (
-    <footer className="flex scroll-mt-[100px] flex-col items-center gap-32  md:px-2 lg:px-10 pt-40   ">
+    <footer className="flex scroll-mt-[100px] flex-col items-center gap-32  pt-40 md:px-2 lg:px-10   ">
       <ContactForm />
 
-      <div className="grid w-full gap-10 md:grid-cols-2 md:text-lg  lg:grid-cols-3 ">
+      <section className="grid w-full gap-10 px-3 md:grid-cols-2 text-lg  lg:grid-cols-3 ">
         <FooterColumn
           title="À propos"
           content={
@@ -46,13 +46,13 @@ export default function Footer() {
         />
         <hr className="md:hidden" />
         <FooterContact />
-      </div>
-      <div className="mx-auto py-20  text-gray-500">
+      </section>
+      <section className="mx-auto py-20 text-center  text-gray-500">
         <p>
           Copyright © 2024 Tous droits réservés
           <span className="text-yellow-600"> ♥ </span>MAAMAR BENHADJAR Habib
         </p>
-      </div>
+      </section>
     </footer>
   );
 }

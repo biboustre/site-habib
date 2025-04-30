@@ -2,7 +2,7 @@ import React from "react";
 import ChildServiceDeveloppement from "./ChildServiceDeveloppement";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 
-const services = [
+const servicesDev = [
   {
     number: 1,
     title: "Analyse",
@@ -38,17 +38,17 @@ const services = [
 function ServicesDeveloppement() {
   return (
     <section className="animate-gravel  parallaxe relative flex h-auto flex-col items-center justify-center gap-32 py-20 text-white sm:px-0 lg:px-10">
-      <TitleAnimeGradient title="Développement sur Mesure : Sites Web, Applications Web et Mobiles" className="text-center " classNameH1="lg:text-6xl font-extrabold mx-auto max-w-[1000px] tracking-wide" />
+      <TitleAnimeGradient title="Développement sur Mesure : Sites Web, Applications Web et Mobiles" classNameH1="lg:text-6xl max-w-[1400px] text-4xl font-extrabold mx-auto max-w-[1000px] tracking-wide" />
 
       <ChildServiceDeveloppement
-        services={services.slice(0, 3)} // Mapper les services de l'index 0 à 2
+        services={servicesDev.slice(0, 3)} // Mapper les services de l'index 0 à 2
         imageSrc="/images/pexel5.webp"
         imageAlt="Développement"
       />
 
       <ChildServiceDeveloppement
         className="md:flex-row-reverse"
-        services={services.slice(3)} // Mapper les services de l'index 3 à la fin
+        services={servicesDev.slice(3)} // Mapper les services de l'index 3 à la fin
         justifyLogic={(index) =>
           index % 2 === 0 ? "md:justify-end" : "md:justify-start"
         } // Logique inversée

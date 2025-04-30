@@ -1,0 +1,123 @@
+import React from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import ServiceCard from "@/app/components/organism/sectionsSercvices/servicePhotographie/CardsPhotographie";
+import CarouselSection from "@/app/components/organism/sectionsSercvices/servicePhotographie/CarouselPhotographie";
+import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
+
+const sliderServicesPhotographie = [
+  {
+    id: 1,
+    title: "Photographie Professionnelle",
+    description:
+      "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
+    imageSrc: "/images/pexel1.webp",
+  },
+  {
+    id: 2,
+    title: "Vidéo Créative",
+    description:
+      "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
+    imageSrc: "/images/pexel2.webp",
+  },
+  {
+    id: 3,
+    title: "Montage Vidéo",
+    description:
+      "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
+    imageSrc: "/images/pexel3.webp",
+  },
+];
+
+const portraitServices = [
+  {
+    id: 1,
+    title: "Portraits Individuels",
+    description:
+      "Des portraits élégants et professionnels pour capturer votre personnalité unique.",
+    imageSrc: "/images/pexel1.webp",
+  },
+  {
+    id: 2,
+    title: "Portraits de Famille",
+    description:
+      "Capturez vos moments en famille avec des clichés chaleureux et authentiques.",
+    imageSrc: "/images/pexel2.webp",
+  },
+  {
+    id: 3,
+    title: "Portraits Corporate",
+    description:
+      "Mettez en avant votre image professionnelle avec des portraits d'entreprise de qualité.",
+    imageSrc: "/images/pexel3.webp",
+  },
+];
+
+export default function ServicePhotographie() {
+  return (
+    <section className="relative flex flex-col gap-20 bg-gradient-to-b from-black via-neutral-800 to-black px-6 pb-20">
+      {/* Titre principal */}
+      <section>
+        <motion.section
+          className=" text-center"
+          initial={{ opacity: 0, y: 150 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <TitleAnimeGradient
+            title="Sublimez Vos Moments avec Nos Services"
+            classNameH1="lg:text-6xl text-4xl font-extrabold mx-auto max-w-[1000px] tracking-wide"
+          />
+          <p className="mx-auto mt-4 max-w-5xl text-center  text-xl text-white md:text-3xl">
+            Découvrez l&apos;excellence en photographie, vidéo créative et
+            montage professionnel. Nous transformons vos idées en œuvres
+            visuelles uniques et mémorables.
+          </p>
+        </motion.section>
+
+        {/* Services principaux */}
+        <section className="mx-auto mt-16 grid max-w-[1900px] grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          {sliderServicesPhotographie.map((service, index) => (
+            <ServiceCard
+              key={service.id}
+              title={service.title}
+              description={service.description}
+              imageSrc={service.imageSrc}
+              delay={index * 0.2}
+            />
+          ))}
+        </section>
+      </section>
+
+      {/* Section Portraits */}
+      <motion.section>
+        <TitleAnimeGradient
+          title="Portraits Professionnels"
+          classNameH1="text-start text-4xl font-extrabold lg:text-6xl text-animate-gradient"
+        />
+        <CarouselSection
+          title="Portrait"
+          description="Capturez vos moments précieux avec des portraits uniques et mémorables."
+          items={portraitServices}
+        />
+      </motion.section>
+
+      {/* Call to Action */}
+      <motion.div
+        className="mt-10 flex justify-center"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
+        <Link
+          href="#contact"
+          className="animate-bg-gradient rounded-full px-8 py-4 text-lg font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-110"
+        >
+          Contactez-nous
+        </Link>
+      </motion.div>
+    </section>
+  );
+}

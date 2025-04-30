@@ -148,17 +148,17 @@ const Carousel: React.FC<CarouselProps> = ({
           text-align: center; /* Assurez-vous que le contenu est centré */
         }
 
-        @media (max-width: 600px) {
-          .slick-center figure {
-            opacity: 1 !important;
-            transform: scale(1) !important;
-          }
-          .slick-slide:not(.slick-center) figure {
-            display: none;
-            opacity: 0.5;
-            transform: scale(0.8);
-          }
-        }
+        // @media (max-width: 600px) {
+        //   .slick-center figure {
+        //     opacity: 1 !important;
+        //     transform: scale(1) !important;
+        //   }
+        //   .slick-slide:not(.slick-center) figure {
+        //     display: none;
+        //     opacity: 0.5;
+        //     transform: scale(0.8);
+        //   }
+        // }
       `}</style>
     </>
   );

@@ -22,11 +22,10 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
   text,
 }) => {
   return (
-    <section className="h-auto space-y-36 ">
+    <section className="flex h-auto flex-col gap-10 md:gap-20 ">
       <section>
         <DuplicatedText
-          className="mx-auto max-w-[1000px] pt-11 md:pt-[55px]"
-          duplicatedClassName="pt-10"
+          className="mx-auto px-3 md:px-0 max-w-[1000px] font-extrabold text-4xl pt-11 md:pt-[55px]"
           text={text}
         />
       </section>
@@ -46,7 +45,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
             </section>
           )}
           <section className="absolute inset-0 z-10 flex w-full flex-col justify-center gap-10 text-center">
-            <section className="space-y-10 text-white md:pt-10">
+            <section className="space-y-10 px-2 text-white md:px-0 md:pt-10">
               <h2 className="mx-auto max-w-[800px] text-2xl font-extrabold tracking-wide md:text-3xl">
                 {title.map((part, index) =>
                   typeof part === "string" ? (
@@ -58,7 +57,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
                   )
                 )}
               </h2>
-              <p className="mx-auto max-w-md rounded-lg bg-slate-700/60 p-4 font-semibold">
+              <p className="mx-auto max-w-md text-lg rounded-lg bg-slate-700/60 p-4 font-semibold">
                 {subtitle}
               </p>
             </section>

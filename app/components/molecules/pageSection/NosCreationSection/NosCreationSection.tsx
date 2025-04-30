@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import AnimatedSection from "@/app/features/animatedSection/AnimatedSection";
 import Carousel from "@/app/features/carrousel/Carrousel";
 import cardCreation from "@/app/data/cardCreationData";
 import CardProjet from "../../cards/cardProjet/CardProjet";
-import ModalProjet from "@/app/features/modals/ModaleProjet";
+// import ModalProjet from "@/app/features/modals/ModaleProjet";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 
 export default function NosCreationSection({
@@ -13,21 +13,21 @@ export default function NosCreationSection({
 }: {
   className?: string;
 }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalData, setModalData] = useState<{
-    title?: string;
-    description?: string;
-  } | null>(null);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [modalData, setModalData] = useState<{
+  //   title?: string;
+  //   description?: string;
+  // } | null>(null);
 
-  const handleCardClick = (title?: string, description?: string) => {
-    setModalData({ title, description });
-    setIsModalOpen(true);
-  };
+  // const handleCardClick = (title?: string, description?: string) => {
+  //   setModalData({ title, description });
+  //   setIsModalOpen(true);
+  // };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setModalData(null);
-  };
+  // const handleCloseModal = () => {
+  //   setIsModalOpen(false);
+  //   setModalData(null);
+  // };
 
   const customSettings = {
     autoplaySpeed: 2500,
@@ -37,15 +37,15 @@ export default function NosCreationSection({
     <AnimatedSection>
       <section
         id="creations"
-        className={`bg-gradient-to-b from-black via-neutral-800 to-black relative flex scroll-mt-[90px] flex-col  gap-32 pb-40 pt-20 ${className}`}
+        className={` relative flex scroll-mt-[90px] flex-col gap-20 bg-gradient-to-b from-black via-neutral-800  to-black py-20 md:pb-40 ${className}`}
       >
         <section className="flex justify-center">
           <TitleAnimeGradient
-          classNameH1="lg:text-6xl font-extrabold"
-          title="Nos créations"
-        />
+            classNameH1="lg:text-6xl text-5xl font-extrabold"
+            title="Nos créations"
+          />
         </section>
-        
+
         <Carousel
           settings={customSettings}
           classNameContainer="nos-creation-carousel"
@@ -61,21 +61,21 @@ export default function NosCreationSection({
               description={card.description}
               alt={card.description}
               className="border-none"
-              onClick={() => handleCardClick(card.title, card.description)} // Passe les données à la modale
+              // onClick={() => handleCardClick(card.title, card.description)} // Passe les données à la modale
             />
           ))}
         </Carousel>
       </section>
 
       {/* Modale */}
-      {modalData && (
+      {/* {modalData && (
         <ModalProjet
           isOpen={isModalOpen}
           onClose={handleCloseModal}
           title={modalData.title}
           description={modalData.description}
         />
-      )}
+      )} */}
       {/* <style jsx global>{`
         .nos-creation-carousel .slick-track {
           padding-bottom: 0px !important;
