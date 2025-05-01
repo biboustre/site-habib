@@ -1,6 +1,5 @@
 import React from "react";
 // import AnimatedSection from "@/app/features/animatedSection/AnimatedSection";
-import DuplicatedText from "../../atoms/duplicatedText/DuplicatedText";
 import BtnRounded from "../../atoms/button/BtnRounded";
 import CardStats from "../cards/cardStats/CardStats";
 
@@ -22,61 +21,60 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
   text,
 }) => {
   return (
-    <section className="flex h-auto flex-col gap-10 md:gap-20 ">
+    <section className="flex h-auto flex-col gap-40 xl:gap-52">
       <section>
-        <DuplicatedText
-          className="mx-auto px-3 md:px-0 max-w-[1000px] font-extrabold text-4xl pt-11 md:pt-[55px]"
-          text={text}
-        />
+        <h1 className="mx-auto max-w-[1000px] px-3 pt-11 text-4xl font-extrabold md:px-0 md:pt-[55px]">
+          {text}
+        </h1>
       </section>
 
       {/* Section avec l'image de fond et le contenu */}
       <section
-        className="parallaxe h-auto"
+        className="parallaxe h-auto py-10"
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       >
-        <section className="relative h-screen w-full md:h-[550px]">
-          {/* Section des statistiques */}
+        <section className="h- relative flex w-full flex-col justify-center gap-20 md:h-auto md:gap-16">
           {stats && (
-            <section className="absolute top-[-68px] hidden w-full gap-8 sm:flex md:justify-center ">
+            <section className="absolute top-[-120px] hidden w-full gap-8 sm:flex md:justify-center ">
               {stats.map((stat, index) => (
                 <CardStats key={index} value={stat.value} label={stat.label} />
               ))}
             </section>
           )}
-          <section className="absolute inset-0 z-10 flex w-full flex-col justify-center gap-10 text-center">
-            <section className="space-y-10 px-2 text-white md:px-0 md:pt-10">
-              <h2 className="mx-auto max-w-[800px] text-2xl font-extrabold tracking-wide md:text-3xl">
-                {title.map((part, index) =>
-                  typeof part === "string" ? (
-                    <span key={index}>{part}</span>
-                  ) : (
-                    <span key={index} className={part.className}>
-                      {part.text}
-                    </span>
-                  )
-                )}
-              </h2>
-              <p className="mx-auto max-w-md text-lg rounded-lg bg-slate-700/60 p-4 font-semibold">
-                {subtitle}
-              </p>
-            </section>
 
-            {/* Boutons */}
-            <section className="flex justify-center md:space-x-10">
-              {buttons.map((button, index) => (
-                <BtnRounded
-                  key={index}
-                  className="bgPrimaryStack text-lg"
-                  text={button.text}
-                  href={button.href}
-                />
-              ))}
-            </section>
+          {/* <section className="flex flex-col justify-center gap-10 text-center"> */}
+          <section className="space-y-10 px-2 text-center text-white sm:pt-20 md:px-0">
+            <h2 className="mx-auto max-w-[890px] text-2xl font-extrabold sm:text-4xl 2xl:max-w-[1100px] 2xl:text-6xl">
+              {title.map((part, index) =>
+                typeof part === "string" ? (
+                  <span key={index}>{part}</span>
+                ) : (
+                  <span key={index} className={part.className}>
+                    {part.text}
+                  </span>
+                )
+              )}
+            </h2>
+            <p className="mx-auto max-w-md rounded-lg bg-slate-700/60 p-4 text-lg font-semibold 2xl:max-w-xl 2xl:text-2xl">
+              {subtitle}
+            </p>
+          </section>
+
+          {/* Boutons */}
+          <section className="flex flex-col items-center justify-center gap-5 md:flex-row md:space-x-10">
+            {buttons.map((button, index) => (
+              <BtnRounded
+                key={index}
+                className="text-lg hover:bg-slate-700/60"
+                text={button.text}
+                href={button.href}
+              />
+            ))}
           </section>
         </section>
       </section>
     </section>
+    // </section>
   );
 };
 

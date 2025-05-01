@@ -3,7 +3,7 @@ import { CardsServiceGraphique } from "./CardsServiceGraphique";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 import CarouselEmbla from "@/app/features/carouselTest/CarouselEmbla";
 
-const slidCardsServicesGraphique = [
+const CardsServicesGraphique = [
   {
     title: "Flyer",
     description:
@@ -24,21 +24,28 @@ const slidCardsServicesGraphique = [
 const sliderServiceGraphique = [
   {
     id: 1,
-    title: "Photographie Professionnelle",
+    title: "Flyer",
     // description:
     //   "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
     imageSrc: "/images/pexel1.webp",
   },
   {
     id: 2,
-    title: "Vidéo Créative",
+    title: "Logo",
     // description:
     //   "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
     imageSrc: "/images/pexel2.webp",
   },
   {
     id: 3,
-    title: "Montage Vidéo",
+    title: "Carte de restaurant",
+    // description:
+    //   "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
+    imageSrc: "/images/pexel3.webp",
+  },
+  {
+    id: 4,
+    title: "Carte de visite",
     // description:
     //   "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
     imageSrc: "/images/pexel3.webp",
@@ -59,7 +66,7 @@ function SectionServicesGraphique() {
 
         {/* Cartes de services */}
         <section className="flex w-full flex-wrap justify-center gap-14 md:flex-nowrap md:justify-normal md:gap-5 xl:gap-14 ">
-          {slidCardsServicesGraphique.map((service, index) => (
+          {CardsServicesGraphique.map((service, index) => (
             <CardsServiceGraphique key={index} service={service} />
           ))}
         </section>
@@ -70,6 +77,7 @@ function SectionServicesGraphique() {
         <CarouselEmbla
           items={sliderServiceGraphique}
           loop={true}
+          autoplayDelay={2500}
           classContentFigure=""
         />
       </section>

@@ -34,10 +34,10 @@ export default function NosCreationSection({
   };
 
   return (
-    <AnimatedSection>
+    <AnimatedSection className="bg-gradient-to-b from-black via-neutral-800  to-black">
       <section
         id="creations"
-        className={` relative flex scroll-mt-[90px] flex-col gap-20 bg-gradient-to-b from-black via-neutral-800  to-black py-20 md:pb-40 ${className}`}
+        className={` relative mx-auto flex max-w-[2000px] scroll-mt-[90px] flex-col gap-20 bg-gradient-to-b from-black via-neutral-800  to-black py-20 md:pb-40 ${className}`}
       >
         <section className="flex justify-center">
           <TitleAnimeGradient
@@ -48,7 +48,7 @@ export default function NosCreationSection({
 
         <Carousel
           settings={customSettings}
-          classNameContainer="nos-creation-carousel"
+          classNameContainer="nos-creation-carousel border-x-2 border-slate-700/60 shadow-2xl shadow-white"
         >
           {cardCreation.map((card) => (
             <CardProjet
