@@ -23,7 +23,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
   return (
     <section className="flex h-auto flex-col gap-40 xl:gap-52">
       {/* <section className="flex justify-center items-center"> */}
-      <h1 className="animate-text-gradient  mx-auto max-w-[1000px] cursor-pointer rounded-xl px-3 py-10 text-center text-4xl font-extrabold md:px-0  lg:text-6xl">
+      <h1 className="animate-text-gradient btn-gradient hover-text-white mx-auto max-w-[1000px]  cursor-pointer rounded-xl px-3 py-10 text-center text-4xl font-extrabold duration-500 hover:scale-90 md:px-10  lg:text-6xl">
         {text}
       </h1>
       {/* </section> */}
@@ -68,7 +68,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
             {buttons.map((button, index) => (
               <BtnRounded
                 key={index}
-                className="text-lg bg-slate-700/80 btn-gradient"
+                className="btn-gradient bg-slate-700/80 text-lg"
                 text={button.text}
                 href={button.href}
               />

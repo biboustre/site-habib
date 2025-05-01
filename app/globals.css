@@ -259,6 +259,8 @@ body {
   background: white;
 }
 
+
+/* animation de brillance sur les cards services graphique */
 .bg-animated-shine {
   background: linear-gradient(
     90deg,
@@ -288,3 +290,89 @@ body {
   }
 }
 
+
+
+/* Effet lumineux dans la banniere */
+.moving-light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+  animation: move-bounce 12s linear infinite; /* Animation de rebond */
+  pointer-events: none; /* Empêche les interactions avec le point lumineux */
+  z-index: 1;
+}
+
+.moving-light::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  animation: sparkle 8s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* Animation pour le mouvement en forme de "8" */
+@keyframes move-bounce {
+  0% {
+    transform: translate(50vw, 0vh); /* Départ au milieu en haut */
+  }
+  25% {
+    transform: translate(96vw, 50vh); /* Milieu à droite */
+  }
+  50% {
+    transform: translate(50vw, 97vh); /* Milieu en bas */
+  }
+  75% {
+    transform: translate(0vw, 50vh); /* Milieu à gauche */
+  }
+  100% {
+    transform: translate(50vw, 0vh); /* Retour au milieu en haut */
+  }
+}
+
+
+
+/* Animation pour les traînées lumineuses */
+@keyframes sparkle {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(10px, -10px) scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-20px, 20px) scale(0);
+    opacity: 0;
+  }
+}
+
+.sparkle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sparkle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  animation: sparkle 3s ease-in-out infinite;
+  opacity: 0;
+}

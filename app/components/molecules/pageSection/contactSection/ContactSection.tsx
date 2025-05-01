@@ -27,7 +27,12 @@ export default function ContactSection() {
           className="mb-12 space-y-16 text-center"
           variants={itemVariants}
         >
-          <TitleAnimeGradient title="Contact" classNameH1="mx-auto lg:text-6xl" />
+          <section className="flex justify-center">
+          <TitleAnimeGradient
+            classNameH1="lg:text-6xl text-5xl font-extrabold btn-gradient hover-text-white"
+            title="Contact"
+          />
+        </section>
           {pathname === "/" && (
             <p className="mx-auto mt-4 w-[70%] text-2xl text-gray-400 sm:text-xl 2xl:text-2xl">
               Besoin d&apos;informations ou d&apos;un devis ? N&apos;hésitez pas

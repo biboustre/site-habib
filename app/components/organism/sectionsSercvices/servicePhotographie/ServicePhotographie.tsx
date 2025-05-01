@@ -69,7 +69,7 @@ export default function ServicePhotographie() {
             title="Sublimez Vos Moments avec Nos Services"
             classNameH1=" text-4xl mx-auto max-w-[1000px] lg:text-6xl tracking-wide"
           />
-          <p className="mx-auto mt-4 max-w-5xl text-center  text-xl text-white md:text-3xl">
+          <p className="mx-auto mt-4 max-w-4xl text-center  text-xl text-white md:text-2xl">
             Découvrez l&apos;excellence en photographie, vidéo créative et
             montage professionnel. Nous transformons vos idées en œuvres
             visuelles uniques et mémorables.
@@ -111,7 +111,12 @@ export default function ServicePhotographie() {
         viewport={{ once: true }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
-        <BtnRounded href="#contact" text="Contact" className="2xl:py-4 2xl:font-extrabold" />
+        <BtnRounded
+          href="#contact"
+          text="Contact"
+          className="btn-gradient animate-pulse bg-zinc-500  2xl:py-4 2xl:font-extrabold
+        "
+        />
       </motion.div>
     </section>
   );

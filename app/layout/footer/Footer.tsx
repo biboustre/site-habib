@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="flex scroll-mt-[100px] flex-col items-center gap-32  pt-40 md:px-2 lg:px-10   ">
       <ContactForm />
 
-      <section className="grid w-full gap-10 px-3 md:grid-cols-2 text-lg  lg:grid-cols-3 ">
+      <section className=" grid w-full gap-10  px-3 text-lg md:grid-cols-2 lg:grid-cols-3">
         <FooterColumn
           title="À propos"
           content={
@@ -29,22 +29,24 @@ export default function Footer() {
             </>
           }
         />
-        <hr className="md:hidden" />
+        <hr className="w-4/5 md:hidden" />
         <FooterColumn
           title="Services"
           links={[
             "Développement Web/Mobiles",
             "Développement d'applications",
-            "Conception de logos/Maquettes",
+            "Conception de Logos/Flyers/Cartes",
             "Optimisation SEO",
             "Optimisation de la performance",
             "Intégration de systèmes de paiement",
             "Solutions e-commerce",
             "Création de sites vitrines",
             "Conception graphique",
+            "Photographie et Vidéo",
+            "Montage vidéo",
           ]}
         />
-        <hr className="md:hidden" />
+        <hr className="w-4/5 md:hidden" />
         <FooterContact />
       </section>
       <section className="mx-auto py-20 text-center  text-gray-500">

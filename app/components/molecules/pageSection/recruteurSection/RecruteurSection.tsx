@@ -7,16 +7,16 @@ import BannerMarketing from "../../marketing/BannerMarketing";
 const RecruteurSection: React.FC = () => {
   return (
     <BannerMarketing
-      text="Vous etes recruteur ?"
+      text="Vous êtes recruteur ?"
       title={[
         "Vous avez un ",
-        { text: "POSTE ", className: "colorPrimaryStack" },
+        { text: "POSTE ", className: "" },
         "à me proposer ? Je serais ravi de m'entretenir avec vous.",
-        { text: " N'hésitez pas", className: "colorPrimaryStack" },
+        { text: " N'hésitez pas", className: "" },
         " à consulter mon ",
-        { text: "portfolio ", className: "colorPrimaryStack" },
+        { text: "portfolio ", className: "" },
         "et à me ",
-        { text: "contacter", className: "colorPrimaryStack" },
+        { text: "contacter", className: "" },
         " pour discuter de vos besoins.",
       ]}
       subtitle="Je suis à l'écoute de toutes propositions et je serais ravi d'échanger avec vous. 

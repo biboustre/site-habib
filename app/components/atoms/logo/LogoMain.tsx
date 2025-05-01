@@ -4,7 +4,7 @@ export default function LogoMain() {
   return (
     <section className="">
       <Link href="/">
-        <h1 className="text-3xl font-extrabold text-white transition-transform duration-300 ease-in-out hover:scale-110 md:text-4xl">
+        <h1 className="text-3xl font-extrabold text-white transition-transform duration-300 ease-in-out hover:scale-110 md:text-4xl animate-pulse">
           WEB&apos;ibou
         </h1>
       </Link>
