@@ -22,11 +22,11 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
 }) => {
   return (
     <section className="flex h-auto flex-col gap-40 xl:gap-52">
-      <section>
-        <h1 className="mx-auto max-w-[1000px] px-3 pt-11 text-4xl font-extrabold md:px-0 md:pt-[55px]">
-          {text}
-        </h1>
-      </section>
+      {/* <section className="flex justify-center items-center"> */}
+      <h1 className="animate-text-gradient  mx-auto max-w-[1000px] cursor-pointer rounded-xl px-3 py-10 text-center text-4xl font-extrabold md:px-0  lg:text-6xl">
+        {text}
+      </h1>
+      {/* </section> */}
 
       {/* Section avec l'image de fond et le contenu */}
       <section
@@ -44,12 +44,15 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
 
           {/* <section className="flex flex-col justify-center gap-10 text-center"> */}
           <section className="space-y-10 px-2 text-center text-white sm:pt-20 md:px-0">
-            <h2 className="mx-auto max-w-[890px] text-2xl font-extrabold sm:text-4xl 2xl:max-w-[1100px] 2xl:text-6xl">
+            <h2 className="mx-auto max-w-[890px] text-2xl font-extrabold sm:text-4xl 2xl:max-w-[1300px] 2xl:text-5xl">
               {title.map((part, index) =>
                 typeof part === "string" ? (
                   <span key={index}>{part}</span>
                 ) : (
-                  <span key={index} className={part.className}>
+                  <span
+                    key={index}
+                    className="animate-text-gradient uppercase 2xl:leading-[65px]"
+                  >
                     {part.text}
                   </span>
                 )
@@ -65,7 +68,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
             {buttons.map((button, index) => (
               <BtnRounded
                 key={index}
-                className="text-lg hover:bg-slate-700/60"
+                className="text-lg bg-slate-700/80 btn-gradient"
                 text={button.text}
                 href={button.href}
               />

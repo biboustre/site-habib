@@ -60,8 +60,7 @@ function SectionServicesGraphique() {
         <TitleAnimeGradient
           title="Nous proposons une gamme de services de design graphique. Que ce
             soit pour la création de flyers, logos, ou de cartes de restaurant."
-          className="md:justify-start"
-          classNameH1="xl:text-4xl font-extrabold md:text-start text-3xl"
+          classNameH1="lg:text-3xl xl:text-4xl font-extrabold md:text-start text-3xl 2xl:text-5xl 2xl:max-w-[1300px] btn-gradient hover-text-white"
         />
 
         {/* Cartes de services */}

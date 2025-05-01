@@ -21,7 +21,7 @@ export default function InternalLink({
       onClick={onClick}
       className={`underline-animation tracking-wider transition-colors duration-300 ${
         isActive ? "active-link" : "text-white"
-      } hover:colorPrimaryStack `}
+      } animate-text-gradient `}
       href={href}
     >
       {name}

@@ -9,7 +9,7 @@ const SubmitButton: React.FC<SubmitButtonProps> = ({ text }) => (
     {/* Je dois utiliser le composant btnRounded !!!!  */}
     <button
       type="submit"
-      className="bgPrimaryStack w-full rounded-full p-5 text-[13px] font-medium uppercase  tracking-widest text-black hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-blue-500 lg:w-3/5"
+      className="animate-bg-gradient w-full rounded-full p-5 text-[13px] font-medium uppercase tracking-widest  text-white lg:w-3/5  2xl:py-6 2xl:text-lg"
     >
       {text}
     </button>

@@ -57,6 +57,7 @@ interface CarouselEmblaProps {
   autoplayDelay?: number; // Délai pour l'autoplay (en millisecondes)
   loop?: boolean; // Activer ou désactiver le mode boucle
   classContentFigure?: string; // Classe CSS pour le contenu de la figure
+  classDescription?: string; // Classe CSS pour la description
 }
 
 export default function CarouselEmbla({
@@ -64,6 +65,7 @@ export default function CarouselEmbla({
   autoplayDelay = 6000, // Valeur par défaut : 3 secondes
   loop = true, // Valeur par défaut : boucle activée
   classContentFigure,
+  classDescription,
 }: CarouselEmblaProps) {
   const autoplay = Autoplay({ delay: autoplayDelay, stopOnInteraction: false });
   const [emblaRef] = useEmblaCarousel({ loop }, [autoplay]);
@@ -91,7 +93,7 @@ export default function CarouselEmbla({
                   {item.title}
                 </h2>
                 {item.description && (
-                  <p className=" font-mono text-xl text-gray-100 lg:px-5 lg:text-xl">
+                  <p className={`font-mono text-xl text-gray-100 lg:px-5 lg:text-xl ${classDescription}`}>
                     {item.description}
                   </p>
                 )}

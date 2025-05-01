@@ -11,7 +11,7 @@ export default function BtnRounded({ text, href, className }: BtnRoundedProps) {
   return (
     <Link
       href={href}
-      className={`animate-bg-gradient rounded-full px-8 py-4 text-lg font-semibold tracking-widest text-white transition duration-300 hover:scale-110 hover:text-white ${className}`}
+      className={` rounded-full px-8 py-4 text-lg font-semibold tracking-widest text-white 2xl:text-xl 2xl:py-5 transition duration-300 hover:scale-110 hover:text-white ${className}`}
     >
       {text}
     </Link>

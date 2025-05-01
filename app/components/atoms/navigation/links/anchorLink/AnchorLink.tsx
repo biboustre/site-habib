@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 interface AnchorLinkProps {
@@ -9,6 +10,6 @@ interface AnchorLinkProps {
 
 export default function AnchorLink({ href, children, target, rel }: AnchorLinkProps) {
   return (
-    <a className='tracking-wider' href={href} target={target} rel={rel}>{children}</a>
+    <Link className='tracking-wider' href={href} target={target} rel={rel}>{children}</Link>
   )
 }

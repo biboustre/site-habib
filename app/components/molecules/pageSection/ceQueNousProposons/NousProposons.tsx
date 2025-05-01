@@ -1,10 +1,10 @@
 import React from "react";
-import ServiceCard from "../../cards/serviceCard/ServiceCard";
+import ServiceCard from "../../cards/cardsNousProposons/CardsNousProposons";
 import { cardService } from "@/app/data/cardServiceData";
-import DuplicatedText from "@/app/components/atoms/duplicatedText/DuplicatedText";
 import AnimatedSection from "@/app/features/animatedSection/AnimatedSection";
 import { motion } from "framer-motion";
 import Carousel from "@/app/features/carrousel/Carrousel";
+import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 
 export default function NousProposons() {
   const itemVariants = {
@@ -23,10 +23,10 @@ export default function NousProposons() {
         className="animate-gravel  parallaxe flex scroll-mt-[100px] flex-col gap-20 px-3  pb-32 pt-20  2xl:gap-44"
         variants={itemVariants}
       >
-        <DuplicatedText
-          text="Ce que nous proposons"
-          className="pt-3  text-[35px] text-white md:text-[55px]"
-        />
+         <TitleAnimeGradient
+            classNameH1="lg:text-6xl text-5xl mx-auto font-extrabold"
+            title="Ce que nous proposons"
+          />
         {/* <motion.section
           className="flex flex-col gap-20  px-5 pb-20 text-justify text-lg font-semibold text-white lg:flex-row lg:gap-5  xl:px-20 "
           variants={itemVariants}

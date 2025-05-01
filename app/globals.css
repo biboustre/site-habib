@@ -55,75 +55,14 @@ body {
     transition: left 0.3s ease-out;
   }
 
-  /*ICON*****************************************************************************/
-  .icon {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+  
 
-  .icon:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .icon:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  /* BUTTON*********************************************************************/
-  .btn-main {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    box-shadow: 0 3px 4px 4px rgb(255, 255, 255);
-  }
-
-  .btn-main:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 12px rgba(117, 52, 160, 0.106);
-  }
-
-  /* .btnStack {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    box-shadow: 0 1px 4px 3px rgba(195, 183, 167, 0.526);
-  }
-
-  .btnStack:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 12px rgba(50, 89, 180, 0.588);
-  }  */
-
-  /* COLOR****************************************************************** */
-
-  .bgPrimary {
-    background-color: #ffbd39;
-  }
-
-  .bgHamburger {
+.bgHamburger {
     background: #0f2027;
     background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
     background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   }
-
-  .bgSecondary {
-    --tw-bg-opacity: 1;
-    background-color: rgb(227 215 205 / var(--tw-bg-opacity));
-  }
-
-  .bgHeaderStack {
-    background-color: #000000;
-  }
-
-  .bgFooter {
-    background-color: #001722;
-  }
-
-  .colorPrimaryStack {
-    color: #ffbd39;
-  }
-
-  .bgPrimaryStack {
-    background-color: #ffbd39;
-  }
+ 
 
   /* SHADOW CLASS******************************************/
   .shadow-white {
@@ -163,7 +102,7 @@ body {
   }
 } */
 
-.btn-gradient:hover {
+.btn-gradient:hover, .btn-gradient:active {
   /* background: linear-gradient(270deg, #022c42, #1b4d63, #3078a7, #1b4d63, #022c42); */
   background: linear-gradient(270deg, #ff7e5f, #942fb9, #ff7e5f);
   background-size: 300% 300%;
@@ -319,3 +258,33 @@ body {
 .hover-bg-white:hover {
   background: white;
 }
+
+.bg-animated-shine {
+  background: linear-gradient(
+    90deg,
+    #000000, /* Noir */
+    #1a1a1a, /* Gris foncé */
+    #292929, /* Blanc brillant */
+    #1a1a1a, /* Gris foncé */
+    #000000 /* Noir */
+  );
+  background-size: 700% 700%; /* Étend la taille pour un défilement fluide */
+  animation: shine-animation 2s linear infinite; /* Animation fluide et infinie */
+}
+
+.bg-animated-shine:hover {
+  animation: none; /* Arrête l'animation au survol */
+}
+
+@keyframes shine-animation {
+  0% {
+    background-position: 0% 50%; /* Départ à gauche */
+  }
+  50% {
+    background-position: 50% 50%; /* Milieu */
+  }
+  100% {
+    background-position: 100% 50%; /* Fin à droite */
+  }
+}
+

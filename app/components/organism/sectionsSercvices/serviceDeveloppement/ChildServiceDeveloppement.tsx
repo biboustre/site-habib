@@ -85,9 +85,19 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
     }),
   };
 
+  const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
+    const target = event.currentTarget;
+    target.classList.add("active");
+  };
+
+  const handleTouchEnd = (event: React.TouchEvent<HTMLDivElement>) => {
+    const target = event.currentTarget;
+    target.classList.remove("active");
+  };
+
   return (
     <section
-      className={`flex max-w-[1200px] flex-col items-center justify-center gap-20 md:w-full md:flex-row 2xl:max-w-[1400px] 2xl:gap-32 ${className}`}
+      className={`flex max-w-[1200px] flex-col items-center justify-center gap-20 md:w-full md:flex-row 2xl:max-w-[1400px] 2xl:gap-44 ${className}`}
     >
       {/* Section des services */}
       <section className="flex w-full flex-col gap-10 md:px-5 lg:w-1/2 lg:px-0">
@@ -101,7 +111,11 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
             custom={index} // Passe l'index pour le décalage
             variants={cardVariants} // Applique les variantes
           >
-            <section className="btn-gradient flex w-[95%] max-w-[450px] cursor-pointer gap-5  rounded-3xl bg-neutral-800/60 p-7 duration-300 hover:scale-110 md:w-auto lg:w-auto">
+            <section
+              className="btn-gradient flex w-[95%] max-w-[450px] cursor-pointer gap-5  rounded-3xl bg-neutral-800/60 p-7 duration-300 hover:scale-110 md:w-auto lg:w-auto "
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+            >
               {/* Cercle avec le numéro */}
               <p className="animate-bg-gradient flex size-20 shrink-0 items-center  justify-center rounded-full bg-black/50 bg-gradient-to-r text-xl font-bold shadow-lg shadow-neutral-900">
                 <span>{service.number}</span>
@@ -116,7 +130,21 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
         ))}
       </section>
 
-      {/* <figure className="w-full lg:flex lg:w-1/2 lg:items-center lg:justify-center">
+      <section className="h-[400px] w-full md:h-auto lg:flex lg:w-1/2 lg:items-center lg:justify-center ">
+        <CarouselEmbla
+          items={servicesDeveloppement}
+          loop={true}
+          classContentFigure="sm:h-[500px] "
+        />
+      </section>
+    </section>
+  );
+};
+
+export default ChildServiceDeveloppement;
+
+{
+  /* <figure className="w-full lg:flex lg:w-1/2 lg:items-center lg:justify-center">
         <motion.div
           whileHover={{ rotate: 720 }} // 3 tours rapides (360° x 3)
           whileTap={{ rotate: -720 }} // Retour en sens inverse
@@ -136,17 +164,5 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
             className="size-full object-cover"
           />
         </motion.div>
-        
-      </figure> */}
-      <section className="h-[400px] w-full md:h-auto lg:flex lg:w-1/2 lg:items-center lg:justify-center ">
-        <CarouselEmbla
-          items={servicesDeveloppement}
-          loop={true}
-          classContentFigure="sm:h-[500px] "
-        />
-      </section>
-    </section>
-  );
-};
-
-export default ChildServiceDeveloppement;
+      </figure> */
+}

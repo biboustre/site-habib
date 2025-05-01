@@ -48,7 +48,7 @@ export default function NosCreationSection({
 
         <Carousel
           settings={customSettings}
-          classNameContainer="nos-creation-carousel border-x-2 border-slate-700/60 shadow-2xl shadow-white"
+          classNameContainer="nos-creation-carousel"
         >
           {cardCreation.map((card) => (
             <CardProjet

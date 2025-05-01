@@ -1,5 +1,5 @@
-'use client';
-import { usePathname } from "next/navigation";
+"use client";
+// import { usePathname } from "next/navigation";
 import React from "react";
 
 interface ContactItemProps {
@@ -13,16 +13,18 @@ export default function ContactItem({
   title,
   description,
 }: ContactItemProps) {
-  const pathname = usePathname();
-  const bgIcon = pathname === "/" ? "bgFooter" : "bg-gray-800";
+  // const pathname = usePathname();
+  // const bgIcon = pathname === "/" ? "bgFooter" : "bg-gray-800";
 
   return (
-    <section className="flex w-32 flex-col items-center text-center transform transition-all duration-300 hover:scale-125">
-      <section className={`colorPrimaryStack mb-4 rounded-full p-10 text-3xl ${bgIcon}`}>
+    <section className="flex w-32 flex-col items-center text-center  ">
+      <figure
+        className={`icon-gradient mb-4 cursor-pointer rounded-full p-10 text-3xl transition-all duration-300 hover:scale-150 2xl:text-4xl`}
+      >
         {icon}
-      </section>
-      <h3 className="font-bold">{title}</h3>
-      <p className="mt-2 text-gray-400">{description}</p>
+      </figure>
+      <h3 className="font-bold 2xl:text-2xl">{title}</h3>
+      <p className="mt-2 text-gray-400 2xl:text-xl">{description}</p>
     </section>
   );
 }

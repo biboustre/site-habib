@@ -33,7 +33,7 @@ export default function CardProjet({
 
   return (
     <section
-      className={`relative mb- h-auto w-[90vw] cursor-pointer sm:w-[480px] 2xl:w-[600px] ${className}`}
+      className={`mb-24 relative h-auto w-[90vw] cursor-pointer sm:w-[480px] 2xl:w-[600px] ${className}`}
     >
       <section
         className="relative h-[500px] overflow-hidden rounded-2xl sm:h-[400px] 2xl:h-[500px]"
@@ -113,7 +113,6 @@ export default function CardProjet({
           </aside>
         </motion.section>
       </section>
-
     </section>
   );
 }

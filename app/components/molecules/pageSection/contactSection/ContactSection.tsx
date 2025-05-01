@@ -2,11 +2,11 @@
 
 import React from "react";
 import ContactItem from "./ContactItem";
-import DuplicatedText from "../../../atoms/duplicatedText/DuplicatedText";
 import { itemsContact } from "@/app/data/itemsContactData";
 import { usePathname } from "next/navigation";
 import AnimatedSection from "@/app/features/animatedSection/AnimatedSection";
 import { motion } from "framer-motion";
+import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 
 export default function ContactSection() {
   const itemVariants = {
@@ -23,13 +23,13 @@ export default function ContactSection() {
         className="flex scroll-mt-[100px] flex-col items-center gap-16 pt-20 text-white "
         variants={itemVariants}
       >
-        <motion.section className="mb-12 space-y-16 text-center" variants={itemVariants}>
-          <DuplicatedText
-            text="Contact"
-            className="text-center text-5xl font-extrabold text-white"
-          />
+        <motion.section
+          className="mb-12 space-y-16 text-center"
+          variants={itemVariants}
+        >
+          <TitleAnimeGradient title="Contact" classNameH1="mx-auto lg:text-6xl" />
           {pathname === "/" && (
-            <p className="mx-auto mt-4 w-[70%] text-gray-400 text-2xl sm:text-xl">
+            <p className="mx-auto mt-4 w-[70%] text-2xl text-gray-400 sm:text-xl 2xl:text-2xl">
               Besoin d&apos;informations ou d&apos;un devis ? N&apos;hésitez pas
               à nous contacter pour discuter de vos projets et découvrir comment
               nous pouvons vous aider à concrétiser vos idées.

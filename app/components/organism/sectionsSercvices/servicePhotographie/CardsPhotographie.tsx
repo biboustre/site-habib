@@ -17,7 +17,7 @@ const CardsPhotographie: React.FC<CardsPhotographieProps> = ({
 }) => {
   return (
     <motion.div
-      className="group relative overflow-hidden rounded-xl bg-neutral-800/60 shadow-lg transition-transform duration-500 hover:scale-105"
+      className="group relative overflow-hidden rounded-xl bg-neutral-800/60 cursor-pointer shadow-lg transition-transform duration-500 hover:scale-105"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import ServiceCard from "@/app/components/organism/sectionsSercvices/servicePhotographie/CardsPhotographie";
-import CarouselSection from "@/app/components/organism/sectionsSercvices/servicePhotographie/CarouselPhotographie";
+import CarouselPhotographie from "@/app/components/organism/sectionsSercvices/servicePhotographie/CarouselPhotographie";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
+import BtnRounded from "@/app/components/atoms/button/BtnRounded";
 
 const sliderServicesPhotographie = [
   {
@@ -67,7 +67,7 @@ export default function ServicePhotographie() {
         >
           <TitleAnimeGradient
             title="Sublimez Vos Moments avec Nos Services"
-            classNameH1="lg:text-6xl text-4xl font-extrabold mx-auto max-w-[1000px] tracking-wide"
+            classNameH1=" text-4xl mx-auto max-w-[1000px] lg:text-6xl tracking-wide"
           />
           <p className="mx-auto mt-4 max-w-5xl text-center  text-xl text-white md:text-3xl">
             Découvrez l&apos;excellence en photographie, vidéo créative et
@@ -94,9 +94,9 @@ export default function ServicePhotographie() {
       <motion.section>
         <TitleAnimeGradient
           title="Portraits Professionnels"
-          classNameH1="text-start text-4xl font-extrabold lg:text-6xl text-animate-gradient"
+          classNameH1="text-start mx-[0px] text-4xl font-extrabold lg:text-6xl "
         />
-        <CarouselSection
+        <CarouselPhotographie
           title="Portrait"
           description="Capturez vos moments précieux avec des portraits uniques et mémorables."
           items={portraitServices}
@@ -111,12 +111,7 @@ export default function ServicePhotographie() {
         viewport={{ once: true }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
-        <Link
-          href="#contact"
-          className="animate-bg-gradient rounded-full px-8 py-4 text-lg font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-110"
-        >
-          Contactez-nous
-        </Link>
+        <BtnRounded href="#contact" text="Contact" className="2xl:py-4 2xl:font-extrabold" />
       </motion.div>
     </section>
   );

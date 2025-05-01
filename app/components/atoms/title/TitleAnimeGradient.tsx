@@ -14,7 +14,7 @@ function TitleAnimeGradient({
     //   className={`${className} btn-gradient flex cursor-pointer rounded-2xl transition duration-300 hover:scale-95`}
     // >
     <h1
-      className={`animate-text-gradient btn-gradient hover-text-white max-w-[1000px] cursor-pointer rounded-2xl p-10 text-center text-2xl font-bold transition duration-300 hover:scale-95 2xl:py-16 ${classNameH1}`}
+      className={`animate-text-gradient  max-w-[1000px] cursor-pointer rounded-2xl p-10 text-center text-2xl font-extrabold transition duration-300 hover:scale-95 2xl:py-16 ${classNameH1}`}
     >
       {title}
       {/* {typeof title === "string" ? title : String(title)} */}
