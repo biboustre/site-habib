@@ -1,7 +1,22 @@
 // import Image from "next/image";
 import React from "react";
-import { BannerMainProps } from "../../../types";
+// import { BannerMainProps } from "../../../types";
 import BtnRounded from "../../atoms/button/BtnRounded";
+
+export interface BannerMainProps {
+  title?: React.ReactNode;
+  text?: React.ReactNode;
+  src: string;
+  alt: string;
+  classNameImage?: string;
+  classNameTitle?: string;
+  classNameBanner?: string;
+  classNameInfo?: string;
+  classNameParentImage?: string;
+  width?: number;
+  height?: number;
+  videoSrc?: string;
+}
 
 export default function BannerMain({
   title,
@@ -14,8 +29,17 @@ BannerMainProps) {
   return (
     <section
       id="top"
-      className="relative flex h-screen flex-col justify-center bg-black md:pl-[15%]"
+      className="relative flex h-screen flex-col justify-center md:pl-[15%]"
     >
+      {/* Vidéo en arrière-plan */}
+      <video
+        className="absolute inset-0 -z-10 size-full object-cover"
+        src="/video/video11.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      ></video>
       {/* Effet lumineux */}
       <div className="moving-light">
         <div className="sparkle-container">
@@ -49,15 +73,6 @@ BannerMainProps) {
           />
         </section>
       </section>
-      {/* <section className="h-screen ">
-        <Image
-          className="h-[calc(100vh-6rem)] w-full object-cover"
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-        />
-      </section> */}
     </section>
   );
 }

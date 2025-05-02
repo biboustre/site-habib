@@ -13,4 +13,5 @@ export interface BannerMainProps {
     classNameParentImage?: string;
     width?: number;
     height?: number;
+    videoSrc?: string; 
   }

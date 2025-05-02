@@ -14,7 +14,7 @@ export default function AboutSection() {
         { text: "transformation digitale", className: "" },
       ]}
       subtitle="Notre mission est de vous aider à développer des outils performants, parfaitement adaptés à vos besoins, et de vous accompagner vers la réussite de vos projets web et mobile."
-      backgroundImage="/images/IMG-PAYSAGE-ENEIGER-2.webp"
+      videoSrc="/video/video3.mp4"
       buttons={[
         { text: "Contactez-moi", href: "#contact" },
         { text: "Portfolio", href: "/stackTechnic" },

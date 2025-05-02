@@ -21,7 +21,7 @@ const RecruteurSection: React.FC = () => {
       ]}
       subtitle="Je suis à l'écoute de toutes propositions et je serais ravi d'échanger avec vous. 
       Je suis disponible pour un entretien afin de discuter de mes compétences et de la manière dont je peux contribuer à votre équipe."
-      backgroundImage="/images/IMG-PAYSAGE-ENEIGER-2.webp"
+      videoSrc="/video/video9.mp4"
       buttons={[
         { text: "Contactez-moi", href: "#contact" },
         { text: "Portfolio", href: "/stackTechnic" },
