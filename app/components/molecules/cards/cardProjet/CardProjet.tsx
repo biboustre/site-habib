@@ -101,7 +101,7 @@ export default function CardProjet({
 
           {/* Face arrière */}
           <aside
-            className="absolute inset-0 flex flex-col gap-8 bg-zinc-700/50 px-3 py-5 text-center text-white 2xl:px-10 "
+            className="absolute inset-0 flex flex-col gap-8 bg-zinc-700/30 px-3 py-5 text-center text-white 2xl:px-10 "
             style={{
               backfaceVisibility: "hidden", // Cache la face avant
               transform: "rotateY(180deg)", // Face arrière tournée à 180°
