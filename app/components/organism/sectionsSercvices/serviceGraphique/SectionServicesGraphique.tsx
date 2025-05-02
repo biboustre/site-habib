@@ -15,7 +15,7 @@ const CardsServicesGraphique = [
       "Nous concevons des logos uniques et professionnels pour renforcer votre identité visuelle.",
   },
   {
-    title: "Carte de restaurant",
+    title: "Carte de Visite/Restaurant",
     description:
       "Nous créons des designs attractifs pour vos cartes de restaurant et snack.",
   },

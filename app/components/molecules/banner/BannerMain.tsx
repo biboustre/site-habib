@@ -17,7 +17,6 @@ BannerMainProps) {
       className="relative flex h-screen flex-col justify-center bg-black md:pl-[15%]"
     >
       {/* Effet lumineux */}
-      {/* Effet lumineux */}
       <div className="moving-light">
         <div className="sparkle-container">
           {Array.from({ length: 20 }).map((_, index) => (

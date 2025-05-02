@@ -292,7 +292,7 @@ body {
 
 
 
-/* Effet lumineux dans la banniere */
+/* Effet lumineux bille dans la banniere */
 .moving-light {
   position: absolute;
   top: 0;
@@ -320,7 +320,7 @@ body {
   opacity: 0;
 }
 
-/* Animation pour le mouvement en forme de "8" */
+/* Animation de la bille sur la banniere */
 @keyframes move-bounce {
   0% {
     transform: translate(50vw, 0vh); /* Départ au milieu en haut */

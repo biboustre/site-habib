@@ -58,7 +58,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
                 )
               )}
             </h2>
-            <p className="mx-auto max-w-md rounded-lg bg-slate-700/60 p-4 text-lg font-semibold 2xl:max-w-xl 2xl:text-2xl">
+            <p className="mx-auto max-w-md cursor-pointer rounded-lg bg-zinc-600/70 p-4 text-lg font-semibold  duration-300 hover:scale-110 2xl:max-w-xl 2xl:text-2xl">
               {subtitle}
             </p>
           </section>
@@ -68,7 +68,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
             {buttons.map((button, index) => (
               <BtnRounded
                 key={index}
-                className="btn-gradient bg-slate-700/80 text-lg"
+                className="btn-gradient animate-pulse bg-zinc-500 text-lg"
                 text={button.text}
                 href={button.href}
               />

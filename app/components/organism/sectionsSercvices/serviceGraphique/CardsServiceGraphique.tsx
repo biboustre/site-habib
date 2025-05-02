@@ -45,16 +45,16 @@ export const CardsServiceGraphique = ({
 
         {/* Face arrière */}
         <section
-          className="2xltop-[20%] absolute inset-0  md:top-[10%] flex flex-col gap-5 p-5 text-center text-white"
+          className="2xltop-[10%] absolute inset-0  flex flex-col gap-5 p-5 text-center text-white md:top-[10%]"
           style={{
             backfaceVisibility: "hidden", // Cache la face avant
             transform: "rotateY(180deg)", // Face arrière tournée à 180°
           }}
         >
-          <h2 className="colorPrimaryStack text-2xl font-bold sm:text-2xl">
+          <h2 className="animate-text-gradient text-2xl font-bold 2xl:text-4xl">
             {service.title}
           </h2>
-          <p className="text-base md:text-lg xl:text-lg">
+          <p className="text-base md:text-lg xl:text-lg 2xl:text-2xl">
             {service.description}
           </p>
         </section>

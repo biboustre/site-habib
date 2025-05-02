@@ -1,49 +1,10 @@
-// "use client";
-
-// import React from "react";
-// import useEmblaCarousel from "embla-carousel-react";
-// import Image from "next/image";
-// import Autoplay from "embla-carousel-autoplay";
-
-// const carouselItems = [
-//   { id: 1, title: "Photographie", imageSrc: "/images/pexel1.webp" },
-//   { id: 2, title: "Vidéo Créative", imageSrc: "/images/pexel2.webp" },
-//   { id: 3, title: "Montage Vidéo", imageSrc: "/images/pexel3.webp" },
-// ];
-
-// export default function CarouselEmbla() {
-//   const autoplay = Autoplay({ delay: 3000, stopOnInteraction: false  });
-//   const [emblaRef] = useEmblaCarousel({ loop: true }, [autoplay]);
-
-//   return (
-//     <section ref={emblaRef} className="relative mx-auto w-full max-w-6xl py-10 overflow-hidden">
-//         <section className="flex">
-//           {carouselItems.map((item) => (
-//             <section key={item.id} className="group relative h-64 flex-[0_0_100%] px-2">
-//               <figure className="relative size-full overflow-hidden rounded-lg shadow-lg">
-//                 <Image
-//                   src={item.imageSrc}
-//                   alt={item.title}
-//                   fill
-//                   className="object-cover transition-transform duration-500 group-hover:scale-110"
-//                 />
-//                 <div className="absolute inset-0 flex items-center justify-center bg-black/50 text-white">
-//                   <h2 className="text-xl font-bold">{item.title}</h2>
-//                 </div>
-//               </figure>
-//             </section>
-//           ))}
-//         </section>
-//     </section>
-//   );
-// }
-
 "use client";
 
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
+import { FaArrowRight } from "react-icons/fa";
 
 interface CarouselItem {
   id: number;
@@ -75,12 +36,18 @@ export default function CarouselEmbla({
       ref={emblaRef}
       className=" relative mx-auto size-full max-w-[1600px] overflow-hidden "
     >
-      <div className="flex h-full ">
+      {/* Flèche pour passer au slide suivant */}
+
+      <section className="flex h-full">
         {items.map((item) => (
           <section
             key={item.id}
             className={`group relative h-full flex-[0_0_100%] cursor-pointer px-2  ${classContentFigure}`}
           >
+            <button className="absolute right-4 top-4 z-10 flex  items-center justify-center  text-white">
+              {" "}
+              <FaArrowRight size={30} />
+            </button>
             <figure className="relative size-full overflow-hidden rounded-lg shadow-lg ">
               <Image
                 src={item.imageSrc}
@@ -93,7 +60,9 @@ export default function CarouselEmbla({
                   {item.title}
                 </h2>
                 {item.description && (
-                  <p className={`font-mono text-xl text-gray-100 lg:px-5 lg:text-xl ${classDescription}`}>
+                  <p
+                    className={`font-mono text-xl text-gray-100 lg:px-5 lg:text-xl ${classDescription}`}
+                  >
                     {item.description}
                   </p>
                 )}
@@ -101,7 +70,7 @@ export default function CarouselEmbla({
             </figure>
           </section>
         ))}
-      </div>
+      </section>
     </section>
   );
 }

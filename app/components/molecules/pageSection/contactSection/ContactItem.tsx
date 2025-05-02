@@ -1,5 +1,4 @@
 "use client";
-// import { usePathname } from "next/navigation";
 import React from "react";
 
 interface ContactItemProps {
@@ -13,13 +12,10 @@ export default function ContactItem({
   title,
   description,
 }: ContactItemProps) {
-  // const pathname = usePathname();
-  // const bgIcon = pathname === "/" ? "bgFooter" : "bg-gray-800";
-
   return (
     <section className="flex w-32 flex-col items-center text-center  ">
       <figure
-        className={`icon-gradient mb-4 cursor-pointer rounded-full p-10 text-3xl transition-all duration-300 hover:scale-150 2xl:text-4xl`}
+        className={`icon-gradient mb-4 animate-bounce cursor-pointer rounded-full p-10 text-3xl transition-all duration-300 hover:scale-150 2xl:text-4xl`}
       >
         {icon}
       </figure>

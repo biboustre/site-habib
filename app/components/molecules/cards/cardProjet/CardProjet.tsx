@@ -33,7 +33,7 @@ export default function CardProjet({
 
   return (
     <section
-      className={`mb-24 relative h-auto w-[90vw] cursor-pointer sm:w-[480px] 2xl:w-[600px] ${className}`}
+      className={`relative mb-24 h-auto w-[90vw] cursor-pointer sm:w-[480px] 2xl:w-[600px] ${className}`}
     >
       <section
         className="relative h-[500px] overflow-hidden rounded-2xl sm:h-[400px] 2xl:h-[500px]"
@@ -101,7 +101,7 @@ export default function CardProjet({
 
           {/* Face arrière */}
           <aside
-            className="absolute inset-0 flex flex-col gap-5 bg-gray-800/90 px-3 py-5 text-center text-white"
+            className="absolute inset-0 flex flex-col gap-8 bg-zinc-700/50 px-3 py-5 text-center text-white 2xl:px-10 "
             style={{
               backfaceVisibility: "hidden", // Cache la face avant
               transform: "rotateY(180deg)", // Face arrière tournée à 180°
@@ -109,7 +109,7 @@ export default function CardProjet({
           >
             {/* <p className="text-lg font-bold">{category}</p> */}
             <h2 className="text-3xl font-bold lg:text-4xl">{title}</h2>
-            {description && <p className="text-base">{description}</p>}
+            {description && <p className="text-base 2xl:text-xl ">{description}</p>}
           </aside>
         </motion.section>
       </section>
