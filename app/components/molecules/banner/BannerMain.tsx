@@ -1,22 +1,22 @@
 // import Image from "next/image";
 import React from "react";
-// import { BannerMainProps } from "../../../types";
+import { BannerMainProps } from "../../../types";
 import BtnRounded from "../../atoms/button/BtnRounded";
 
-export interface BannerMainProps {
-  title?: React.ReactNode;
-  text?: React.ReactNode;
-  src: string;
-  alt: string;
-  classNameImage?: string;
-  classNameTitle?: string;
-  classNameBanner?: string;
-  classNameInfo?: string;
-  classNameParentImage?: string;
-  width?: number;
-  height?: number;
-  videoSrc?: string;
-}
+// export interface BannerMainProps {
+//   title?: React.ReactNode;
+//   text?: React.ReactNode;
+//   src: string;
+//   alt: string;
+//   classNameImage?: string;
+//   classNameTitle?: string;
+//   classNameBanner?: string;
+//   classNameInfo?: string;
+//   classNameParentImage?: string;
+//   width?: number;
+//   height?: number;
+//   videoSrc?: string;
+// }
 
 export default function BannerMain({
   title,
