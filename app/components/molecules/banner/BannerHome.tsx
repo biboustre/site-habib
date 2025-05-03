@@ -14,10 +14,10 @@ function BannerHome() {
         <>
           <span className="animate-text-gradient font-semibold">Solution</span>{" "}
           <br />
-          <span className="font-extrabold ">WEB || Mobile</span> <br />
-          <span className=" animate-text-gradient font-extrabold">&</span>{" "}
+          <span className="">WEB || Mobile</span> <br />
+          <span className=" animate-text-gradient ">&</span>{" "}
           <br />
-          <span className="font-extrabold ">DESIGN</span>
+          <span >DESIGN</span>
         </>
       }
       src="/images/photo_ordinateur_1.webp"

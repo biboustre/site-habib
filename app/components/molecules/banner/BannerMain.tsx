@@ -29,12 +29,12 @@ BannerMainProps) {
   return (
     <section
       id="top"
-      className="relative flex h-screen flex-col justify-center md:pl-[15%]"
+      className="relative flex h-screen flex-col justify-center md:pl-[15%] overflow-hidden"
     >
       {/* Vidéo en arrière-plan */}
       <video
-        className="absolute inset-0 -z-10 size-full object-cover"
-        src="/video/video11.mp4"
+        className="absolute inset-0 -z-10 size-full object-cover will-change-transform"
+        src="/video/video9.mp4"
         autoPlay
         loop
         muted
@@ -57,18 +57,18 @@ BannerMainProps) {
         </div>
       </div>
       <section className={``}>
-        <h1 className="mb-5 text-center text-6xl font-bold text-white md:text-start md:text-7xl lg:text-8xl 2xl:text-[150px]">
+        <h1 className="mb-5 text-center text-6xl font-extrabold text-white md:text-start md:text-7xl lg:text-8xl 2xl:text-[150px]">
           {title}
         </h1>
         {text && (
-          <h2 className="mb-16 text-center text-3xl font-semibold tracking-wider text-white md:text-start md:text-4xl lg:text-5xl 2xl:text-7xl">
+          <h2 className="mb-16 text-center text-3xl font-extrabold tracking-wider text-white md:text-start md:text-4xl lg:text-5xl 2xl:text-7xl">
             {text}
           </h2>
         )}
         <section className="flex justify-center md:justify-start">
           <BtnRounded
             href="#contact"
-            className=" btn-gradient mt-10 animate-pulse bg-zinc-700 py-6 text-center"
+            className=" animate-bg-gradient mt-10  py-6 text-center"
             text="Contactez-nous"
           />
         </section>

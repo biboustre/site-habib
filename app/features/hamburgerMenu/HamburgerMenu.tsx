@@ -12,6 +12,10 @@ const HamburgerMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false); // Ferme le menu après un clic sur un lien
+  };
+
   const pathname = usePathname(); //usePathname pour obtenir la route actuelle
 
   const links =
@@ -57,7 +61,7 @@ const HamburgerMenu = () => {
                   key={link.href}
                   className="hover:colorPrimaryStack block py-2 text-lg"
                 >
-                  <InternalLink href={link.href} name={link.name} />
+                  <InternalLink onClick={closeMenu} href={link.href} name={link.name} />
                 </li>
               ))}
             </ul>

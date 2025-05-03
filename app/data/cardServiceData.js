@@ -3,8 +3,8 @@ import { FaSearch, FaPuzzlePiece, FaGlobe, FaCamera } from "react-icons/fa";
 export const cardService = [
   {
     id: 1,
-    title: "Création de sites web et design graphique",
-    text: "Web'ibou est une entreprise spécialisée dans la création de sites web et de design graphique. Nous vous accompagnons dans la réalisation de vos projets, de la conception à la mise en ligne. Notre équipe est composée de professionnels expérimentés qui sauront répondre à vos besoins.",
+    title: "Création de sites web, apps mobiles et design graphique",
+    text: "Web'ibou est une entreprise spécialisée dans la création de sites web, d'applications mobiles et de design graphique. Nous vous accompagnons dans la réalisation de vos projets, de la conception à la mise en ligne. Notre équipe est composée de professionnels expérimentés qui sauront répondre à vos besoins.",
     icon: <FaGlobe />,
   },
   {

@@ -18,11 +18,13 @@ export default function NousProposons() {
   return (
     // j'ai mis en h-screen mais faut redisposter les elements
     <AnimatedSection>
+      
       <motion.section
         id="services"
-        className="animate-gravel  parallaxe flex scroll-mt-[100px] flex-col gap-20 px-3  pb-32 pt-20  2xl:gap-44"
+        className="   flex scroll-mt-[100px] flex-col gap-20 px-3  pb-32 pt-20  2xl:gap-44"
         variants={itemVariants}
       >
+        
          <TitleAnimeGradient
             classNameH1="lg:text-6xl text-5xl mx-auto font-extrabold"
             title="Ce que nous proposons"

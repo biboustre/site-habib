@@ -16,14 +16,16 @@ export default function Footer() {
           content={
             <>
               <p>
-                Nous sommes une équipe de développeurs passionnés, spécialisés
-                dans la création de sites et d&apos;applications web sur mesure.
-                Notre mission : vous offrir des solutions digitales modernes et
-                performantes, adaptées à vos besoins, tout en restant
-                accessibles et compétitives. En alliant créativité et expertise
-                technique, nous accompagnons nos clients dans la réalisation de
-                leurs projets avec des prix attractifs et un service
-                personnalisé.
+                Nous sommes une équipe de professionnels passionnés, spécialisés
+                dans la création de sites web, d&apos;applications web et mobiles sur
+                mesure. En plus de nos services de développement, nous proposons
+                également des prestations de photographie et de design graphique
+                pour sublimer votre image de marque. Notre mission : vous offrir
+                des solutions digitales modernes, performantes et esthétiques,
+                parfaitement adaptées à vos besoins. En alliant créativité,
+                expertise technique et sens artistique, nous accompagnons nos
+                clients dans la réalisation de leurs projets avec des prix
+                attractifs et un service personnalisé.
               </p>
               <SocialsLinks className="mt-4" />
             </>

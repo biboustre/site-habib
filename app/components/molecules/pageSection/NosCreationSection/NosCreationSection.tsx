@@ -34,11 +34,19 @@ export default function NosCreationSection({
   };
 
   return (
-    <AnimatedSection className="bg-gradient-to-b from-black via-neutral-800  to-black">
+    <AnimatedSection className="">
       <section
         id="creations"
-        className={` relative mx-auto flex max-w-[2000px] scroll-mt-[90px] flex-col gap-20 bg-gradient-to-b from-black via-neutral-800  to-black py-20 md:pb-40 ${className}`}
+        className={` relative mx-auto flex max-w-[2000px] scroll-mt-[90px] flex-col gap-20  py-20 md:pb-40 ${className}`}
       >
+        <video
+        className="absolute inset-0 -z-10 size-full object-cover will-change-transform"
+        src="/video/video2.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      ></video>
         <section className="flex justify-center">
           <TitleAnimeGradient
             classNameH1="lg:text-6xl text-5xl font-extrabold btn-gradient hover-text-white"

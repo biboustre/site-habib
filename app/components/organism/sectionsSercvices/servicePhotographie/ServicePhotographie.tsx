@@ -18,7 +18,7 @@ const sliderServicesPhotographie = [
     title: "Vidéo Créative",
     description:
       "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
-    imageSrc: "/images/pexel2.webp",
+    videoSrc: "/video/video4.MP4",
   },
   {
     id: 3,
@@ -84,6 +84,7 @@ export default function ServicePhotographie() {
               title={service.title}
               description={service.description}
               imageSrc={service.imageSrc}
+              videoSrc={service.videoSrc}
               delay={index * 0.2}
             />
           ))}
