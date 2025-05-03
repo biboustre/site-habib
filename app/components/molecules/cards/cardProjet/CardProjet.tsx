@@ -38,7 +38,7 @@ export default function CardProjet({
       <section
         className="relative h-[500px] overflow-hidden rounded-2xl sm:h-[400px] 2xl:h-[500px]"
         style={{
-          perspective: "800px", // Perspective pour l'effet 3D
+          perspective: "500px", // Perspective pour l'effet 3D
         }}
         onMouseEnter={() => setIsFlipped(true)} // Retourne la carte au survol
         onMouseLeave={() => setIsFlipped(false)} // Remet la carte à l'état initial

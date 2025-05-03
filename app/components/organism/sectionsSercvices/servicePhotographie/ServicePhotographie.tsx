@@ -59,7 +59,7 @@ export default function ServicePhotographie() {
       {/* Titre principal */}
       <section>
         <motion.section
-          className=" text-center"
+          className=" text-center pt-10 flex flex-col gap-5"
           initial={{ opacity: 0, y: 150 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

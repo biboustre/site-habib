@@ -106,7 +106,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
   text,
 }) => {
   return (
-    <section className="flex h-auto flex-col gap-10 sm:gap-32 xl:gap-52 pt-10">
+    <section className="flex h-auto flex-col gap-10 sm:gap-32 bg-black xl:gap-48 pt-10">
       {/* Texte principal */}
       <h1 className="animate-text-gradient btn-gradient hover-text-white mx-auto max-w-[1000px] cursor-pointer rounded-xl px-3 py-10 text-center text-4xl font-extrabold duration-500 hover:scale-90 md:px-10 lg:text-6xl">
         {text}
