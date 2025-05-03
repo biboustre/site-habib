@@ -37,11 +37,11 @@ export default function NosCreationSection({
     <AnimatedSection className="">
       <section
         id="creations"
-        className={` relative mx-auto flex max-w-[2000px] scroll-mt-[90px] flex-col gap-20  py-20 md:pb-40 ${className}`}
+        className={` relative mx-auto flex max-w-[2000px] scroll-mt-[90px] flex-col gap-20  py-20 md:pb-40 parallaxe2 ${className}`}
       >
         <video
-        className="absolute inset-0 -z-10 size-full object-cover will-change-transform"
-        src="/video/video2.mp4"
+        className="fixed  inset-0 -z-10 size-full object-cover will-change-transform"
+        src="/video/video9.mp4"
         autoPlay
         loop
         muted

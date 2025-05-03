@@ -17,7 +17,7 @@ export const CardsServiceGraphique = ({
     <section
       className="bg-animated-shine relative h-[250px] max-h-[350px] w-full max-w-[500px] basis-full cursor-pointer overflow-hidden rounded-3xl shadow-sm shadow-yellow-900 md:min-h-[350px] md:basis-1/3 lg:size-[20vw]"
       style={{
-        perspective: "500px", // Perspective pour l'effet 3D
+        perspective: "400px", // Perspective pour l'effet 3D
         // transformStyle: "preserve-3d", // Préserve le style 3D
       }}
       onMouseEnter={() => setIsFlipped(true)} // Retourne la carte au survol
