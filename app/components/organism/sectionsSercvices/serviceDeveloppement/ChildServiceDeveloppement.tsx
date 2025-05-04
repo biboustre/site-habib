@@ -9,66 +9,33 @@ interface Service {
   text: string;
 }
 
+interface CarouselItem {
+  id: number;
+  title: string;
+  description: string;
+  imageSrc: string;
+}
+
 interface ChildServiceDeveloppementProps {
   services: Service[];
   justifyLogic?: (index: number) => string; // Fonction pour personnaliser la logique de justification
   imageSrc: string;
   imageAlt: string;
   className?: string; // Ajout de la prop className
+  carouselItems: CarouselItem[]; // Tableau dynamique pour le carousel
 }
 
-const servicesDeveloppement = [
-  {
-    id: 1,
-    title: "Développement Web",
-    description:
-      "Création de sites web modernes, performants et optimisés pour tous les appareils. Nous utilisons les dernières technologies pour garantir une expérience utilisateur exceptionnelle.",
-    imageSrc: "/images/pexel1.webp",
-  },
-  {
-    id: 2,
-    title: "Développement Mobile",
-    description:
-      "Applications mobiles natives et hybrides, conçues pour offrir des performances optimales et une expérience utilisateur fluide sur iOS et Android.",
-    imageSrc: "/images/pexel1.webp",
-  },
-  {
-    id: 3,
-    title: "SEO & Performance",
-    description:
-      "Optimisation de votre site pour les moteurs de recherche et amélioration des performances pour un chargement rapide et une meilleure visibilité.",
-    imageSrc: "/images/pexel1.webp",
-  },
-  {
-    id: 4,
-    title: "Accessibilité",
-    description:
-      "Conception de sites accessibles à tous, respectant les normes WCAG pour garantir une expérience inclusive.",
-    imageSrc: "/images/pexel1.webp",
-  },
-  {
-    id: 5,
-    title: "Bonnes Pratiques",
-    description:
-      "Code propre, maintenable et respectant les standards de l'industrie pour garantir la qualité et la pérennité de vos projets.",
-    imageSrc: "/images/pexel1.webp",
-  },
-  {
-    id: 6,
-    title: "Design UI/UX",
-    description:
-      "Création d'interfaces utilisateur intuitives et esthétiques, centrées sur l'utilisateur pour une navigation fluide et agréable.",
-    imageSrc: "/images/pexel1.webp",
-  },
-];
+
 
 const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
   services,
+  carouselItems,
   justifyLogic = (index) =>
     index % 2 === 0 ? "md:justify-start" : "md:justify-end", // Logique par défaut
   // imageSrc,
   // imageAlt,
   className, // Ajout de la prop className
+
 }) => {
   // Variants pour l'animation des cartes
   const cardVariants = {
@@ -97,7 +64,7 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
 
   return (
     <section
-      className={`flex max-w-[1200px] flex-col items-center justify-center gap-20 md:w-full md:flex-row 2xl:max-w-[1400px] 2xl:gap-44 ${className}`}
+      className={`flex max-w-[1200px] flex-col items-center justify-center gap-20 md:w-full lg:flex-row 2xl:max-w-[1400px] 2xl:gap-44 ${className}`}
     >
       {/* Section des services */}
       <section className="flex w-full flex-col gap-10 md:px-5 lg:w-1/2 lg:px-0">
@@ -132,7 +99,8 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
 
       <section className="h-[400px] w-full md:h-auto lg:flex lg:w-1/2 lg:items-center lg:justify-center ">
         <CarouselEmbla
-          items={servicesDeveloppement}
+          items={carouselItems}
+
           loop={true}
           classContentFigure="sm:h-[500px] "
         />
@@ -142,27 +110,3 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
 };
 
 export default ChildServiceDeveloppement;
-
-{
-  /* <figure className="w-full lg:flex lg:w-1/2 lg:items-center lg:justify-center">
-        <motion.div
-          whileHover={{ rotate: 720 }} // 3 tours rapides (360° x 3)
-          whileTap={{ rotate: -720 }} // Retour en sens inverse
-          transition={{
-            duration: 0.2, // Durée de l'animation
-            ease: "easeInOut", // Transition fluide
-          }}
-          className="h-[450px] w-full cursor-default overflow-hidden rounded-lg shadow-lg shadow-slate-700 transition duration-200"
-        >
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            width={550}
-            height={500}
-            quality={100}
-            loading="lazy"
-            className="size-full object-cover"
-          />
-        </motion.div>
-      </figure> */
-}

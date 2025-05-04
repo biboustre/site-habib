@@ -19,7 +19,7 @@ const sectionVariants = {
       whileInView="visible"
       viewport={{ once: true, margin: "-50px 0px" }}
       variants={sectionVariants}
-      className={className}
+      className={` ${className}`}
       style={style}
     >
       {children}

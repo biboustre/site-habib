@@ -4,6 +4,7 @@ import ServiceCard from "@/app/components/organism/sectionsSercvices/servicePhot
 import CarouselPhotographie from "@/app/components/organism/sectionsSercvices/servicePhotographie/CarouselPhotographie";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 import BtnRounded from "@/app/components/atoms/button/BtnRounded";
+import { a } from "framer-motion/client";
 
 const sliderServicesPhotographie = [
   {
@@ -12,6 +13,7 @@ const sliderServicesPhotographie = [
     description:
       "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
     imageSrc: "/images/pexel1.webp",
+    alt: "photographie",
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ const sliderServicesPhotographie = [
     description:
       "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
     videoSrc: "/video/video4.MP4",
+    alt: "vidéo",
   },
   {
     id: 3,
@@ -26,6 +29,7 @@ const sliderServicesPhotographie = [
     description:
       "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
     imageSrc: "/images/pexel3.webp",
+    alt: "montage vidéo",
   },
 ];
 
@@ -36,6 +40,7 @@ const portraitServices = [
     description:
       "Des portraits élégants et professionnels pour capturer votre personnalité unique.",
     imageSrc: "/images/pexel1.webp",
+    alt: "Portraits Individuels",
   },
   {
     id: 2,
@@ -43,6 +48,7 @@ const portraitServices = [
     description:
       "Capturez vos moments en famille avec des clichés chaleureux et authentiques.",
     imageSrc: "/images/pexel2.webp",
+    alt: "Portraits de Famille",
   },
   {
     id: 3,
@@ -50,6 +56,7 @@ const portraitServices = [
     description:
       "Mettez en avant votre image professionnelle avec des portraits d'entreprise de qualité.",
     imageSrc: "/images/pexel3.webp",
+    alt: "Portraits Corporate",
   },
 ];
 
@@ -59,7 +66,7 @@ export default function ServicePhotographie() {
       {/* Titre principal */}
       <section>
         <motion.section
-          className=" text-center pt-10 flex flex-col gap-5"
+          className=" flex flex-col gap-5 pt-10 text-center"
           initial={{ opacity: 0, y: 150 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

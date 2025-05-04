@@ -35,6 +35,57 @@ const servicesDev = [
   },
 ];
 
+const servicesDeveloppement = [
+  {
+    id: 1,
+    title: "Développement Web",
+    description:
+      "Création de sites web modernes, performants et optimisés pour tous les appareils. Nous utilisons les dernières technologies pour garantir une expérience utilisateur exceptionnelle.",
+    imageSrc: "/images/pexel1.webp",
+    alt: "Développement Web",
+  },
+  {
+    id: 2,
+    title: "Développement Mobile",
+    description:
+      "Applications mobiles natives et hybrides, conçues pour offrir des performances optimales et une expérience utilisateur fluide sur iOS et Android.",
+    imageSrc: "/images/pexel1.webp",
+    alt: "Développement Mobile",
+  },
+  {
+    id: 3,
+    title: "SEO & Performance",
+    description:
+      "Optimisation de votre site pour les moteurs de recherche et amélioration des performances pour un chargement rapide et une meilleure visibilité.",
+    imageSrc: "/images/pexel1.webp",
+    alt: "SEO & Performance",
+  },
+  {
+    id: 4,
+    title: "Accessibilité",
+    description:
+      "Conception de sites accessibles à tous, respectant les normes WCAG pour garantir une expérience inclusive.",
+    imageSrc: "/images/pexel1.webp",
+    alt: "Accessibilité",
+  },
+  {
+    id: 5,
+    title: "Bonnes Pratiques",
+    description:
+      "Code propre, maintenable et respectant les standards de l'industrie pour garantir la qualité et la pérennité de vos projets.",
+    imageSrc: "/images/pexel1.webp",
+    alt: "Bonnes Pratiques",
+  },
+  {
+    id: 6,
+    title: "Design UI/UX",
+    description:
+      "Création d'interfaces utilisateur intuitives et esthétiques, centrées sur l'utilisateur pour une navigation fluide et agréable.",
+    imageSrc: "/images/pexel1.webp",
+    alt: "Design UI/UX",
+  },
+];
+
 function ServicesDeveloppement() {
   return (
     <section className="animate-gravel  parallaxe relative flex h-auto flex-col items-center justify-center gap-32 py-20 text-white sm:px-0 lg:px-10">
@@ -46,16 +97,18 @@ function ServicesDeveloppement() {
           services={servicesDev.slice(0, 3)} // Mapper les services de l'index 0 à 2
           imageSrc="/images/pexel5.webp"
           imageAlt="Développement"
+          carouselItems={servicesDeveloppement} // Passer le tableau dynamique pour le carousel
         />
 
         <ChildServiceDeveloppement
-          className="md:flex-row-reverse"
+          className="lg:flex-row-reverse"
           services={servicesDev.slice(3)} // Mapper les services de l'index 3 à la fin
           justifyLogic={(index) =>
             index % 2 === 0 ? "md:justify-end" : "md:justify-start"
           } // Logique inversée
           imageSrc="/images/photo_ordinateur_1.webp"
           imageAlt="Maintenance"
+          carouselItems={servicesDeveloppement} // Passer le tableau dynamique pour le carousel
         />
     </section>
   );

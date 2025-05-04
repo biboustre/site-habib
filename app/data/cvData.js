@@ -31,4 +31,12 @@ export const cvData = [
       description:
         "Développement de mon site personnel et portfolio en Next.js, TypeScript et TailwindCSS, en appliquant les meilleures pratiques de code. Mise en place de composants réutilisables, structuration optimisée des dossiers et fichiers, et optimisation SEO, y compris la gestion des images.",
     },
+    {
+      id: 5,
+      year: "2025",
+      title: "Développeur front-end",
+      institution: "Substance graphique",
+      description:
+        "Développement de mon site personnel et portfolio en Next.js, TypeScript et TailwindCSS, en appliquant les meilleures pratiques de code. Mise en place de composants réutilisables, structuration optimisée des dossiers et fichiers, et optimisation SEO, y compris la gestion des images.",
+    },
   ];

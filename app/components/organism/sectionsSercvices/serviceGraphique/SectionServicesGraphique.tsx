@@ -28,6 +28,7 @@ const sliderServiceGraphique = [
     // description:
     //   "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
     imageSrc: "/images/pexel1.webp",
+    alt: "flyer",
   },
   {
     id: 2,
@@ -35,6 +36,7 @@ const sliderServiceGraphique = [
     // description:
     //   "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
     imageSrc: "/images/pexel2.webp",
+    alt: "logo",
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ const sliderServiceGraphique = [
     // description:
     //   "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
     imageSrc: "/images/pexel3.webp",
+    alt: "carte de restaurant",
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ const sliderServiceGraphique = [
     // description:
     //   "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
     imageSrc: "/images/pexel3.webp",
+    alt: "carte de visite",
   },
 ];
 

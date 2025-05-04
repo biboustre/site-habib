@@ -39,7 +39,7 @@ export default function ContactForm() {
     <section className="flex w-full flex-col md:flex-row lg:w-[90%] lg:justify-between 2xl:h-[800px]">
       {/* Section gauche avec texte et informations */}
       <section className={`md:w-1/2 ${bgForm}`}>
-        <figure className="size-full relative">
+        <figure className="relative size-full">
           <Image
             src="/images/pexel1.webp"
             alt="contact"

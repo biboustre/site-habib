@@ -3,20 +3,7 @@ import React from "react";
 import { BannerMainProps } from "../../../types";
 import BtnRounded from "../../atoms/button/BtnRounded";
 
-// export interface BannerMainProps {
-//   title?: React.ReactNode;
-//   text?: React.ReactNode;
-//   src: string;
-//   alt: string;
-//   classNameImage?: string;
-//   classNameTitle?: string;
-//   classNameBanner?: string;
-//   classNameInfo?: string;
-//   classNameParentImage?: string;
-//   width?: number;
-//   height?: number;
-//   videoSrc?: string;
-// }
+
 
 export default function BannerMain({
   title,
@@ -29,7 +16,7 @@ BannerMainProps) {
   return (
     <section
       id="top"
-      className="relative flex h-screen flex-col justify-center md:pl-[15%] overflow-hidden"
+      className="relative flex h-screen flex-col justify-center overflow-hidden md:pl-[15%]"
     >
       {/* Vidéo en arrière-plan */}
       <video

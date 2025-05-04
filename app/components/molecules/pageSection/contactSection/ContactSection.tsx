@@ -20,7 +20,7 @@ export default function ContactSection() {
     <AnimatedSection>
       <motion.section
         id="contact"
-        className="flex scroll-mt-[100px] flex-col items-center gap-16 pt-20 text-white "
+        className="flex scroll-mt-[100px] flex-col items-center gap-16 bg-gradient-to-b  from-black via-neutral-800 to-black pt-20 text-white "
         variants={itemVariants}
       >
         <motion.section
@@ -28,11 +28,11 @@ export default function ContactSection() {
           variants={itemVariants}
         >
           <section className="flex justify-center">
-          <TitleAnimeGradient
-            classNameH1="lg:text-6xl text-5xl font-extrabold btn-gradient hover-text-white"
-            title="Contact"
-          />
-        </section>
+            <TitleAnimeGradient
+              classNameH1="lg:text-6xl text-5xl font-extrabold btn-gradient hover-text-white"
+              title="Contact"
+            />
+          </section>
           {pathname === "/" && (
             <p className="mx-auto mt-4 w-[70%] text-2xl text-gray-400 sm:text-xl 2xl:text-2xl">
               Besoin d&apos;informations ou d&apos;un devis ? N&apos;hésitez pas

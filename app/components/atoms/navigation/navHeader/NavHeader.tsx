@@ -9,18 +9,27 @@ export default function NavHeader() {
   const pathname = usePathname();
 
   const links =
-    pathname === "/stackTechnic"
+    pathname === "/mentionLegale"
       ? [
+          { href: "/", name: "Home" }, // Lien vers la page Home
+          { href: "/stackTechnic", name: "Portfolio" }, // Lien vers la page Portfolio
+        ]
+      : pathname === "/stackTechnic"
+      ? [
+        { href: "/", name: "Home" }, // Lien vers la page Home
+
           { href: "#competences", name: "Compétences" },
           { href: "#projets", name: "Projets" },
           { href: "#cv", name: "CV" },
           { href: "#contact", name: "Contact" },
+          { href: "/mentionLegale", name: "Mentions Légales" },
         ]
       : [
           { href: "#services", name: "Services" },
           { href: "#a-propos", name: "A propos" },
           { href: "/stackTechnic", name: "Portfolio" },
           { href: "#creations", name: "Créations" },
+          { href: "/mentionLegale", name: "Mentions Légales" },
           { href: "#contact", name: "Contact" },
         ];
 

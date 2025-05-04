@@ -7,7 +7,7 @@ import SocialsLinks from "@/app/components/atoms/socials/socialsLinks/SocialsLin
 
 export default function Footer() {
   return (
-    <footer className="flex scroll-mt-[100px] flex-col items-center gap-32  pt-40 md:px-2 lg:px-10   ">
+    <footer className="flex  scroll-mt-[100px] flex-col items-center gap-32 bg-gradient-to-b  from-black via-neutral-800 to-black  pt-40 md:px-2 lg:px-10   ">
       <ContactForm />
 
       <section className=" grid w-full gap-10  px-3 text-lg md:grid-cols-2 lg:grid-cols-3">
@@ -17,15 +17,16 @@ export default function Footer() {
             <>
               <p>
                 Nous sommes une équipe de professionnels passionnés, spécialisés
-                dans la création de sites web, d&apos;applications web et mobiles sur
-                mesure. En plus de nos services de développement, nous proposons
-                également des prestations de photographie et de design graphique
-                pour sublimer votre image de marque. Notre mission : vous offrir
-                des solutions digitales modernes, performantes et esthétiques,
-                parfaitement adaptées à vos besoins. En alliant créativité,
-                expertise technique et sens artistique, nous accompagnons nos
-                clients dans la réalisation de leurs projets avec des prix
-                attractifs et un service personnalisé.
+                dans la création de sites web, d&apos;applications web et
+                mobiles sur mesure. En plus de nos services de développement,
+                nous proposons également des prestations de photographie et de
+                design graphique pour sublimer votre image de marque. Notre
+                mission : vous offrir des solutions digitales modernes,
+                performantes et esthétiques, parfaitement adaptées à vos
+                besoins. En alliant créativité, expertise technique et sens
+                artistique, nous accompagnons nos clients dans la réalisation de
+                leurs projets avec des prix attractifs et un service
+                personnalisé.
               </p>
               <SocialsLinks className="mt-4" />
             </>
