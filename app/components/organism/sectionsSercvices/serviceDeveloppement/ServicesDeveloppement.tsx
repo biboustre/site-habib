@@ -2,7 +2,7 @@ import React from "react";
 import ChildServiceDeveloppement from "./ChildServiceDeveloppement";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 
-const servicesDev = [
+const cardsServices = [
   {
     number: 1,
     title: "Analyse",
@@ -41,7 +41,7 @@ const servicesDeveloppement = [
     title: "Développement Web",
     description:
       "Création de sites web modernes, performants et optimisés pour tous les appareils. Nous utilisons les dernières technologies pour garantir une expérience utilisateur exceptionnelle.",
-    imageSrc: "/images/pexel1.webp",
+    imageSrc: "/images/ordi-violet.jpg",
     alt: "Développement Web",
   },
   {
@@ -57,7 +57,7 @@ const servicesDeveloppement = [
     title: "SEO & Performance",
     description:
       "Optimisation de votre site pour les moteurs de recherche et amélioration des performances pour un chargement rapide et une meilleure visibilité.",
-    imageSrc: "/images/pexel1.webp",
+    imageSrc: "/images/ligne-de-code-2.jpg",
     alt: "SEO & Performance",
   },
   {
@@ -86,6 +86,41 @@ const servicesDeveloppement = [
   },
 ];
 
+const servicesDeveloppement2 = [
+  {
+    id: 1,
+    title: "Flyer",
+    description:
+      "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
+    imageSrc: "/images/pexel4.webp",
+    alt: "flyer",
+  },
+  {
+    id: 2,
+    title: "Logo",
+    description:
+      "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
+    imageSrc: "/images/pexel5.webp",
+    alt: "logo",
+  },
+  {
+    id: 3,
+    title: "Carte de restaurant",
+    description:
+      "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
+    imageSrc: "/images/pexel6.webp",
+    alt: "carte de restaurant",
+  },
+  {
+    id: 4,
+    title: "Carte de visite",
+    description:
+      "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
+    imageSrc: "/images/pexel7.webp",
+    alt: "carte de visite",
+  },
+];
+
 function ServicesDeveloppement() {
   return (
     <section className="animate-gravel  parallaxe relative flex h-auto flex-col items-center justify-center gap-32 py-20 text-white sm:px-0 lg:px-10">
@@ -93,23 +128,23 @@ function ServicesDeveloppement() {
         title="Développement sur Mesure : Sites Web, Applications Web et Mobiles"
         classNameH1="lg:text-6xl max-w-[1400px] text-4xl font-extrabold mx-auto max-w-[1000px] tracking-wide"
       />
-        <ChildServiceDeveloppement
-          services={servicesDev.slice(0, 3)} // Mapper les services de l'index 0 à 2
-          imageSrc="/images/pexel5.webp"
-          imageAlt="Développement"
-          carouselItems={servicesDeveloppement} // Passer le tableau dynamique pour le carousel
-        />
+      <ChildServiceDeveloppement
+        services={cardsServices.slice(0, 3)} // Mapper les services de l'index 0 à 2
+        imageSrc="/images/pexel5.webp"
+        imageAlt="Développement"
+        carouselItems={servicesDeveloppement2} // Passer le tableau dynamique pour le carousel
+      />
 
-        <ChildServiceDeveloppement
-          className="lg:flex-row-reverse"
-          services={servicesDev.slice(3)} // Mapper les services de l'index 3 à la fin
-          justifyLogic={(index) =>
-            index % 2 === 0 ? "md:justify-end" : "md:justify-start"
-          } // Logique inversée
-          imageSrc="/images/photo_ordinateur_1.webp"
-          imageAlt="Maintenance"
-          carouselItems={servicesDeveloppement} // Passer le tableau dynamique pour le carousel
-        />
+      <ChildServiceDeveloppement
+        className="lg:flex-row-reverse"
+        services={cardsServices.slice(3)} // Mapper les services de l'index 3 à la fin
+        justifyLogic={(index) =>
+          index % 2 === 0 ? "md:justify-end" : "md:justify-start"
+        } // Logique inversée
+        imageSrc="/images/photo_ordinateur_1.webp"
+        imageAlt="Maintenance"
+        carouselItems={servicesDeveloppement} // Passer le tableau dynamique pour le carousel
+      />
     </section>
   );
 }

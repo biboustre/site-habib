@@ -21,12 +21,13 @@ BannerMainProps) {
       {/* Vidéo en arrière-plan */}
       <video
         className="absolute inset-0 -z-10 size-full object-cover will-change-transform"
-        src="/video/video9.mp4"
+        src="/video/video16.mp4"
         autoPlay
         loop
         muted
         playsInline
-      ></video>
+      >
+      </video>
       {/* Effet lumineux */}
       <div className="moving-light">
         <div className="sparkle-container">

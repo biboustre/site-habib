@@ -117,12 +117,14 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
         {/* Vidéo en arrière-plan */}
         <video
           className="absolute inset-0 size-full object-cover"
-          src={videoSrc}
+          // src={videoSrc}
           autoPlay
           loop
           muted
           playsInline
-        ></video>
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
 
         {/* Contenu par-dessus la vidéo */}
         <section className="relative flex w-full flex-col justify-center gap-20 md:h-auto md:gap-16">

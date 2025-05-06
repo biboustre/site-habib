@@ -20,7 +20,6 @@ function BannerHome() {
           <span >DESIGN</span>
         </>
       }
-      src="/images/photo_ordinateur_1.webp"
       alt="photo de profil"
     />
   );

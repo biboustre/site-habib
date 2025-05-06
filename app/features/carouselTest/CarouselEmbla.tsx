@@ -55,7 +55,7 @@ export default function CarouselEmbla({
                 fill
                 className="object-cover opacity-70 transition-transform duration-500 group-hover:scale-110"
               />
-              <figcaption className="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-black/50 p-4 text-center text-white">
+              <figcaption className="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-black/30 p-4 text-center text-white">
                 <h2 className="text-2xl font-extrabold md:text-4xl">
                   {item.title}
                 </h2>

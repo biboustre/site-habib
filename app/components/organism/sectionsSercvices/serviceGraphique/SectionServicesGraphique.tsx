@@ -27,7 +27,7 @@ const sliderServiceGraphique = [
     title: "Flyer",
     // description:
     //   "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
-    imageSrc: "/images/pexel1.webp",
+    imageSrc: "/images/flyer/flyer-9.png",
     alt: "flyer",
   },
   {
@@ -43,7 +43,7 @@ const sliderServiceGraphique = [
     title: "Carte de restaurant",
     // description:
     //   "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
-    imageSrc: "/images/pexel3.webp",
+    imageSrc: "/images/flyer/carte-restaurant-1.png",
     alt: "carte de restaurant",
   },
   {
@@ -51,7 +51,7 @@ const sliderServiceGraphique = [
     title: "Carte de visite",
     // description:
     //   "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
-    imageSrc: "/images/pexel3.webp",
+    imageSrc: "/images/flyer/carte-de-visite-1.jpg",
     alt: "carte de visite",
   },
 ];
@@ -76,7 +76,7 @@ function SectionServicesGraphique() {
       </section>
 
       {/* Image à droite */}
-      <section className="h-[400px] w-full cursor-pointer rounded-lg shadow-lg shadow-slate-700 lg:h-auto  lg:w-1/5">
+      <section className="h-[400px] w-full cursor-pointer rounded-lg shadow-lg shadow-slate-700 lg:h-auto  lg:w-1/4">
         <CarouselEmbla
           items={sliderServiceGraphique}
           loop={true}
