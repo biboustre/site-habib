@@ -19,9 +19,9 @@ export default function InternalLink({
   return (
     <Link
       onClick={onClick}
-      className={`underline-animation tracking-wider transition-colors duration-300 ${
-        isActive ? "active-link" : "text-white"
-      } animate-text-gradient `}
+      className={`underline-animation tracking-wider transition-colors duration-300  ${
+        isActive ? "animate-text-gradient active-link" : "text-white"
+      }  `}
       href={href}
     >
       {name}

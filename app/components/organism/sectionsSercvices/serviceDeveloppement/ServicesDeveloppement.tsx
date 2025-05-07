@@ -35,7 +35,7 @@ const cardsServices = [
   },
 ];
 
-const servicesDeveloppement = [
+const servicesDeveloppement2 = [
   {
     id: 1,
     title: "Développement Web",
@@ -49,7 +49,7 @@ const servicesDeveloppement = [
     title: "Développement Mobile",
     description:
       "Applications mobiles natives et hybrides, conçues pour offrir des performances optimales et une expérience utilisateur fluide sur iOS et Android.",
-    imageSrc: "/images/pexel1.webp",
+    imageSrc: "/images/pexel5.webp",
     alt: "Développement Mobile",
   },
   {
@@ -57,15 +57,18 @@ const servicesDeveloppement = [
     title: "SEO & Performance",
     description:
       "Optimisation de votre site pour les moteurs de recherche et amélioration des performances pour un chargement rapide et une meilleure visibilité.",
-    imageSrc: "/images/ligne-de-code-2.jpg",
+    imageSrc: "/images/seo2.jpg",
     alt: "SEO & Performance",
   },
+];
+
+const servicesDeveloppement = [
   {
     id: 4,
     title: "Accessibilité",
     description:
       "Conception de sites accessibles à tous, respectant les normes WCAG pour garantir une expérience inclusive.",
-    imageSrc: "/images/pexel1.webp",
+    imageSrc: "/images/2-pc.jpg",
     alt: "Accessibilité",
   },
   {
@@ -73,7 +76,7 @@ const servicesDeveloppement = [
     title: "Bonnes Pratiques",
     description:
       "Code propre, maintenable et respectant les standards de l'industrie pour garantir la qualité et la pérennité de vos projets.",
-    imageSrc: "/images/pexel1.webp",
+    imageSrc: "/images/ligne-de-code-2.jpg",
     alt: "Bonnes Pratiques",
   },
   {
@@ -81,43 +84,8 @@ const servicesDeveloppement = [
     title: "Design UI/UX",
     description:
       "Création d'interfaces utilisateur intuitives et esthétiques, centrées sur l'utilisateur pour une navigation fluide et agréable.",
-    imageSrc: "/images/pexel1.webp",
+    imageSrc: "/images/pc-large.jpg",
     alt: "Design UI/UX",
-  },
-];
-
-const servicesDeveloppement2 = [
-  {
-    id: 1,
-    title: "Flyer",
-    description:
-      "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
-    imageSrc: "/images/pexel4.webp",
-    alt: "flyer",
-  },
-  {
-    id: 2,
-    title: "Logo",
-    description:
-      "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
-    imageSrc: "/images/pexel5.webp",
-    alt: "logo",
-  },
-  {
-    id: 3,
-    title: "Carte de restaurant",
-    description:
-      "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
-    imageSrc: "/images/pexel6.webp",
-    alt: "carte de restaurant",
-  },
-  {
-    id: 4,
-    title: "Carte de visite",
-    description:
-      "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
-    imageSrc: "/images/pexel7.webp",
-    alt: "carte de visite",
   },
 ];
 

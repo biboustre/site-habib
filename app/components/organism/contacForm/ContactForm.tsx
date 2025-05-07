@@ -36,12 +36,12 @@ export default function ContactForm() {
   const bgForm = pathname === "/" ? "bgFooter" : "bg-gray-800";
 
   return (
-    <section className="flex w-full flex-col md:flex-row lg:w-[90%] lg:justify-between 2xl:h-[800px]">
+    <section className="flex w-full flex-col  md:flex-row lg:w-[90%] lg:justify-between 2xl:h-[800px]">
       {/* Section gauche avec texte et informations */}
-      <section className={`md:w-1/2 ${bgForm}`}>
+      <section className={`h-[400px] md:h-auto md:w-1/2 ${bgForm}`}>
         <figure className="relative size-full">
           <Image
-            src="/images/pexel1.webp"
+            src="/images/pexel2.webp"
             alt="contact"
             fill
             quality={100}
@@ -50,7 +50,7 @@ export default function ContactForm() {
         </figure>
       </section>
 
-      <section className="bg-white p-5 md:w-1/2 md:p-10 xl:p-12">
+      <section className="bg-white p-5 md:w-1/2 md:p-10 xl:p-12 rounded-b-2xl md:rounded-b-none">
         <form
           onSubmit={onSubmit}
           className="space-y-6 xl:w-full 2xl:space-y-20"

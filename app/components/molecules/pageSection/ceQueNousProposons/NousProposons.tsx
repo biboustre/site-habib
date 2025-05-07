@@ -21,7 +21,7 @@ export default function NousProposons() {
       
       <motion.section
         id="services"
-        className="   flex scroll-mt-[100px] flex-col gap-20 px-3  pb-32 pt-20  2xl:gap-44"
+        className="  flex scroll-mt-[100px] flex-col gap-20 px-3  pb-32 pt-20  2xl:gap-44 bg-gradient-black"
         variants={itemVariants}
       >
         

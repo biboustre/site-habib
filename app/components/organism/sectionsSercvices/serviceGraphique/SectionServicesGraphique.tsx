@@ -40,14 +40,6 @@ const sliderServiceGraphique = [
   },
   {
     id: 3,
-    title: "Carte de restaurant",
-    // description:
-    //   "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
-    imageSrc: "/images/flyer/carte-restaurant-1.png",
-    alt: "carte de restaurant",
-  },
-  {
-    id: 4,
     title: "Carte de visite",
     // description:
     //   "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
@@ -58,7 +50,7 @@ const sliderServiceGraphique = [
 
 function SectionServicesGraphique() {
   return (
-    <section className="flex h-auto flex-col items-center justify-center gap-14 bg-neutral-950 px-2 py-28 text-white sm:px-3 md:px-0 lg:flex-row lg:items-stretch">
+    <section className="flex h-auto flex-col items-center justify-center gap-14 bg-gradient-black px-2 py-28 text-white sm:px-3 md:px-0 lg:flex-row lg:items-stretch">
       {/* Conteneur gauche (Texte + Cartes) */}
       <section className="flex flex-col gap-16 lg:w-2/3">
         <TitleAnimeGradient

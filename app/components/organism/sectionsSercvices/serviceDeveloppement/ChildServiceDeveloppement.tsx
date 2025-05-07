@@ -25,8 +25,6 @@ interface ChildServiceDeveloppementProps {
   carouselItems: CarouselItem[]; // Tableau dynamique pour le carousel
 }
 
-
-
 const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
   services,
   carouselItems,
@@ -35,7 +33,6 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
   // imageSrc,
   // imageAlt,
   className, // Ajout de la prop className
-
 }) => {
   // Variants pour l'animation des cartes
   const cardVariants = {
@@ -97,12 +94,12 @@ const ChildServiceDeveloppement: React.FC<ChildServiceDeveloppementProps> = ({
         ))}
       </section>
 
-      <section className="h-[400px] w-full md:h-auto lg:flex lg:w-1/2 lg:items-center lg:justify-center ">
+      <section className="h-[400px] w-full bg-black/90 md:h-auto lg:flex lg:w-1/2 lg:items-center lg:justify-center">
         <CarouselEmbla
           items={carouselItems}
-
           loop={true}
-          classContentFigure="sm:h-[500px] "
+          classContentFigure="sm:h-[500px] " 
+          classCaption="bg-black/60"
         />
       </section>
     </section>

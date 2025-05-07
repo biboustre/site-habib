@@ -15,7 +15,7 @@ export default function CardsNousProposons({
 }: NousProposonsCardProps) {
   return (
     <section
-      className={`flex h-[550px] w-auto flex-col items-center justify-between gap-9 rounded-xl bg-neutral-900/60 px-2 py-10 md:size-[550px] md:rounded-full 2xl:size-[800px] duration-300 hover:scale-95 cursor-pointer ${className}`}
+      className={`flex h-[550px] w-auto flex-col items-center justify-between gap-9 rounded-xl bg-neutral-800/50 px-2 py-10 md:size-[550px] md:rounded-full 2xl:size-[800px] duration-300 hover:scale-95 cursor-pointer ${className}`}
     >
       <figure className="text-5xl text-slate-100 md:text-6xl 2xl:text-8xl ">
         {icon}

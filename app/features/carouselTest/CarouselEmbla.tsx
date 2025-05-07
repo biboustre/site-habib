@@ -19,6 +19,7 @@ interface CarouselEmblaProps {
   loop?: boolean; // Activer ou désactiver le mode boucle
   classContentFigure?: string; // Classe CSS pour le contenu de la figure
   classDescription?: string; // Classe CSS pour la description
+  classCaption?: string; // Classe CSS pour la légende
 }
 
 export default function CarouselEmbla({
@@ -27,6 +28,7 @@ export default function CarouselEmbla({
   loop = true, // Valeur par défaut : boucle activée
   classContentFigure,
   classDescription,
+  classCaption,
 }: CarouselEmblaProps) {
   const autoplay = Autoplay({ delay: autoplayDelay, stopOnInteraction: false });
   const [emblaRef] = useEmblaCarousel({ loop }, [autoplay]);
@@ -55,7 +57,7 @@ export default function CarouselEmbla({
                 fill
                 className="object-cover opacity-70 transition-transform duration-500 group-hover:scale-110"
               />
-              <figcaption className="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-black/30 p-4 text-center text-white">
+              <figcaption className={`absolute inset-0 flex flex-col items-center justify-center gap-5  p-4 text-center text-white ${classCaption}`}>
                 <h2 className="text-2xl font-extrabold md:text-4xl">
                   {item.title}
                 </h2>

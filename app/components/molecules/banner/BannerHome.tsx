@@ -14,7 +14,7 @@ function BannerHome() {
         <>
           <span className="animate-text-gradient font-semibold">Solution</span>{" "}
           <br />
-          <span className="">WEB || Mobile</span> <br />
+          <span className="">WEB||Mobile</span> <br />
           <span className=" animate-text-gradient ">&</span>{" "}
           <br />
           <span >DESIGN</span>

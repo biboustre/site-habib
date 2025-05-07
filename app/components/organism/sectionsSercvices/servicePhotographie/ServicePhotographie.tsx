@@ -4,7 +4,6 @@ import ServiceCard from "@/app/components/organism/sectionsSercvices/servicePhot
 import CarouselPhotographie from "@/app/components/organism/sectionsSercvices/servicePhotographie/CarouselPhotographie";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 import BtnRounded from "@/app/components/atoms/button/BtnRounded";
-import { a } from "framer-motion/client";
 
 const sliderServicesPhotographie = [
   {
@@ -28,7 +27,7 @@ const sliderServicesPhotographie = [
     title: "Montage Vidéo",
     description:
       "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
-    imageSrc: "/images/pexel3.webp",
+    imageSrc: "/images/montage-video-3.jpg",
     alt: "montage vidéo",
   },
 ];
@@ -39,7 +38,7 @@ const portraitServices = [
     title: "Portraits Individuels",
     description:
       "Des portraits élégants et professionnels pour capturer votre personnalité unique.",
-    imageSrc: "/images/pexel1.webp",
+    imageSrc: "/images/appareil-photo/appareil-photo-3.jpg",
     alt: "Portraits Individuels",
   },
   {
@@ -47,7 +46,7 @@ const portraitServices = [
     title: "Portraits de Famille",
     description:
       "Capturez vos moments en famille avec des clichés chaleureux et authentiques.",
-    imageSrc: "/images/pexel2.webp",
+    imageSrc: "/images/appareil-photo/appareil-photo-2.jpg",
     alt: "Portraits de Famille",
   },
   {
@@ -55,14 +54,14 @@ const portraitServices = [
     title: "Portraits Corporate",
     description:
       "Mettez en avant votre image professionnelle avec des portraits d'entreprise de qualité.",
-    imageSrc: "/images/pexel3.webp",
+    imageSrc: "/images/appareil-photo/appareil-photo-6.jpg",
     alt: "Portraits Corporate",
   },
 ];
 
 export default function ServicePhotographie() {
   return (
-    <section className="relative flex flex-col gap-20 bg-gradient-to-b from-black via-neutral-800 to-black px-6 pb-20">
+    <section className="bg-gradient-black relative flex flex-col gap-20 px-6 pb-20">
       {/* Titre principal */}
       <section>
         <motion.section

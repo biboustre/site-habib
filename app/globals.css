@@ -17,7 +17,6 @@ html {
 }
 
 
-
 @layer components {
   .underline-animation {
     position: relative;
@@ -32,8 +31,8 @@ html {
     left: 100%;
     width: 100%;
     height: 2px;
-    background-color: rgb(232, 197, 1);
-    transition: left 0.3s ease-out;
+    background: linear-gradient(270deg, #ff7e5f, #942fb9, #ff7e5f);
+    transition: left 0.4s ease-out;
   }
 
   .underline-animation:hover::after {
@@ -42,7 +41,7 @@ html {
 
   .active-link {
     position: relative;
-    color: rgb(232, 197, 1);
+    color: var(--gradient-primary);
   }
 
   .active-link::after {
@@ -52,16 +51,9 @@ html {
     bottom: -2px;
     width: 100%;
     height: 2px;
-    background-color: rgb(232, 197, 1);
-    transition: left 0.3s ease-out;
+    background: var(--gradient-primary);
+    transition: left 0.4s ease-out;
   }
-
-  /* .bgHamburger {
-    background: #0f2027;
-    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-    margin: 10px;
-  } */
 
   /* SHADOW CLASS******************************************/
   .shadow-white {
@@ -258,7 +250,7 @@ html {
     transform: translate(50vw, 0vh); /* Départ au milieu en haut */
   }
   25% {
-    transform: translate(96vw, 50vh); /* Milieu à droite */
+    transform: translate(97vw, 50vh); /* Milieu à droite */
   }
   50% {
     transform: translate(50vw, 97vh); /* Milieu en bas */

@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import AnimatedSection from "@/app/features/animatedSection/AnimatedSection";
 import Carousel from "@/app/features/carrousel/Carrousel";
 import cardCreation from "@/app/data/cardCreationData";
 import CardProjet from "../../cards/cardProjet/CardProjet";
 // import ModalProjet from "@/app/features/modals/ModaleProjet";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
+// import Image from "next/image";
 
 export default function NosCreationSection({
   className,
@@ -34,19 +34,19 @@ export default function NosCreationSection({
   };
 
   return (
-    <AnimatedSection className="">
       <section
         id="creations"
-        className={` relative mx-auto flex max-w-[2000px] scroll-mt-[90px] flex-col gap-20  py-20 md:pb-40 parallaxe2 ${className}`}
+        className={` parallaxe relative mx-auto flex max-w-[2000px] scroll-mt-[90px] flex-col  gap-20 py-10 md:pb-32 ${className}`}
+        style={{
+          backgroundImage: "url('/images/pc-large.jpg')",}}
       >
-        <video
-        className="fixed  inset-0 -z-10 size-full object-cover will-change-transform"
-        src="/video/video9.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-      ></video>
+        {/* <Image
+          src="/images/pc-large.jpg"
+          alt="Image de fond"
+          fill
+          className=" -z-10 object-cover"
+          loading="lazy"
+          /> */}
         <section className="flex justify-center">
           <TitleAnimeGradient
             classNameH1="lg:text-6xl text-5xl font-extrabold btn-gradient hover-text-white"
@@ -73,22 +73,21 @@ export default function NosCreationSection({
             />
           ))}
         </Carousel>
-      </section>
 
       {/* Modale */}
       {/* {modalData && (
         <ModalProjet
-          isOpen={isModalOpen}
-          onClose={handleCloseModal}
-          title={modalData.title}
-          description={modalData.description}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        title={modalData.title}
+        description={modalData.description}
         />
-      )} */}
+        )} */}
       {/* <style jsx global>{`
         .nos-creation-carousel .slick-track {
           padding-bottom: 0px !important;
-        }
-      `}</style> */}
-    </AnimatedSection>
+          }
+          `}</style> */}
+          </section>
   );
 }

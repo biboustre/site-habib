@@ -12,9 +12,9 @@ export default function NavHeader() {
     pathname === "/mentionLegale"
       ? [
           { href: "/", name: "Home" }, // Lien vers la page Home
-          { href: "/stackTechnic", name: "Portfolio" }, // Lien vers la page Portfolio
+          { href: "/portfolio", name: "Portfolio" }, // Lien vers la page Portfolio
         ]
-      : pathname === "/stackTechnic"
+      : pathname === "/portfolio"
       ? [
         { href: "/", name: "Home" }, // Lien vers la page Home
 
@@ -27,7 +27,7 @@ export default function NavHeader() {
       : [
           { href: "#services", name: "Services" },
           { href: "#a-propos", name: "A propos" },
-          { href: "/stackTechnic", name: "Portfolio" },
+          { href: "/portfolio", name: "Portfolio" },
           { href: "#creations", name: "Créations" },
           { href: "/mentionLegale", name: "Mentions Légales" },
           { href: "#contact", name: "Contact" },
@@ -37,7 +37,7 @@ export default function NavHeader() {
     <nav className="hidden gap-10 lg:flex">
       {" "}
       {/* Cache les liens sur les écrans mobiles */}
-      <ul className="flex gap-5 text-xl font-normal text-white">
+      <ul className="flex gap-5 text-xl font-bold text-white">
         {links.map((link) => (
           <li key={link.href} className="underline-animation">
             <InternalLink
