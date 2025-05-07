@@ -34,7 +34,7 @@ const HamburgerMenu = () => {
         ];
 
   return (
-    <div className="lg:hidden">
+    <div className="xl:hidden">
       {/* cache le menu écrans moyen et lg */}
       <button
         className="p-2 focus:outline-none"

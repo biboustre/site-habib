@@ -27,7 +27,7 @@ const sliderServicesPhotographie = [
     title: "Montage Vidéo",
     description:
       "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
-    imageSrc: "/images/montage-video-3.jpg",
+    imageSrc: "/images/montage-video-3.webp",
     alt: "montage vidéo",
   },
 ];
@@ -38,7 +38,7 @@ const portraitServices = [
     title: "Portraits Individuels",
     description:
       "Des portraits élégants et professionnels pour capturer votre personnalité unique.",
-    imageSrc: "/images/appareil-photo/appareil-photo-3.jpg",
+    imageSrc: "/images/appareil-photo/appareil-photo-3.webp",
     alt: "Portraits Individuels",
   },
   {
@@ -46,7 +46,7 @@ const portraitServices = [
     title: "Portraits de Famille",
     description:
       "Capturez vos moments en famille avec des clichés chaleureux et authentiques.",
-    imageSrc: "/images/appareil-photo/appareil-photo-2.jpg",
+    imageSrc: "/images/appareil-photo/appareil-photo-2.webp",
     alt: "Portraits de Famille",
   },
   {
@@ -54,22 +54,22 @@ const portraitServices = [
     title: "Portraits Corporate",
     description:
       "Mettez en avant votre image professionnelle avec des portraits d'entreprise de qualité.",
-    imageSrc: "/images/appareil-photo/appareil-photo-6.jpg",
+    imageSrc: "/images/appareil-photo/appareil-photo-6.webp",
     alt: "Portraits Corporate",
   },
 ];
 
 export default function ServicePhotographie() {
   return (
-    <section className="bg-gradient-black relative flex flex-col gap-20 px-6 pb-20">
+    <section id="photographie" className="bg-gradient-black relative flex flex-col gap-20 px-6 pb-20">
       {/* Titre principal */}
       <section>
         <motion.section
           className=" flex flex-col gap-5 pt-10 text-center"
-          initial={{ opacity: 0, y: 150 }}
+          initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
         >
           <TitleAnimeGradient
             title="Sublimez Vos Moments avec Nos Services"

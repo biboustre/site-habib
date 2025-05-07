@@ -14,7 +14,7 @@
     category: "APPLICATION WEB/MOBILE",
     description:
       "Application E-commerce de Vente de Véhicules et Matériel de Chantier. J'ai développé une application e-commerce dédiée à la vente de véhicules et de matériel de chantier. Elle permet aux utilisateurs de naviguer facilement parmi une large sélection d’engins, avec la possibilité d'acheter par marque et de choisir entre des modèles neufs ou d’occasion. Cette plateforme vise à simplifier le processus d’achat en ligne, en offrant des informations claires et un accès rapide aux produits recherchés.",
-    imageSrc: "/images/france-engin.jpg",
+    imageSrc: "/images/france-engin.webp",
     alt: "France Engin",
   },
   {
@@ -23,7 +23,7 @@
     category: "CONCEPTION WEB",
     description:
       "Dans ce projet, j'ai conçu un portfolio interactif pour une architecte d'intérieur. Ce site présente une galerie dynamique où chaque projet est illustré, offrant aux visiteurs un aperçu de ses compétences et de son style. Grâce à une interface de connexion sécurisée, l'architecte peut gérer son portfolio en ajoutant, modifiant ou supprimant ses travaux facilement. Un formulaire de contact intégré permet aux clients potentiels de la joindre directement, facilitant les échanges et les opportunités professionnelles. Ce portfolio met en avant son travail avec un design épuré et intuitif, optimisé pour une navigation fluide et une présentation soignée de ses réalisations.",
-    imageSrc: "/images/sophie2.png",
+    imageSrc: "/images/sophie2.webp",
     alt: "Portfolio Architecte d'Intérieur",
   },
   {

@@ -1,8 +1,7 @@
 import React from "react";
-// import AnimatedSection from "@/app/features/animatedSection/AnimatedSection";
 import BtnRounded from "../../atoms/button/BtnRounded";
 import CardStats from "../cards/cardStats/CardStats";
-// import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface BannerMarketingProps {
   title: (string | { text: string; className?: string })[];
@@ -12,6 +11,7 @@ interface BannerMarketingProps {
   imgSrc?: string; // Chemin de l'image de fond (optionnel)
   buttons: { text: string; href: string }[];
   stats?: { value: string; label: string }[];
+  id?: string; // ID de la section (optionnel)
 }
 
 const BannerMarketing: React.FC<BannerMarketingProps> = ({
@@ -21,10 +21,30 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
   imgSrc,
   buttons,
   stats,
+  id,
   text,
 }) => {
+  // Variantes pour l'animation
+  const containerVariants = {
+    hidden: { opacity: 0, y: 250 }, // Position initiale (invisible et décalée vers le bas)
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1, // Durée de l'animation
+        ease: "easeOut", // Courbe d'animation
+      },
+    },
+  };
   return (
-    <section className="bg-gradient-black  flex h-auto flex-col gap-10 pt-10 sm:gap-32 xl:gap-48">
+    <motion.section
+    id={id}
+      className="bg-gradient-black  flex h-auto flex-col gap-10 pt-10 sm:gap-32 xl:gap-48"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }} // L'animation se déclenche lorsque l'élément est visible
+      variants={containerVariants}
+    >
       {/* Texte principal */}
       <h1 className="animate-text-gradient btn-gradient hover-text-white mx-auto max-w-[1000px] cursor-pointer rounded-xl px-3 py-10 text-center text-4xl font-extrabold duration-500 hover:scale-90 md:px-10 lg:text-6xl ">
         {text}
@@ -94,7 +114,7 @@ const BannerMarketing: React.FC<BannerMarketingProps> = ({
           </section>
         </section>
       </section>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { cardRecruteur } from "@/app/data/cardRecruteurData";
+import { cardRecruteur } from "@/app/data/cardsMarketingData";
 import BannerMarketing from "../../marketing/BannerMarketing";
 
 const RecruteurSection: React.FC = () => {

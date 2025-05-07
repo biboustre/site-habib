@@ -50,7 +50,7 @@ export default function ContactForm() {
         </figure>
       </section>
 
-      <section className="bg-white p-5 md:w-1/2 md:p-10 xl:p-12 rounded-b-2xl md:rounded-b-none">
+      <section className="rounded-b-2xl bg-white p-5 md:w-1/2 md:rounded-b-none md:p-10 xl:p-12">
         <form
           onSubmit={onSubmit}
           className="space-y-6 xl:w-full 2xl:space-y-20"

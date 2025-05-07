@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import BtnRounded from "../../atoms/button/BtnRounded";
+import { motion } from "framer-motion";
 
 export default function BannerPortfolio() {
   const textBtn = [
@@ -7,10 +10,34 @@ export default function BannerPortfolio() {
     { id: 2, text: "Compétences", href: "#competences" },
   ];
 
+  // Variantes pour l'animation
+  const containerVariants = {
+    hidden: { opacity: 0, y: 150 }, 
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1, 
+        ease: "easeOut", 
+        delayChildren: 0.3, // Délai avant l'apparition des enfants
+        staggerChildren: 0.2, // Décalage entre les enfants
+      },
+    },
+  };
+
+  const childVariants = {
+    hidden: { opacity: 0, y: 120 }, // Position initiale des enfants
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
   return (
     <section
       className="parallaxe flex min-h-screen flex-col items-center justify-center  text-white lg:items-start  lg:gap-14  "
-      style={{ backgroundImage: "url('/images/2-pc2.jpg')" }}
+      style={{ backgroundImage: "url('/images/2-pc2.webp')" }}
     >
       {/* <Image
         src="/images/pc-large.jpg"
@@ -27,24 +54,32 @@ export default function BannerPortfolio() {
       >
         <source src="/video/video18.mp4" type="video/mp4" />
       </video> */}
-      <section className="flex flex-col items-center justify-center  gap-20 lg:gap-14 lg:items-start 2xl:gap-28 bg-black/30 min-h-screen w-full lg:px-[15%] ">
-        <section className="space-y-10 2xl:space-y-14">
-          <h1 className="text-center text-5xl font-bold md:text-start md:text-[66px] 2xl:text-8xl">
+      <motion.section
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+        className="flex min-h-screen w-full flex-col  items-center justify-center gap-20 bg-black/30 lg:items-start lg:gap-14 lg:px-[15%] 2xl:gap-28 "
+      >
+        <motion.section variants={childVariants} className="space-y-10 2xl:space-y-14">
+          <motion.h1
+            variants={childVariants}
+            className="text-center text-5xl font-bold md:text-start md:text-[66px] 2xl:text-8xl"
+          >
             Je suis{" "}
             <span className="animate-text-gradient">
               Habib <br /> de Web&apos;
             </span>{" "}
             <span className="text-white">ibou</span>
-          </h1>
+          </motion.h1>
           <p className="text-center text-3xl font-semibold tracking-wide lg:text-start 2xl:text-5xl">
             Développeur <span className="animate-text-gradient">front-end</span>{" "}
             <br />
             React, <span className="animate-text-gradient">NextJS</span> &
             Typescript
           </p>
-        </section>
+        </motion.section>
 
-        <section className="space-x-4">
+        <motion.section variants={childVariants} className="space-x-4">
           {textBtn.map((btn, index) => (
             <BtnRounded
               key={btn.id}
@@ -57,8 +92,8 @@ export default function BannerPortfolio() {
               }
             />
           ))}
-        </section>
-      </section>
+        </motion.section>
+      </motion.section>
     </section>
   );
 }

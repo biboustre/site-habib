@@ -2,55 +2,13 @@ import React from "react";
 import { CardsServiceGraphique } from "./CardsServiceGraphique";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
 import CarouselEmbla from "@/app/features/carouselTest/CarouselEmbla";
+import { CardsServicesGraphique, sliderServiceGraphique } from "@/app/data/service-graphique-data";
 
-const CardsServicesGraphique = [
-  {
-    title: "Flyer",
-    description:
-      "Nous proposons une gamme complète de services de design graphique pour répondre à vos besoins. Que ce soit pour la création de flyers, de logos, ou de cartes de restaurant.",
-  },
-  {
-    title: "Logo",
-    description:
-      "Nous concevons des logos uniques et professionnels pour renforcer votre identité visuelle.",
-  },
-  {
-    title: "Carte de Visite/Restaurant",
-    description:
-      "Nous créons des designs attractifs pour vos cartes de restaurant et snack.",
-  },
-];
 
-const sliderServiceGraphique = [
-  {
-    id: 1,
-    title: "Flyer",
-    // description:
-    //   "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
-    imageSrc: "/images/flyer/flyer-9.png",
-    alt: "flyer",
-  },
-  {
-    id: 2,
-    title: "Logo",
-    // description:
-    //   "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
-    imageSrc: "/images/pexel2.webp",
-    alt: "logo",
-  },
-  {
-    id: 3,
-    title: "Carte de visite",
-    // description:
-    //   "Sublimez vos contenus avec un montage vidéo professionnel. Nous transformons vos séquences en histoires uniques et impactantes.",
-    imageSrc: "/images/flyer/carte-de-visite-1.jpg",
-    alt: "carte de visite",
-  },
-];
 
 function SectionServicesGraphique() {
   return (
-    <section className="flex h-auto flex-col items-center justify-center gap-14 bg-gradient-black px-2 py-28 text-white sm:px-3 md:px-0 lg:flex-row lg:items-stretch">
+    <section id="graphique" className="bg-gradient-black flex h-auto flex-col items-center justify-center gap-14 px-2 py-28 text-white sm:px-3 md:px-0 lg:flex-row lg:items-stretch">
       {/* Conteneur gauche (Texte + Cartes) */}
       <section className="flex flex-col gap-16 lg:w-2/3">
         <TitleAnimeGradient
