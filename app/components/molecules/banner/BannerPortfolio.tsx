@@ -12,13 +12,13 @@ export default function BannerPortfolio() {
 
   // Variantes pour l'animation
   const containerVariants = {
-    hidden: { opacity: 0, y: 150 }, 
+    hidden: { opacity: 0, y: 150 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1, 
-        ease: "easeOut", 
+        duration: 1,
+        ease: "easeOut",
         delayChildren: 0.3, // Délai avant l'apparition des enfants
         staggerChildren: 0.2, // Décalage entre les enfants
       },
@@ -54,46 +54,51 @@ export default function BannerPortfolio() {
       >
         <source src="/video/video18.mp4" type="video/mp4" />
       </video> */}
-      <motion.section
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-        className="flex min-h-screen w-full flex-col  items-center justify-center gap-20 bg-black/30 lg:items-start lg:gap-14 lg:px-[15%] 2xl:gap-28 "
-      >
-        <motion.section variants={childVariants} className="space-y-10 2xl:space-y-14">
-          <motion.h1
+      <section className="bg-black/30 size-full">
+        <motion.section
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          className="flex min-h-screen w-full flex-col  items-center justify-center gap-20  lg:items-start lg:gap-14 lg:px-[15%] 2xl:gap-28 "
+        >
+          <motion.section
             variants={childVariants}
-            className="text-center text-5xl font-bold md:text-start md:text-[66px] 2xl:text-8xl"
+            className="space-y-10 2xl:space-y-14"
           >
-            Je suis{" "}
-            <span className="animate-text-gradient">
-              Habib <br /> de Web&apos;
-            </span>{" "}
-            <span className="text-white">ibou</span>
-          </motion.h1>
-          <p className="text-center text-3xl font-semibold tracking-wide lg:text-start 2xl:text-5xl">
-            Développeur <span className="animate-text-gradient">front-end</span>{" "}
-            <br />
-            React, <span className="animate-text-gradient">NextJS</span> &
-            Typescript
-          </p>
-        </motion.section>
+            <motion.h1
+              variants={childVariants}
+              className="text-center text-5xl font-bold md:text-start md:text-[66px] 2xl:text-8xl"
+            >
+              Je suis{" "}
+              <span className="animate-text-gradient">
+                Habib <br /> de Web&apos;
+              </span>{" "}
+              <span className="text-white">ibou</span>
+            </motion.h1>
+            <p className="text-center text-3xl font-semibold tracking-wide lg:text-start 2xl:text-5xl">
+              Développeur{" "}
+              <span className="animate-text-gradient">front-end</span> <br />
+              React, <span className="animate-text-gradient">NextJS</span> &
+              Typescript
+            </p>
+          </motion.section>
 
-        <motion.section variants={childVariants} className="space-x-4">
-          {textBtn.map((btn, index) => (
-            <BtnRounded
-              key={btn.id}
-              text={btn.text}
-              href={btn.href}
-              className={
-                index === 0
-                  ? "animate-bg-gradient"
-                  : "btn-gradient border text-white"
-              }
-            />
-          ))}
+          <motion.section variants={childVariants} className="space-x-4">
+            {textBtn.map((btn, index) => (
+              <BtnRounded
+                key={btn.id}
+                text={btn.text}
+                href={btn.href}
+                className={
+                  index === 0
+                    ? "animate-bg-gradient"
+                    : "btn-gradient border text-white"
+                }
+              />
+            ))}
+          </motion.section>
         </motion.section>
-      </motion.section>
+      </section>
     </section>
   );
 }
