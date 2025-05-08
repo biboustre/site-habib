@@ -38,13 +38,13 @@ export default function NavHeader() {
         ];
 
   const servicesLinks = [
-    { href: "#developpement", name: "Developpement" },
     { href: "#graphique", name: "Graphique" },
+    { href: "#developpement", name: "Developpement" },
     { href: "#photographie", name: "Photographie" },
   ]; // Sous-liens pour les services
 
   return (
-    <nav className="hidden gap-10 lg:flex">
+    <nav className="hidden gap-10 xl:flex">
       {/* Cache les liens sur les écrans mobiles */}
       <ul className="relative flex gap-5 text-xl font-bold text-white">
         {links.map((link) =>

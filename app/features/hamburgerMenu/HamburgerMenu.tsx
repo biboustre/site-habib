@@ -19,17 +19,22 @@ const HamburgerMenu = () => {
   const pathname = usePathname(); //usePathname pour obtenir la route actuelle
 
   const links =
-    pathname === "/stackTechnic"
+    pathname === "/portfolio"
       ? [
+          { href: "/", name: "Home" },
           { href: "#competences", name: "Compétences" },
           { href: "#projets", name: "Projets" },
           { href: "#cv", name: "CV" },
           { href: "#contact", name: "Contact" },
+          { href: "/mentionLegale", name: "Mentions Légales" },
         ]
       : [
-          { href: "#services", name: "Services" },
+          { href: "/portfolio", name: "Portfolio" },
           { href: "#a-propos", name: "A propos" },
+          { href: "#graphique", name: "Graphique" },
+          { href: "#developpement", name: "Dveloppement" },
           { href: "#creations", name: "Créations" },
+          { href: "#photographie", name: "Photographie" },
           { href: "#contact", name: "Contact" },
         ];
 
@@ -46,7 +51,7 @@ const HamburgerMenu = () => {
         <div className="h-1 w-6 bg-slate-100"></div>
       </button>
       {isOpen && (
-        <div className="fixed right-0 top-0 h-60 w-full translate-x-0 bg-zinc-950/95 text-white transition-transform md:h-full md:w-64">
+        <div className="fixed right-0 top-0 h-auto w-full translate-x-0 rounded-b-xl bg-zinc-950/95 pb-10 text-white transition-transform md:mt-3 md:w-1/2 md:rounded-b-none md:rounded-l-xl lg:w-1/3">
           <button
             className="absolute right-4 top-4 text-2xl"
             onClick={toggleMenu}
@@ -55,13 +60,18 @@ const HamburgerMenu = () => {
           </button>
           <nav className="mt-10 px-6">
             {" "}
-            <ul className=" text-white">
+            <ul className=" font-bold text-white">
               {links.map((link) => (
                 <li
                   key={link.href}
                   className="hover:colorPrimaryStack block py-2 text-lg"
                 >
-                  <InternalLink onClick={closeMenu} href={link.href} name={link.name} />
+                  °{" "}
+                  <InternalLink
+                    onClick={closeMenu}
+                    href={link.href}
+                    name={link.name}
+                  />
                 </li>
               ))}
             </ul>
