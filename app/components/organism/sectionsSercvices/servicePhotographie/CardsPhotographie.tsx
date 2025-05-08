@@ -45,6 +45,7 @@ const CardsPhotographie: React.FC<CardsPhotographieProps> = ({
               src={imageSrc}
               alt={title}
               fill
+              loading="lazy"
               className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
           )}

@@ -44,7 +44,7 @@ export default function ContactForm() {
             src="/images/pexel2.webp"
             alt="contact"
             fill
-            quality={100}
+            loading="lazy"
             className="object-cover"
           />
         </figure>

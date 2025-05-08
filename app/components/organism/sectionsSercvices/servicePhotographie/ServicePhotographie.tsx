@@ -11,7 +11,7 @@ const sliderServicesPhotographie = [
     title: "Photographie Professionnelle",
     description:
       "Capturez vos moments précieux avec des clichés de haute qualité. Nous réalisons des séances photo pour événements, portraits, produits et bien plus.",
-    imageSrc: "/images/pexel1.webp",
+    imageSrc: "/images/appareil-photo/appareil-photo-4.webp",
     alt: "photographie",
   },
   {
@@ -19,7 +19,7 @@ const sliderServicesPhotographie = [
     title: "Vidéo Créative",
     description:
       "Réalisez des vidéos captivantes pour vos projets personnels ou professionnels. Nous mettons en valeur vos idées avec des prises de vue dynamiques.",
-    videoSrc: "/video/video4.MP4",
+    videoSrc: "/video/video4.mp4",
     alt: "vidéo",
   },
   {
@@ -61,7 +61,10 @@ const portraitServices = [
 
 export default function ServicePhotographie() {
   return (
-    <section id="photographie" className="bg-gradient-black relative flex flex-col gap-20 px-6 pb-20">
+    <section
+      id="photographie"
+      className="bg-gradient-black relative flex flex-col gap-20 px-6 pb-20"
+    >
       {/* Titre principal */}
       <section>
         <motion.section

@@ -21,7 +21,7 @@ export default function SocialsLinks({ className }: SocialsLinksProps) {
           <SocialIcon
             label="Instagram"
             Icon={FaInstagram}
-            link="https://www.instagram.com"
+            link="https://www.instagram.com/webibou_creative_digital/"
           />
         </li>
       </ul>

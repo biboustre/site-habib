@@ -55,6 +55,7 @@ export default function CarouselEmbla({
                 src={item.imageSrc}
                 alt={item.title}
                 fill
+                loading="lazy"
                 className="object-cover opacity-70 transition-transform duration-500 group-hover:scale-110"
               />
               <figcaption className={`absolute inset-0 flex flex-col items-center justify-center gap-5  p-4 text-center text-white ${classCaption}`}>

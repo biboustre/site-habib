@@ -57,15 +57,15 @@ export default function CompetenceSection() {
     <AnimatedSection>
       <motion.section
         id="competences"
-        className="relative flex scroll-mt-[100px] flex-col gap-10 bg-black bg-gradient-to-b from-black via-neutral-800 to-black pb-36 md:px-20 "
+        className="relative flex scroll-mt-[100px] flex-col gap-10 bg-black bg-gradient-to-b from-black via-neutral-800 to-black pb-36 pt-20 md:px-20 "
         variants={itemVariants}
       >
         <section className="flex justify-center">
-            <TitleAnimeGradient
-              classNameH1="lg:text-6xl text-5xl font-extrabold btn-gradient hover-text-white"
-              title="Mes compétences"
-            />
-          </section>
+          <TitleAnimeGradient
+            classNameH1="lg:text-6xl text-5xl font-extrabold btn-gradient hover-text-white"
+            title="Mes compétences"
+          />
+        </section>
         <h2 className="mb-5 text-center text-xl tracking-wide text-white">
           Voici mes compétences principales
         </h2>

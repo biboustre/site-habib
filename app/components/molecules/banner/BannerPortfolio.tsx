@@ -54,7 +54,7 @@ export default function BannerPortfolio() {
       >
         <source src="/video/video18.mp4" type="video/mp4" />
       </video> */}
-      <section className="bg-black/30 size-full">
+      <section className="size-full bg-black/50">
         <motion.section
           initial="hidden"
           animate="visible"
@@ -67,7 +67,7 @@ export default function BannerPortfolio() {
           >
             <motion.h1
               variants={childVariants}
-              className="text-center text-5xl font-bold md:text-start md:text-[66px] 2xl:text-8xl"
+              className="max-w-full text-center text-5xl font-extrabold md:text-start md:text-[66px] 2xl:text-8xl"
             >
               Je suis{" "}
               <span className="animate-text-gradient">
@@ -75,7 +75,7 @@ export default function BannerPortfolio() {
               </span>{" "}
               <span className="text-white">ibou</span>
             </motion.h1>
-            <p className="text-center text-3xl font-semibold tracking-wide lg:text-start 2xl:text-5xl">
+            <p className="text-center text-3xl font-extrabold tracking-wide lg:text-start 2xl:text-5xl">
               Développeur{" "}
               <span className="animate-text-gradient">front-end</span> <br />
               React, <span className="animate-text-gradient">NextJS</span> &
@@ -83,7 +83,10 @@ export default function BannerPortfolio() {
             </p>
           </motion.section>
 
-          <motion.section variants={childVariants} className="space-x-4">
+          <motion.section
+            variants={childVariants}
+            className="jutify-center flex flex-col items-center gap-4 md:flex-row"
+          >
             {textBtn.map((btn, index) => (
               <BtnRounded
                 key={btn.id}

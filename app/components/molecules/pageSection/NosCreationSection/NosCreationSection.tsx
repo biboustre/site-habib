@@ -6,28 +6,12 @@ import cardCreation from "@/app/data/cardCreationData";
 import CardProjet from "../../cards/cardProjet/CardProjet";
 // import ModalProjet from "@/app/features/modals/ModaleProjet";
 import TitleAnimeGradient from "@/app/components/atoms/title/TitleAnimeGradient";
-// import Image from "next/image";
 
 export default function NosCreationSection({
   className,
 }: {
   className?: string;
 }) {
-  // const [isModalOpen, setIsModalOpen] = useState(false);
-  // const [modalData, setModalData] = useState<{
-  //   title?: string;
-  //   description?: string;
-  // } | null>(null);
-
-  // const handleCardClick = (title?: string, description?: string) => {
-  //   setModalData({ title, description });
-  //   setIsModalOpen(true);
-  // };
-
-  // const handleCloseModal = () => {
-  //   setIsModalOpen(false);
-  //   setModalData(null);
-  // };
 
   const customSettings = {
     autoplaySpeed: 2500,

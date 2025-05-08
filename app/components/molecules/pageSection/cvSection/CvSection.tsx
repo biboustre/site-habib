@@ -16,7 +16,7 @@ export default function CvSection() {
     <AnimatedSection>
       <motion.section
         id="cv"
-        className="flex scroll-mt-[100px] flex-col items-center bg-black bg-gradient-to-b from-black via-neutral-800 to-black py-16"
+        className="flex scroll-mt-[100px] flex-col items-center bg-black bg-gradient-to-b from-black via-neutral-800 to-black  pb-16"
         variants={itemVariants}
       >
         <section className="flex justify-center">
@@ -25,7 +25,7 @@ export default function CvSection() {
             title="Mon CV"
           />
         </section>
-        <p className="mt-4 max-w-xl text-center text-gray-400">
+        <p className="mt-4 max-w-3xl px-2 text-center text-gray-400">
           Découvrez mon parcours et mon expérience en développement web et
           mobile. Diplômé d&apos;un Bac+2, j&apos;ai travaillé sur divers
           projets en tant que développeur front-end, avec un focus sur la
@@ -33,7 +33,7 @@ export default function CvSection() {
         </p>
 
         <motion.section
-          className="mx-auto mt-12 grid max-w-5xl grid-cols-1  gap-8 px-4 md:grid-cols-2 md:grid-auto-row md:justify-items-center"
+          className="md:grid-auto-row mx-auto mt-12 grid max-w-5xl  grid-cols-1 gap-8 px-4 md:grid-cols-2 md:justify-items-center"
           variants={itemVariants}
         >
           {cvData.map((item) => (

@@ -1,4 +1,4 @@
-export * from "./portfolio/portfolioCardProps";
+// export * from "./portfolio/portfolioCardProps";
 export * from "./banner/bannerMain";
 export * from "./buttons/btnMain";
 export * from "./links/anchorLinkProps";

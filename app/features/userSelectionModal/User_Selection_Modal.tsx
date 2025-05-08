@@ -16,7 +16,7 @@ const UserSelectionModal: React.FC<UserSelectionModalProps> = ({
   const router = useRouter();
 
   const handleRecruiterClick = () => {
-    router.push('/stackTechnic');
+    router.push('/portfolio');
   };
 
   return (
@@ -34,7 +34,7 @@ const UserSelectionModal: React.FC<UserSelectionModalProps> = ({
         <div className="flex justify-around">
           <button
             onClick={onClientClick}
-            className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
+            className="rounded bg-slate-500 px-4 py-2 text-white hover:bg-slate-700"
           >
             Client Potentiel
           </button>

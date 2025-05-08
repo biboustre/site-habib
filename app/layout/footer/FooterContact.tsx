@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export default function FooterContact() {
   return (
-    <div className="md:mx-auto space-y-10">
+    <div className="space-y-10 md:mx-auto">
       <h3 className="mb-4 text-2xl font-bold text-white">
         Vous avez des questions ?
       </h3>

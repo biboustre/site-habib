@@ -18,7 +18,7 @@ export default function CompetenceCard({
         <h1 className="text-6xl text-white">{icon}</h1>
       </section>
       <section className="flex flex-col items-center justify-center gap-3">
-        <p className="text-xl text-white">{text}</p>
+        <p className="animate-text-gradient text-xl font-bold">{text}</p>
         <hr className="bgPrimaryStack h-px w-6" />
       </section>
     </section>

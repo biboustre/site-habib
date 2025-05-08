@@ -3,9 +3,8 @@
 import React, { useEffect, useState } from "react";
 // import Head from "next/head";
 import Modal from "react-modal";
-// import BannerMain from "@/app/components/molecules/banner/BannerMain";
 import AboutSection from "./components/molecules/pageSection/aboutSection/AboutSection";
-// import UserSelectionModal from "./features/userSelectionModal/User_Selection_Modal";
+import UserSelectionModal from "./features/userSelectionModal/User_Selection_Modal";
 import NosCreationSection from "./components/molecules/pageSection/NosCreationSection/NosCreationSection";
 import NousProposons from "./components/molecules/pageSection/ceQueNousProposons/NousProposons";
 import ContactSection from "./components/molecules/pageSection/contactSection/ContactSection";
@@ -44,11 +43,11 @@ export default function Home() {
       <EmploySection />
       <ContactSection />
   
-      {/* <UserSelectionModal
+      <UserSelectionModal
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
         onClientClick={handleClientClick}
-      /> */}
+      />
     </>
   );
 }
