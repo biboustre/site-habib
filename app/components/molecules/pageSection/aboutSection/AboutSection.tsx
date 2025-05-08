@@ -19,7 +19,7 @@ export default function AboutSection() {
       imgSrc="/images/2-pc.webp"
       buttons={[
         { text: "Contactez-moi", href: "#contact" },
-        { text: "Portfolio", href: "/stackTechnic" },
+        { text: "Portfolio", href: "/portfolio" },
       ]}
       stats={cardRecruteur}
     />

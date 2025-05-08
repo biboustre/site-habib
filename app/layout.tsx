@@ -5,7 +5,7 @@ import ClientHeader from "./layout/header/ClientHeader";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://Webibou.com"),
+  metadataBase: new URL("https://web-ibou.vercel.app"),
   title:
     "Web'ibou - Création de sites web, applications web et mobile et design graphique",
   description:
@@ -47,18 +47,18 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "MAAMAR BENHADJAR Habib",
-      url: "https://Webibou.com",
+      url: "https://web-ibou.vercel.app",
     },
   ],
   openGraph: {
     title: "Web'ibou",
     description:
       "Web'ibou propose des services de création de sites web, d'applications, de maquettes, de logos, de design graphique, d'hébergement de sites et d'optimisation.",
-    url: "https://Webibou.com",
+    url: "https://web-ibou.vercel.app",
     type: "website",
     images: [
       {
-        url: "https://Webibou.com/images/banniere-reseau.jpg",
+        url: "https://web-ibou.vercel.app/images/banniere-reseau.jpg",
         width: 1200,
         height: 630,
         alt: "Web'ibou",
@@ -88,12 +88,12 @@ export default function RootLayout({
           />
           <meta
             property="og:image"
-            content="https://Webibou.com/images/banniere-reseau.jpg"
+            content="https://web-ibou.vercel.app/images/banniere-resea.jpg"
           />
-          <meta property="og:url" content="https://Webibou.com" />
+          <meta property="og:url" content="https://web-ibou.vercel.app" />
           <meta property="og:type" content="website" />
         </Head>
-        <link rel="canonical" href="https://Webibou.com" />
+        <link rel="canonical" href="https://web-ibou.vercel.app" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -101,7 +101,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Webibou",
-              url: "https://Webibou.com",
+              url: "https://web-ibou.vercel.app",
               sameAs: [
                 "https://www.instagram.com/webibou_creative_digital/",
                 "https://www.facebook.com/votre-compte/",
@@ -111,11 +111,11 @@ export default function RootLayout({
               author: {
                 "@type": "Organization",
                 name: "MAAMAR BENHADJAR Habib",
-                url: "https://Webibou.com",
+                url: "https://web-ibou.vercel.app",
               },
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://Webibou.com/search?q={search_term_string}",
+                target: "https://web-ibou.vercel.app/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),

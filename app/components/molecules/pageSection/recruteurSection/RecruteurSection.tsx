@@ -24,7 +24,7 @@ const RecruteurSection: React.FC = () => {
       videoSrc="/video/video9.mp4"
       buttons={[
         { text: "Contactez-moi", href: "#contact" },
-        { text: "Portfolio", href: "/stackTechnic" },
+        { text: "Portfolio", href: "/portfolio" },
       ]}
       stats={cardRecruteur}
     />
