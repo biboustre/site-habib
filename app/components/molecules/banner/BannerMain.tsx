@@ -36,6 +36,8 @@ export default function BannerMain({ title, text }: BannerMainProps) {
         backgroundImage: "url('/images/pc-large.webp')",
       }}
     >
+      <div className="absolute inset-0 bg-black/50 pointer-events-none rounded-xl"></div>
+
       {/* Effet lumineux */}
       <div className="moving-light">
         <div className="sparkle-container">
