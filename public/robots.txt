@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://web-ibou.vercel.app
+
+# Sitemaps
+Sitemap: https://web-ibou.vercel.app/sitemap.xml
